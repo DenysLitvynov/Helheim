@@ -1518,6 +1518,7 @@ GameObject:
   - component: {fileID: 838671366}
   - component: {fileID: 838671367}
   - component: {fileID: 838671368}
+  - component: {fileID: 838671369}
   m_Layer: 0
   m_Name: Penitente1
   m_TagString: Untagged
@@ -1553,7 +1554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
+  velocidad: 5
   esta_en_combate: 0
 --- !u!54 &838671368
 Rigidbody:
@@ -1582,6 +1583,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &838671369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838671365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &873697748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,6 +1823,7 @@ GameObject:
   - component: {fileID: 1015556525}
   - component: {fileID: 1015556524}
   - component: {fileID: 1015556526}
+  - component: {fileID: 1015556527}
   m_Layer: 0
   m_Name: Penitente3
   m_TagString: Untagged
@@ -1828,7 +1843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
+  velocidad: 5
   esta_en_combate: 0
 --- !u!4 &1015556525
 Transform:
@@ -1873,6 +1888,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1015556527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015556523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1038348370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,6 +2323,7 @@ GameObject:
   - component: {fileID: 1190234168}
   - component: {fileID: 1190234167}
   - component: {fileID: 1190234169}
+  - component: {fileID: 1190234170}
   m_Layer: 0
   m_Name: Penitente2
   m_TagString: Untagged
@@ -2314,7 +2343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
+  velocidad: 5
   esta_en_combate: 0
 --- !u!4 &1190234168
 Transform:
@@ -2359,6 +2388,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1190234170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190234166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1210367038
 GameObject:
   m_ObjectHideFlags: 0
