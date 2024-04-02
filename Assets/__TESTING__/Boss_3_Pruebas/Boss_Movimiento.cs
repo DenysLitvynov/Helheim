@@ -11,6 +11,7 @@ public class Boss_Movimiento : MonoBehaviour
     private Transform target;
     private Waypoints caminos;
     private int waypointIndex = 0;
+    public bool esta_en_combate = false;
 
     private void Start()
     {
@@ -22,12 +23,15 @@ public class Boss_Movimiento : MonoBehaviour
 
     private void Update()
     {
-        Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * velocidad * Time.deltaTime, Space.World);
-
-        if (Vector3.Distance(transform.position, target.position) <= 0.4f)
+        if (!esta_en_combate)
         {
-            GetNextWaypoint();
+            Vector3 dir = target.position - transform.position;
+            transform.Translate(dir.normalized * velocidad * Time.deltaTime, Space.World);
+
+            if (Vector3.Distance(transform.position, target.position) <= 0.4f)
+            {
+                GetNextWaypoint();
+            }
         }
     }
 
@@ -40,6 +44,14 @@ public class Boss_Movimiento : MonoBehaviour
             return;
         }
         target = caminos.points[waypointIndex];
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Aliado")
+        {
+            esta_en_combate = true;
+        }
     }
 }
 
