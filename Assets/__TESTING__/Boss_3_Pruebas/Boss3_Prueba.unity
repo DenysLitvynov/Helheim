@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 41504676}
   - component: {fileID: 41504675}
   - component: {fileID: 41504674}
+  - component: {fileID: 41504678}
+  - component: {fileID: 41504679}
   m_Layer: 0
   m_Name: Aliado_dummy (2)
   m_TagString: Aliado
@@ -230,6 +232,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &41504678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41504673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 5
+--- !u!54 &41504679
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41504673}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &66080104
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +285,8 @@ GameObject:
   - component: {fileID: 66080107}
   - component: {fileID: 66080106}
   - component: {fileID: 66080105}
+  - component: {fileID: 66080109}
+  - component: {fileID: 66080110}
   m_Layer: 0
   m_Name: Aliado_dummy (3)
   m_TagString: Aliado
@@ -337,6 +382,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &66080109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66080104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 5
+--- !u!54 &66080110
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66080104}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &132773931
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +435,8 @@ GameObject:
   - component: {fileID: 132773934}
   - component: {fileID: 132773933}
   - component: {fileID: 132773932}
+  - component: {fileID: 132773936}
+  - component: {fileID: 132773937}
   m_Layer: 0
   m_Name: Aliado_dummy
   m_TagString: Aliado
@@ -444,6 +532,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &132773936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132773931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 5
+--- !u!54 &132773937
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132773931}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &218812447
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +585,8 @@ GameObject:
   - component: {fileID: 218812450}
   - component: {fileID: 218812449}
   - component: {fileID: 218812448}
+  - component: {fileID: 218812452}
+  - component: {fileID: 218812453}
   m_Layer: 0
   m_Name: Aliado_dummy (6)
   m_TagString: Aliado
@@ -551,6 +682,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &218812452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218812447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 5
+--- !u!54 &218812453
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218812447}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &262719571
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,6 +841,8 @@ GameObject:
   - component: {fileID: 301706466}
   - component: {fileID: 301706465}
   - component: {fileID: 301706464}
+  - component: {fileID: 301706468}
+  - component: {fileID: 301706469}
   m_Layer: 0
   m_Name: Aliado_dummy (5)
   m_TagString: Aliado
@@ -764,6 +938,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &301706468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301706463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 20
+--- !u!54 &301706469
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301706463}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &408050274
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +1097,8 @@ GameObject:
   - component: {fileID: 456313677}
   - component: {fileID: 456313676}
   - component: {fileID: 456313675}
+  - component: {fileID: 456313679}
+  - component: {fileID: 456313680}
   m_Layer: 0
   m_Name: Aliado_dummy (9)
   m_TagString: Aliado
@@ -977,6 +1194,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &456313679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456313674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 5
+--- !u!54 &456313680
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456313674}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &474547364
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1247,8 @@ GameObject:
   - component: {fileID: 474547367}
   - component: {fileID: 474547366}
   - component: {fileID: 474547365}
+  - component: {fileID: 474547369}
+  - component: {fileID: 474547370}
   m_Layer: 0
   m_Name: Aliado_dummy (8)
   m_TagString: Aliado
@@ -1084,6 +1344,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &474547369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474547364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 5
+--- !u!54 &474547370
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474547364}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &563986210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,7 +1822,7 @@ GameObject:
   - component: {fileID: 838671369}
   m_Layer: 0
   m_Name: Penitente1
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1595,7 +1896,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  vida: 100
+  dps: 1
 --- !u!1 &873697748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1910,8 @@ GameObject:
   - component: {fileID: 873697751}
   - component: {fileID: 873697750}
   - component: {fileID: 873697749}
+  - component: {fileID: 873697753}
+  - component: {fileID: 873697754}
   m_Layer: 0
   m_Name: Aliado_dummy (1)
   m_TagString: Aliado
@@ -1703,6 +2007,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &873697753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873697748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 5
+--- !u!54 &873697754
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873697748}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &983979022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,7 +2171,7 @@ GameObject:
   - component: {fileID: 1015556527}
   m_Layer: 0
   m_Name: Penitente3
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1854,7 +2199,7 @@ Transform:
   m_GameObject: {fileID: 1015556523}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.15, y: 3.84, z: -5.92}
+  m_LocalPosition: {x: 17.41, y: 3.84, z: -5.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1900,7 +2245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  vida: 100
+  dps: 1
 --- !u!1 &1038348370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,8 +2332,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038348370}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071067, y: -0.0000000018626451, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.1463137, y: 20.991388, z: -0.647663}
+  m_LocalRotation: {x: 0.10182275, y: 0.0029844032, z: -0.0003054693, w: 0.9947981}
+  m_LocalPosition: {x: 2.1170273, y: 11.552248, z: -18.135954}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2326,7 +2672,7 @@ GameObject:
   - component: {fileID: 1190234170}
   m_Layer: 0
   m_Name: Penitente2
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2400,7 +2746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  vida: 100
+  dps: 1
 --- !u!1 &1210367038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,6 +3173,8 @@ GameObject:
   - component: {fileID: 1466012357}
   - component: {fileID: 1466012356}
   - component: {fileID: 1466012355}
+  - component: {fileID: 1466012359}
+  - component: {fileID: 1466012360}
   m_Layer: 0
   m_Name: Aliado_dummy (7)
   m_TagString: Aliado
@@ -2921,6 +3270,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466012359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466012354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 5
+--- !u!54 &1466012360
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466012354}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1488887586
 GameObject:
   m_ObjectHideFlags: 0
@@ -3361,6 +3751,8 @@ GameObject:
   - component: {fileID: 1928922754}
   - component: {fileID: 1928922753}
   - component: {fileID: 1928922752}
+  - component: {fileID: 1928922756}
+  - component: {fileID: 1928922757}
   m_Layer: 0
   m_Name: Aliado_dummy (4)
   m_TagString: Aliado
@@ -3456,6 +3848,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928922756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928922751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 50
+  dps: 5
+--- !u!54 &1928922757
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928922751}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2100859325
 GameObject:
   m_ObjectHideFlags: 0

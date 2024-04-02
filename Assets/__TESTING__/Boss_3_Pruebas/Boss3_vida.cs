@@ -5,7 +5,8 @@ using UnityEngine;
 public class Boss3_vida : MonoBehaviour
 {
     private Boss_Movimiento combate;
-    public int health = 20; // La vida del enemigo
+    public float vida = 100f; // La vida del enemigo
+    public float dps = 1f;
 
     private void Start()
     {
@@ -14,6 +15,7 @@ public class Boss3_vida : MonoBehaviour
 
     private void Update()
     {
+        
         recibirDaño();
     }
 
@@ -21,10 +23,10 @@ public class Boss3_vida : MonoBehaviour
     {
         if (combate.esta_en_combate==true)
         {
-            health -= 1;
+            vida -= dps*Time.deltaTime;
         }
         // Comprueba si la vida del enemigo ha llegado a 0
-        if (health <= 0)
+        if (vida <= 0)
         {
             Destroy(gameObject); // Destruye el enemigo
         }
