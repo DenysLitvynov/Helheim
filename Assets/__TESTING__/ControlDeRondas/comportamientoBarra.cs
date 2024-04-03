@@ -11,7 +11,8 @@ public class Vida : MonoBehaviour {
 
     private void OnCollisionEnter(Collision other){
         
-        if(other.gameObject.tag== "enemigo1" || other.gameObject.tag== "enemigo2" || other.gameObject.tag== "enemigo3"){
+        if(other.gameObject.tag== "enemigo1" || other.gameObject.tag== "enemigo2" || other.gameObject.tag== "enemigo3" || other.gameObject.tag == "Enemy")
+        {
 
             Debug.Log("Hola perra");
 
