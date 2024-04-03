@@ -10,19 +10,26 @@ public class Vida_aliado_dummy : MonoBehaviour
 
     private void Update()
     {
-        recibirDaño();
+        if (combate_aliado == true)
+        {
+            // Obtiene una referencia al objeto del enemigo
+            Boss3_vida enemigo = GameObject.FindObjectOfType<Boss3_vida>();
+
+            // Accede a la variable daño_boss3 del enemigo
+            recibirDaño(enemigo.daño_boss);
+        }
     }
 
-    private void recibirDaño()
+    private void recibirDaño(float daño)
     {
         if (combate_aliado == true)
         {
-            vida -= dps * Time.deltaTime;
+            vida -= daño * Time.deltaTime;
         }
-        // Comprueba si la vida del enemigo ha llegado a 0
+        // Comprueba si la vida del aliado ha llegado a 0
         if (vida <= 0)
         {
-            Destroy(gameObject); // Destruye el enemigo
+            Destroy(gameObject); // Destruye el aliado
         }
     }
 

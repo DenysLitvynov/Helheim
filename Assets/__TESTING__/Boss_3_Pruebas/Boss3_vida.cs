@@ -6,7 +6,7 @@ public class Boss3_vida : MonoBehaviour
 {
     private Boss_Movimiento combate;
     public float vida = 100f; // La vida del enemigo
-    public float dps = 1f;
+    public float daño_boss = 40f;
 
     private void Start()
     {
@@ -15,15 +15,18 @@ public class Boss3_vida : MonoBehaviour
 
     private void Update()
     {
-        
-        recibirDaño();
+        if (combate.esta_en_combate == true)
+        {
+            Vida_aliado_dummy aliado = GameObject.FindObjectOfType<Vida_aliado_dummy>();
+            recibirDaño(aliado.dps);
+        }
     }
 
-    private void recibirDaño()
+    private void recibirDaño(float daño)
     {
         if (combate.esta_en_combate==true)
         {
-            vida -= dps*Time.deltaTime;
+            vida -= daño*Time.deltaTime;
         }
         // Comprueba si la vida del enemigo ha llegado a 0
         if (vida <= 0)
