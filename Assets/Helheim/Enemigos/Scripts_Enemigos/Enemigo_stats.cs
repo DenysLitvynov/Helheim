@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss3_vida : MonoBehaviour
+public class Enemigo_stats : MonoBehaviour
 {
-    private Boss_Movimiento combate;
-    public float vida_maxima = 100f;
+    private Movimiento_Enemigo combate;
+    public float vida_maxima = 100f;//La vida maxima del enemigo, solo para comparar y saber si se muere de una vez
     public float vida = 100f; // La vida del enemigo
-    public float daño_boss = 40f;
-    private Vida_aliado_dummy aliado;
+    public float daño_enemigo = 15f;//daño que causa el enemigo(el aliado tomara esto como parametro en recibirDaño())
+    private Aliado_stats aliado;
 
     private void Start()
     {
-        combate = GetComponent<Boss_Movimiento>();
+        combate = GetComponent<Movimiento_Enemigo>();
     }
 
     private void Update()
@@ -43,7 +43,7 @@ public class Boss3_vida : MonoBehaviour
         {
             combate.esta_en_combate = true;
             // Obtiene una referencia al objeto del aliado
-            aliado = collision.gameObject.GetComponent<Vida_aliado_dummy>();
+            aliado = collision.gameObject.GetComponent<Aliado_stats>();
         }
     }
 

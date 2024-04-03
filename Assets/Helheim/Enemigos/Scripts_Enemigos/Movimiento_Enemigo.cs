@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Boss_Movimiento : MonoBehaviour
+public class Movimiento_Enemigo : MonoBehaviour
 {
 
 
