@@ -576,20 +576,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waves:
   - _waveSettings:
-<<<<<<< Updated upstream
-    - {_enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}, _neededSpawner: {fileID: 840836867}, _spawnDelay: 1}
-    - {_enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}, _neededSpawner: {fileID: 1610680572}, _spawnDelay: 1}
-    - {_enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}, _neededSpawner: {fileID: 462626922}, _spawnDelay: 1}
-  - _waveSettings:
-    - {_enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}, _neededSpawner: {fileID: 1250136070}, _spawnDelay: 1}
-    - {_enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}, _neededSpawner: {fileID: 435779201}, _spawnDelay: 1}
-  - _waveSettings:
-    - {_enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}, _neededSpawner: {fileID: 419197606}, _spawnDelay: 1}
-    - {_enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}, _neededSpawner: {fileID: 1334036564}, _spawnDelay: 1}
-  _currentEnemyIndex: 0
-  _currentWaveIndex: 0
-  _enemiesLeftToSpawn: 0
-=======
     - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}
       _neededSpawner: {fileID: 840836867}
       _spawnDelay: 1
@@ -613,7 +599,6 @@ MonoBehaviour:
     - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}
       _neededSpawner: {fileID: 1334036564}
       _spawnDelay: 1
->>>>>>> Stashed changes
 --- !u!1 &1610680572
 GameObject:
   m_ObjectHideFlags: 0
