@@ -23,6 +23,13 @@ public class Vida : MonoBehaviour {
 
             Destroy(other.gameObject);
 
+            // Chequear si la vida de la casa llega a 0
+            if (vidaActual <= 0f)
+            {
+                // Detener el juego
+                GameManager.Instance.GameOver();
+            }
+
         }
 
     }
