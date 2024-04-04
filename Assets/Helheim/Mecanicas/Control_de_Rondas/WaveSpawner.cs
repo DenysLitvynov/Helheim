@@ -6,7 +6,7 @@ public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private Waves[] _waves;
     private int _currentEnemyIndex;
-    private int _currentWaveIndex;
+    public int _currentWaveIndex;
     private int _enemiesLeftToSpawn;
 
     private void Start()
