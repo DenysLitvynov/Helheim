@@ -410,7 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_maxima: 250
   vida: 250
-  "da\xF1o_enemigo": 40
+  dano_enemigo: 35
 --- !u!1 &5633391837415950599
 GameObject:
   m_ObjectHideFlags: 0
