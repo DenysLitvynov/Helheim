@@ -338,4 +338,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_maxima: 100
   vida: 100
-  "da\u0441o_espectro": 500
+  "da\u0441o_espectro": 50

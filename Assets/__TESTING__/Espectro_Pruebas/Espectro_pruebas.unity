@@ -461,8 +461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_Maxima: 50
-  vida: 50
+  vida_Maxima: 100
+  vida: 100
   dps: 1
 --- !u!136 &299418470
 CapsuleCollider:
@@ -546,7 +546,7 @@ Transform:
   m_GameObject: {fileID: 299418467}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 8.49, z: -6.4799995}
+  m_LocalPosition: {x: 3.96, y: 8.49, z: -5.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -612,8 +612,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_Maxima: 50
-  vida: 50
+  vida_Maxima: 100
+  vida: 100
   dps: 1
 --- !u!136 &331126591
 CapsuleCollider:
@@ -697,7 +697,7 @@ Transform:
   m_GameObject: {fileID: 331126588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 8.49, z: -8.91}
+  m_LocalPosition: {x: 3.96, y: 8.49, z: -8.200001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -763,8 +763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_Maxima: 50
-  vida: 50
+  vida_Maxima: 100
+  vida: 100
   dps: 1
 --- !u!136 &715575704
 CapsuleCollider:
@@ -848,7 +848,7 @@ Transform:
   m_GameObject: {fileID: 715575701}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 8.49, z: -10.19}
+  m_LocalPosition: {x: 3.96, y: 8.49, z: -9.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -914,8 +914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_Maxima: 50
-  vida: 50
+  vida_Maxima: 100
+  vida: 100
   dps: 1
 --- !u!136 &790502582
 CapsuleCollider:
@@ -999,7 +999,7 @@ Transform:
   m_GameObject: {fileID: 790502579}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 8.49, z: -7.7999997}
+  m_LocalPosition: {x: 3.96, y: 8.49, z: -7.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1065,8 +1065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_Maxima: 50
-  vida: 50
+  vida_Maxima: 100
+  vida: 100
   dps: 1
 --- !u!136 &866666797
 CapsuleCollider:
@@ -1150,7 +1150,7 @@ Transform:
   m_GameObject: {fileID: 866666794}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 8.49, z: -2.62}
+  m_LocalPosition: {x: 3.96, y: 8.49, z: -1.9100003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1216,8 +1216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_Maxima: 50
-  vida: 50
+  vida_Maxima: 100
+  vida: 100
   dps: 1
 --- !u!136 &870880234
 CapsuleCollider:
@@ -1301,7 +1301,7 @@ Transform:
   m_GameObject: {fileID: 870880231}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 8.49, z: -3.8599997}
+  m_LocalPosition: {x: 3.96, y: 8.49, z: -3.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1367,8 +1367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_Maxima: 50
-  vida: 50
+  vida_Maxima: 100
+  vida: 100
   dps: 1
 --- !u!136 &1151901174
 CapsuleCollider:
@@ -1452,7 +1452,7 @@ Transform:
   m_GameObject: {fileID: 1151901171}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 8.49, z: -6.4799995}
+  m_LocalPosition: {x: 3.96, y: 8.49, z: -5.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1612,9 +1612,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_Maxima: 50
-  vida: 50
-  dps: 1
+  vida_Maxima: 100
+  vida: 100
+  dps: 2000
 --- !u!136 &1479221987
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1697,7 +1697,7 @@ Transform:
   m_GameObject: {fileID: 1479221984}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 8.49, z: -4.8199997}
+  m_LocalPosition: {x: 3.96, y: 8.49, z: -4.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1763,8 +1763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_Maxima: 50
-  vida: 50
+  vida_Maxima: 100
+  vida: 100
   dps: 1
 --- !u!136 &1483504414
 CapsuleCollider:
@@ -1848,7 +1848,7 @@ Transform:
   m_GameObject: {fileID: 1483504411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 8.49, z: -11.49}
+  m_LocalPosition: {x: 3.96, y: 8.49, z: -10.780001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1939,8 +1939,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931516861}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.012312117, y: -0.0024040667, z: 0.000029550189, w: -0.9999214}
-  m_LocalPosition: {x: -0.3102407, y: 14.1740055, z: -22.75962}
+  m_LocalRotation: {x: -0.6862333, y: -0.003967083, z: 0.0036693085, w: -0.7273615}
+  m_LocalPosition: {x: -0.66176313, y: 23.379051, z: -6.5379286}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -27,6 +27,12 @@ public class Aliado_stats : MonoBehaviour
                 recibirDaсo(enemigo.daсo_enemigo);
             }
         }
+
+        // Comprueba si la vida del aliado ha llegado a 0
+        if (vida <= 0)
+        {
+            Destroy(gameObject); // Destruye el aliado
+        }
     }
 
     private void recibirDaсo(float daсo)
