@@ -221,11 +221,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4602182539400643279}
-  - component: {fileID: 6609603470213364939}
   - component: {fileID: 867346917246537621}
   - component: {fileID: 2735153965238166359}
   - component: {fileID: -2881841835532991229}
   - component: {fileID: 1342174683448357662}
+  - component: {fileID: 7381103704701515458}
   m_Layer: 0
   m_Name: Espectro
   m_TagString: Enemigo
@@ -250,21 +250,6 @@ Transform:
   - {fileID: 8281843945154339982}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6609603470213364939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6120940689491781809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84bf3b87ea190c6409e87db9cac773de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida_maxima: 100
-  vida: 100
-  "da\u0441o_enemigo": 15
 --- !u!114 &867346917246537621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,3 +324,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 3
   esta_en_combate: 0
+--- !u!114 &7381103704701515458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120940689491781809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7a4cb03a1bf2f49904bf9dd5745609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida_maxima: 100
+  vida: 100
+  "da\u0441o_espectro": 500

@@ -1,13 +1,13 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EspectroStats : MonoBehaviour
+public class Espectro_Stats : MonoBehaviour
 {
     private Movimiento_Enemigo combate;
     public float vida_maxima = 100f;//La vida maxima del enemigo, solo para comparar y saber si se muere de una vez
     public float vida = 100f; // La vida del enemigo
-    public float daÒo_enemigo = 15f;//daÒo que causa el enemigo(el aliado tomara esto como parametro en recibirDaÒo())
+    public float da—Åo_espectro = 15f;//da—Åo que causa el enemigo(el aliado tomara esto como parametro en recibirDa—Åo())
     private Aliado_stats aliado;
 
     private void Start()
@@ -20,18 +20,18 @@ public class EspectroStats : MonoBehaviour
         if (combate.esta_en_combate == true)
         {
             // Accede a la variable dps del aliado
-            recibirDaÒo(aliado.dps);
+            recibirDa—Åo(aliado.dps);
         }
     }
 
-    private void recibirDaÒo(float daÒo)
+    private void recibirDa—Åo(float da—Åo)
     {
         if (combate.esta_en_combate == true)
         {
-            vida -= daÒo * Time.deltaTime;
+            vida -= da—Åo * Time.deltaTime;
         }
         // Comprueba si la vida del enemigo ha llegado a 0
-        if (vida <= 0 || daÒo > vida_maxima)
+        if (vida <= 0 || da—Åo > vida_maxima)
         {
             Destroy(gameObject); // Destruye el enemigo
         }
