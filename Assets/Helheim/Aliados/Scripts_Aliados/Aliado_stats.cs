@@ -15,12 +15,12 @@ public class Aliado_stats : MonoBehaviour
         if (combate_aliado == true)
         {
             // Accede a la variable daño_boss3 del enemigo
-            recibirDaño(enemigo.daño_enemigo);
+            recibirDano(enemigo.dano_enemigo);
         }
     }
 
 
-    private void recibirDaño(float daño)
+    private void recibirDano(float daño)
     {
         if (combate_aliado == true)
         {
