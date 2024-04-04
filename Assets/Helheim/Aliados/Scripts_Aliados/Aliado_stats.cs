@@ -24,7 +24,7 @@ public class Aliado_stats : MonoBehaviour
             else if (enemigo != null)
             {
                 // Accede a la variable daсo_boss3 del enemigo
-                recibirDaсo(enemigo.daсo_enemigo);
+                recibirDaсo(enemigo.dano_enemigo);
             }
         }
 
