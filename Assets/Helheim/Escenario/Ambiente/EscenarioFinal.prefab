@@ -259,6 +259,30 @@ PrefabInstance:
     m_TransformParent: {fileID: 7861490998036516486}
     m_Modifications:
     - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.data[0]._enemy
+      value: 
+      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.data[1]._enemy
+      value: 
+      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.data[2]._enemy
+      value: 
+      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.data[5]._enemy
+      value: 
+      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.data[6]._enemy
+      value: 
+      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
       propertyPath: _waves.Array.data[0]._waveSettings.Array.data[0]._neededSpawner
       value: 
       objectReference: {fileID: 9059876551111895688}
@@ -562,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7893568478023169601, guid: 5a1e07491743f4a45a358ca1004cf68d, type: 3}
       propertyPath: m_Name
-      value: Escenario_CON_WAYPOINTS Variant
+      value: EscenarioFinal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
