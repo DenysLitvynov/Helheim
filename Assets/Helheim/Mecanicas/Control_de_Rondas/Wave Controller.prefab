@@ -46,25 +46,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waves:
   - _waveSettings:
-    - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}
+    - _enemy: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
       _neededSpawner: {fileID: 0}
       _spawnDelay: 0
-    - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}
+    - _enemy: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
       _neededSpawner: {fileID: 0}
       _spawnDelay: 0
-    - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}
+    - _enemy: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
       _neededSpawner: {fileID: 0}
       _spawnDelay: 0
-    - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}
+    - _enemy: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
       _neededSpawner: {fileID: 0}
       _spawnDelay: 0
-    - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}
+    - _enemy: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
       _neededSpawner: {fileID: 0}
       _spawnDelay: 0
-    - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}
+    - _enemy: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
       _neededSpawner: {fileID: 0}
       _spawnDelay: 0
-    - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}
+    - _enemy: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
       _neededSpawner: {fileID: 0}
       _spawnDelay: 0
     - _enemy: {fileID: 5888886746609600951, guid: d7188da7b45417f4fa7413ad1201b043, type: 3}

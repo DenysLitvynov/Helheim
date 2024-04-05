@@ -7,7 +7,7 @@ public class Enemigo_stats : MonoBehaviour
     private Movimiento_Enemigo combate;
     public float vida_maxima = 100f;//La vida maxima del enemigo, solo para comparar y saber si se muere de una vez
     public float vida = 100f; // La vida del enemigo
-    public float daño_enemigo = 15f;//daño que causa el enemigo(el aliado tomara esto como parametro en recibirDaño())
+    public float dano_enemigo = 15f;//daño que causa el enemigo(el aliado tomara esto como parametro en recibirDaño())
     private Aliado_stats aliado;
 
     private void Start()
@@ -20,11 +20,11 @@ public class Enemigo_stats : MonoBehaviour
         if (combate.esta_en_combate == true)
         {
             // Accede a la variable dps del aliado
-            recibirDaño(aliado.dps);
+            recibirDano(aliado.dps);
         }
     }
 
-    private void recibirDaño(float daño)
+    private void recibirDano(float daño)
     {
         if (combate.esta_en_combate == true)
         {

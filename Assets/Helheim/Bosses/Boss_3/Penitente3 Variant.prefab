@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 846032200407647670, guid: e0503d6b6a5f7e74287029ba8bc1dedd, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Enemigo
       objectReference: {fileID: 0}
     - target: {fileID: 5848420003076806183, guid: e0503d6b6a5f7e74287029ba8bc1dedd, type: 3}
       propertyPath: velocidad
