@@ -13,9 +13,13 @@ public class TestWaves : MonoBehaviour
 
     private void OnDestroy()
     {
-        int enemiesLeft = 0;
-        enemiesLeft = GameObject.FindGameObjectsWithTag("Enemy").Length;
-        if (enemiesLeft == 0)
-            _waveSpawner.LaunchWave();
+        if (_waveSpawner != null)
+        {
+            int enemiesLeft = GameObject.FindGameObjectsWithTag("Enemy").Length;
+            if (enemiesLeft == 0)
+            {
+                _waveSpawner.LaunchWave();
+            }
+        }
     }
 }
