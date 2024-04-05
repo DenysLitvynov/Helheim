@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -19,6 +19,10 @@ public class Movimiento_Enemigo : MonoBehaviour
         int numeroAleatorio = UnityEngine.Random.Range(1, 9);
         GameObject objWaypoints = GameObject.Find("LINEA" + numeroAleatorio);
         caminos = objWaypoints.GetComponent<Waypoints>();
+
+        // Establece el waypoint inicial en la posici√≥n actual del enemigo
+        waypointIndex = ClosestWaypoint();
+
         target = caminos.points[waypointIndex];
     }
 
@@ -34,11 +38,11 @@ public class Movimiento_Enemigo : MonoBehaviour
                 GetNextWaypoint();
             }
         }
-        //Si el jefe est· en combate pero el
+        //Si el jefe est–± en combate pero el
         //objeto "Aliado" con el que estaba en combate ha sido destruido (es decir, aliadoIdentificado es null)...
         else if (aliadoIdentificado == null)
         {
-            // Establece que el jefe ya no est· en combate.
+            // Establece que el jefe ya no est–± en combate.
             esta_en_combate = false;
         }
     }
@@ -57,7 +61,7 @@ public class Movimiento_Enemigo : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Aliado")//Habra que hacer alguna funcion que al chocar devuelva el tag del objeto 
-            //Asi establecer que daÒo recibe el jefe.
+            //Asi establecer que da—Åo recibe el jefe.
         {
             esta_en_combate = true;
             aliadoIdentificado = collision.gameObject;
@@ -69,9 +73,28 @@ public class Movimiento_Enemigo : MonoBehaviour
         if (collision.gameObject.tag == "Aliado")
         {
             aliadoIdentificado = null;//Si el objeto con el que se paro de colosionar es Aliado. Es null, lo cual significa que
-            // Esto indica que este objeto ya no est· en contacto con el objeto "Aliado".
+            // Esto indica que este objeto ya no est–± en contacto con el objeto "Aliado".
             esta_en_combate = false;
         }
+    }
+
+    // metodo necesario para el correcto espawneo de los enemigos
+    private int ClosestWaypoint()
+    {
+        int closestIndex = 0;
+        float closestDistance = float.MaxValue;
+
+        for (int i = 0; i < caminos.points.Length; i++)
+        {
+            float distance = Vector3.Distance(transform.position, caminos.points[i].position);
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestIndex = i;
+            }
+        }
+
+        return closestIndex;
     }
 }
 

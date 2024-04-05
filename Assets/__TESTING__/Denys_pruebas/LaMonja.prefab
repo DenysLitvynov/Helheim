@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: -3658482675985938662}
   - component: {fileID: 845117628414759506}
   - component: {fileID: 6238001679879797884}
-  - component: {fileID: 7572114431400370404}
+  - component: {fileID: 284587064397552186}
   m_Layer: 0
   m_Name: LaMonja
   m_TagString: Enemigo
@@ -217,7 +217,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 3.8807163, z: 1}
   m_Center: {x: 0, y: 0.85655403, z: 0}
---- !u!114 &7572114431400370404
+--- !u!114 &284587064397552186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -226,12 +226,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4864061667914979165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd7a4cb03a1bf2f49904bf9dd5745609, type: 3}
+  m_Script: {fileID: 11500000, guid: 21059368b1c2fb949a7ab877a544811f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   vida_maxima: 100
   vida: 100
-  "da\u0441o_espectro": 50
+  espectroPrefab: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+  tiempoEntreInvocaciones: 3
+  distanciaDeInvocacion: 0
 --- !u!1 &6240133339487145412
 GameObject:
   m_ObjectHideFlags: 0
