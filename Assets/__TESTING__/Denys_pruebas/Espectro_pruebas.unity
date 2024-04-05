@@ -137,12 +137,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.size
-      value: 5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[0]._waveSettings.Array.data[3]._enemy
       value: 
-      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+      objectReference: {fileID: 4864061667914979165, guid: 603eabe34d49b7d4ba88394ee1c5f3e8, type: 3}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[0]._waveSettings.Array.data[4]._enemy
       value: 
@@ -158,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[0]._waveSettings.Array.data[9]._enemy
       value: 
-      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+      objectReference: {fileID: 4864061667914979165, guid: 603eabe34d49b7d4ba88394ee1c5f3e8, type: 3}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[1]._waveSettings.Array.data[0]._enemy
       value: 
@@ -319,6 +323,10 @@ PrefabInstance:
       propertyPath: _waves.Array.data[4]._waveSettings.Array.data[9]._enemy
       value: 
       objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.data[3]._spawnDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[1]._waveSettings.Array.data[0]._spawnDelay
       value: 0
@@ -1939,8 +1947,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931516861}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.6862333, y: -0.003967083, z: 0.0036693085, w: -0.7273615}
-  m_LocalPosition: {x: -0.66176313, y: 23.379051, z: -6.5379286}
+  m_LocalRotation: {x: -0.004812032, y: -0.0039046984, z: -0.000035562785, w: -0.9999808}
+  m_LocalPosition: {x: -0.029913127, y: 13.035966, z: -21.210573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
