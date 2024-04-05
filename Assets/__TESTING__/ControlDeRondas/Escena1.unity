@@ -699,9 +699,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 507379096}
     m_Modifications:
     - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.data[0]._enemy
+      value: 
+      objectReference: {fileID: 4864061667914979165, guid: 603eabe34d49b7d4ba88394ee1c5f3e8, type: 3}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
+      propertyPath: _waves.Array.data[0]._waveSettings.Array.data[9]._enemy
+      value: 
+      objectReference: {fileID: 4864061667914979165, guid: 603eabe34d49b7d4ba88394ee1c5f3e8, type: 3}
+    - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
       propertyPath: _waves.Array.data[0]._waveSettings.Array.data[0]._neededSpawner
       value: 
-      objectReference: {fileID: 840836867}
+      objectReference: {fileID: 435779201}
     - target: {fileID: 23870123560334849, guid: 67bce939442457343a4047a52a7b6901, type: 3}
       propertyPath: _waves.Array.data[0]._waveSettings.Array.data[1]._neededSpawner
       value: 
