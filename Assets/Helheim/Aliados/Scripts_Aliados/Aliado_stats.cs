@@ -7,24 +7,33 @@ public class Aliado_stats : MonoBehaviour
     private bool combate_aliado = false;
     public float vida_Maxima = 50f;//La vida maxima del aliado, solo para comparar y saber si se muere de una vez
     public float vida = 50f; // La vida del aliado
-    public float dps = 5f;//daño que causa el enemigo(el aliado tomara esto como parametro en recibirDaño())
+    public float dps = 5f;//daï¿½o que causa el enemigo(el aliado tomara esto como parametro en recibirDaï¿½o())
     private Enemigo_stats enemigo;
 
     private void Update()
     {
         if (combate_aliado == true)
         {
+<<<<<<< Updated upstream
             // Accede a la variable daño_boss3 del enemigo
             recibirDaño(enemigo.daño_enemigo);
+=======
+            // Accede a la variable daï¿½o_boss3 del enemigo
+            recibirDano(enemigo.dano_enemigo);
+>>>>>>> Stashed changes
         }
     }
 
 
+<<<<<<< Updated upstream
     private void recibirDaño(float daño)
+=======
+    private void recibirDano(float dano)
+>>>>>>> Stashed changes
     {
         if (combate_aliado == true)
         {
-            vida -= daño * Time.deltaTime;
+            vida -= dano * Time.deltaTime;
         }
         // Comprueba si la vida del aliado ha llegado a 0
         if (vida <= 0)

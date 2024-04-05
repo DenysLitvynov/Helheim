@@ -7,7 +7,11 @@ public class Enemigo_stats : MonoBehaviour
     private Movimiento_Enemigo combate;
     public float vida_maxima = 100f;//La vida maxima del enemigo, solo para comparar y saber si se muere de una vez
     public float vida = 100f; // La vida del enemigo
+<<<<<<< Updated upstream
     public float daño_enemigo = 15f;//daño que causa el enemigo(el aliado tomara esto como parametro en recibirDaño())
+=======
+    public float dano_enemigo = 15f;//daï¿½o que causa el enemigo(el aliado tomara esto como parametro en recibirDaï¿½o())
+>>>>>>> Stashed changes
     private Aliado_stats aliado;
 
     private void Start()
@@ -24,14 +28,18 @@ public class Enemigo_stats : MonoBehaviour
         }
     }
 
+<<<<<<< Updated upstream
     private void recibirDaño(float daño)
+=======
+    private void recibirDano(float dano)
+>>>>>>> Stashed changes
     {
         if (combate.esta_en_combate == true)
         {
-            vida -= daño * Time.deltaTime;
+            vida -= dano * Time.deltaTime;
         }
         // Comprueba si la vida del enemigo ha llegado a 0
-        if (vida <= 0 || daño > vida_maxima) 
+        if (vida <= 0 || dano > vida_maxima) 
         {
             Destroy(gameObject); // Destruye el enemigo
         }
