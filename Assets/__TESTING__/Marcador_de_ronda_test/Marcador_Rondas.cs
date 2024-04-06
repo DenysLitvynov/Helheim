@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -14,11 +14,14 @@ public class Marcador_Rondas : MonoBehaviour
         // Asigna a 'contador' el componente WaveSpawner del objeto correspondiente
         contador = GameObject.FindObjectOfType<WaveSpawner>();
 
+        // Muestra el número de la ronda actual sin sumar 1
         Contador_Rondas.text = "Ronda " + (contador._currentWaveIndex + 1).ToString() + "/5";
     }
+
     // Update is called once per frame
     void Update()
     {
-        Contador_Rondas.text = "Ronda " + (contador._currentWaveIndex + 1).ToString() + "/5";
+        // Mantiene la lógica consistente, no suma 1 a _currentWaveIndex en el contador
+        Contador_Rondas.text = "Ronda " + (contador._currentWaveIndex).ToString() + "/5";
     }
 }

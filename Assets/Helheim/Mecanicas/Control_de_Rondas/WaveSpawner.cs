@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,14 +6,13 @@ public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private Waves[] _waves;
     private int _currentEnemyIndex;
-    public int _currentWaveIndex = 0; // Inicializa a 0
+    public int _currentWaveIndex; // Inicializa a 0
     private int _enemiesLeftToSpawn;
     public int _activeEnemies; // Nuevo contador
-    public GameObject _lastEnemy; // Referencia al último enemigo
+    public GameObject _lastEnemy; // Referencia al ÑŠltimo enemigo
 
     private void Start()
     {
-        
         LaunchWave();
     }
 
@@ -31,24 +30,25 @@ public class WaveSpawner : MonoBehaviour
             _enemiesLeftToSpawn--;
             _currentEnemyIndex++;
             _activeEnemies++; // Incrementa el contador cuando se genera un enemigo
+
+            StartCoroutine(SpawnEnemyInWave());
         }
-        // Mueve esta línea fuera del condicional
-        StartCoroutine(SpawnEnemyInWave());
     }
 
     public void LaunchWave()
     {
-        if (_activeEnemies == 0 && _lastEnemy == null && _currentWaveIndex < _waves.Length - 1) // Solo lanza la siguiente ola si no hay enemigos activos y el último enemigo está destruido
+        if (_activeEnemies == 0 && _currentWaveIndex < _waves.Length) // Solo lanza la siguiente ola si no hay enemigos activos
         {
-            _currentWaveIndex++;
             _enemiesLeftToSpawn = _waves[_currentWaveIndex].WaveSettings.Length;
             _currentEnemyIndex = 0;
-            StartCoroutine(SpawnEnemyInWave());
+            _currentWaveIndex++; // Incrementa despuÃ©s de usarlo como Ã­ndice
+            if (this != null)
+            {
+                StartCoroutine(SpawnEnemyInWave());
+            }
         }
     }
 }
-
-
 
 
 
