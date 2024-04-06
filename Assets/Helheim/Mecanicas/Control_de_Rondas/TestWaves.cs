@@ -13,9 +13,13 @@ public class TestWaves : MonoBehaviour
 
     private void OnDestroy()
     {
-        int enemiesLeft = 0;
-        enemiesLeft = GameObject.FindGameObjectsWithTag("Enemy").Length;
-        if (enemiesLeft == 0)
+        _waveSpawner._activeEnemies--; // Decrementa el contador cuando se destruye un enemigo
+        if (gameObject == _waveSpawner._lastEnemy) // Si el enemigo destruido es el último enemigo
+        {
+            _waveSpawner._lastEnemy = null; // Establece la referencia al último enemigo a null
+        }
+        if (_waveSpawner._activeEnemies == 0)
             _waveSpawner.LaunchWave();
     }
 }
+

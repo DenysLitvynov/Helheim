@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 5337510989520736997}
   - component: {fileID: 5727678625743995528}
   - component: {fileID: 5544951492302320833}
+  - component: {fileID: 7340291195748378519}
   m_Layer: 0
   m_Name: Esqueleto_Gigante
   m_TagString: Enemigo
@@ -412,6 +413,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 1
   esta_en_combate: 0
+--- !u!114 &7340291195748378519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782844528531234085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a9d357ae8146d4d8adc69f11a8deed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5573254683698407397
 GameObject:
   m_ObjectHideFlags: 0

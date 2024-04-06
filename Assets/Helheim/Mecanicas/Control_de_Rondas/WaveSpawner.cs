@@ -6,12 +6,14 @@ public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private Waves[] _waves;
     private int _currentEnemyIndex;
-    public int _currentWaveIndex;
+    public int _currentWaveIndex = 0; // Inicializa a 0
     private int _enemiesLeftToSpawn;
+    public int _activeEnemies; // Nuevo contador
+    public GameObject _lastEnemy; // Referencia al último enemigo
 
     private void Start()
     {
-        _enemiesLeftToSpawn = _waves[0].WaveSettings.Length;
+        
         LaunchWave();
     }
 
@@ -22,30 +24,33 @@ public class WaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(_waves[_currentWaveIndex]
                 .WaveSettings[_currentEnemyIndex]
                 .SpawnDelay);
-            Instantiate(_waves[_currentWaveIndex]
+            _lastEnemy = Instantiate(_waves[_currentWaveIndex]
                 .WaveSettings[_currentEnemyIndex].Enemy,
                 _waves[_currentWaveIndex].WaveSettings[_currentEnemyIndex]
                 .NeededSpawner.transform.position, Quaternion.identity);
             _enemiesLeftToSpawn--;
             _currentEnemyIndex++;
-            StartCoroutine(SpawnEnemyInWave());
+            _activeEnemies++; // Incrementa el contador cuando se genera un enemigo
         }
-        else
-        {
-            if (_currentWaveIndex < _waves.Length - 1)
-            {
-                _currentWaveIndex++;
-                _enemiesLeftToSpawn = _waves[_currentWaveIndex].WaveSettings.Length;
-                _currentEnemyIndex = 0;
-            }
-        }
+        // Mueve esta línea fuera del condicional
+        StartCoroutine(SpawnEnemyInWave());
     }
 
     public void LaunchWave()
     {
-        StartCoroutine(SpawnEnemyInWave());
+        if (_activeEnemies == 0 && _lastEnemy == null && _currentWaveIndex < _waves.Length - 1) // Solo lanza la siguiente ola si no hay enemigos activos y el último enemigo está destruido
+        {
+            _currentWaveIndex++;
+            _enemiesLeftToSpawn = _waves[_currentWaveIndex].WaveSettings.Length;
+            _currentEnemyIndex = 0;
+            StartCoroutine(SpawnEnemyInWave());
+        }
     }
 }
+
+
+
+
 
 [System.Serializable]
 public class Waves
