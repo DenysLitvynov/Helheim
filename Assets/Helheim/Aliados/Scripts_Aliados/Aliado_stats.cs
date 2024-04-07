@@ -14,22 +14,13 @@ public class Aliado_stats : MonoBehaviour
     {
         if (combate_aliado == true)
         {
-<<<<<<< Updated upstream
-            // Accede a la variable daño_boss3 del enemigo
-            recibirDaño(enemigo.daño_enemigo);
-=======
             // Accede a la variable daï¿½o_boss3 del enemigo
             recibirDano(enemigo.dano_enemigo);
->>>>>>> Stashed changes
         }
     }
 
 
-<<<<<<< Updated upstream
-    private void recibirDaño(float daño)
-=======
     private void recibirDano(float dano)
->>>>>>> Stashed changes
     {
         if (combate_aliado == true)
         {

@@ -18,6 +18,7 @@ public class Movimiento_Aliodos : MonoBehaviour
     private void Start()
     {
         //ControllaPosizioneNemici();
+        
         GameObject objWaypoints = GameObject.Find("LINEA" + 3);
         caminos = objWaypoints.GetComponent<Waypoints>();
         target = caminos.points[waypointIndex];

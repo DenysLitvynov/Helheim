@@ -7,12 +7,9 @@ public class Enemigo_stats : MonoBehaviour
     private Movimiento_Enemigo combate;
     public float vida_maxima = 100f;//La vida maxima del enemigo, solo para comparar y saber si se muere de una vez
     public float vida = 100f; // La vida del enemigo
-<<<<<<< Updated upstream
-    public float daño_enemigo = 15f;//daño que causa el enemigo(el aliado tomara esto como parametro en recibirDaño())
-=======
     public float dano_enemigo = 15f;//daï¿½o que causa el enemigo(el aliado tomara esto como parametro en recibirDaï¿½o())
->>>>>>> Stashed changes
     private Aliado_stats aliado;
+    private Movimento_Frecha frecha;
 
     private void Start()
     {
@@ -21,18 +18,16 @@ public class Enemigo_stats : MonoBehaviour
 
     private void Update()
     {
-        if (combate.esta_en_combate == true)
-        {
-            // Accede a la variable dps del aliado
-            recibirDaño(aliado.dps);
-        }
+        if (combate.esta_en_combate == true && aliado != null)
+            {
+                // Accede a la variable dps del aliado
+                recibirDano(aliado.dps);
+            }else if (combate.esta_en_combate == true && frecha != null){
+                recibirDano(frecha.dps);
+            }
     }
 
-<<<<<<< Updated upstream
-    private void recibirDaño(float daño)
-=======
     private void recibirDano(float dano)
->>>>>>> Stashed changes
     {
         if (combate.esta_en_combate == true)
         {
@@ -50,6 +45,7 @@ public class Enemigo_stats : MonoBehaviour
         if (collision.gameObject.tag == "Aliado")
         {
             combate.esta_en_combate = true;
+            frecha = collision.gameObject.GetComponent<Movimento_Frecha>();
             // Obtiene una referencia al objeto del aliado
             aliado = collision.gameObject.GetComponent<Aliado_stats>();
         }
