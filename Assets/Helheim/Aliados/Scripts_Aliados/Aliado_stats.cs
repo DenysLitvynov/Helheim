@@ -15,23 +15,8 @@ public class Aliado_stats : MonoBehaviour
     {
         if (combate_aliado == true)
         {
-            // Check if the enemy is an Espectro
-            if (espectro != null)
-            {
-                // Accede a la variable de daño del espectro
-                recibirDaсo(espectro.daсo_espectro);
-            }
-            else if (enemigo != null)
-            {
-                // Accede a la variable daсo_boss3 del enemigo
-                recibirDaсo(enemigo.dano_enemigo);
-            }
-        }
-
-        // Comprueba si la vida del aliado ha llegado a 0
-        if (vida <= 0)
-        {
-            Destroy(gameObject); // Destruye el aliado
+            // Accede a la variable da�o_boss3 del enemigo
+            recibirDano(enemigo.dano_enemigo);
         }
     }
 
