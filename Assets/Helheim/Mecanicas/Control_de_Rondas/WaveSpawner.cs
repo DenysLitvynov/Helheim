@@ -41,12 +41,23 @@ public class WaveSpawner : MonoBehaviour
         {
             _enemiesLeftToSpawn = _waves[_currentWaveIndex].WaveSettings.Length;
             _currentEnemyIndex = 0;
-            _currentWaveIndex++; // Incrementa después de usarlo como índice
             if (this != null)
             {
                 StartCoroutine(SpawnEnemyInWave());
             }
+            if (_currentWaveIndex < _waves.Length - 1) // Solo incrementa si no estamos en la última ola
+            {
+                _currentWaveIndex++;
+            }
         }
+    }
+
+
+
+    // Método para incrementar el contador de enemigos activos
+    public void IncrementActiveEnemies()
+    {
+        _activeEnemies++;
     }
 }
 

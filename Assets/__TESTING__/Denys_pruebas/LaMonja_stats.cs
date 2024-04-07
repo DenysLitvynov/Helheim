@@ -12,8 +12,17 @@ public class LaMonja_Stats : MonoBehaviour
     public float distanciaDeInvocacion = 2f; // La distancia a la que se invocarán los espectros
     private Aliado_stats aliado; // Referencia al aliado
 
+    public int maxEspectros = 5; // El número máximo de espectros que la monja puede invocar
+    private int espectrosActuales = 0; // El número actual de espectros invocados
+
+    private WaveSpawner waveSpawner; // Referencia al WaveSpawner
+
+
     private void Start()
     {
+        // Obtiene la referencia al WaveSpawner
+        waveSpawner = FindObjectOfType<WaveSpawner>();
+
         // Comienza a invocar espectros
         StartCoroutine(InvocarEspectros());
     }
@@ -48,19 +57,18 @@ public class LaMonja_Stats : MonoBehaviour
 
     private IEnumerator InvocarEspectros()
     {
-        while (true)
+        while (espectrosActuales < maxEspectros)
         {
-            // Calcula la posición de invocación a la izquierda o a la derecha de la monja
             Vector3 posicionDeInvocacion = transform.position + transform.right * distanciaDeInvocacion;
+            GameObject espectro = Instantiate(espectroPrefab, posicionDeInvocacion, Quaternion.identity);
+            espectrosActuales++; // Incrementa el contador de espectros invocados
 
-            // Crea un nuevo espectro en la posición de invocación
-            Instantiate(espectroPrefab, posicionDeInvocacion, Quaternion.identity);
+            // Incrementa el contador de enemigos activos en WaveSpawner
+            waveSpawner.IncrementActiveEnemies();
 
-            // Espera el tiempo especificado antes de la próxima invocación
             yield return new WaitForSeconds(tiempoEntreInvocaciones);
         }
     }
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Aliado")

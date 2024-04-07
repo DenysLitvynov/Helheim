@@ -231,9 +231,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_maxima: 100
   vida: 100
-  espectroPrefab: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+  espectroPrefab: {fileID: 8408731612278415145, guid: 2e08c4d6c5a11fb43808fa8555b9d916, type: 3}
   tiempoEntreInvocaciones: 3
   distanciaDeInvocacion: 0
+  maxEspectros: 4
 --- !u!1 &6240133339487145412
 GameObject:
   m_ObjectHideFlags: 0
