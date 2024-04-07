@@ -137,10 +137,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.size
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[0]._waveSettings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[1]._waveSettings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[2]._waveSettings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[3]._waveSettings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[4]._waveSettings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[5]._waveSettings.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
@@ -170,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[1]._waveSettings.Array.data[0]._enemy
       value: 
-      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+      objectReference: {fileID: 4864061667914979165, guid: 603eabe34d49b7d4ba88394ee1c5f3e8, type: 3}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[1]._waveSettings.Array.data[1]._enemy
       value: 
@@ -210,7 +230,7 @@ PrefabInstance:
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[2]._waveSettings.Array.data[0]._enemy
       value: 
-      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+      objectReference: {fileID: 4864061667914979165, guid: 603eabe34d49b7d4ba88394ee1c5f3e8, type: 3}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[2]._waveSettings.Array.data[1]._enemy
       value: 
@@ -250,7 +270,7 @@ PrefabInstance:
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[3]._waveSettings.Array.data[0]._enemy
       value: 
-      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+      objectReference: {fileID: 4864061667914979165, guid: 603eabe34d49b7d4ba88394ee1c5f3e8, type: 3}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[3]._waveSettings.Array.data[1]._enemy
       value: 
@@ -290,7 +310,7 @@ PrefabInstance:
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[4]._waveSettings.Array.data[0]._enemy
       value: 
-      objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
+      objectReference: {fileID: 4864061667914979165, guid: 603eabe34d49b7d4ba88394ee1c5f3e8, type: 3}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[4]._waveSettings.Array.data[1]._enemy
       value: 
@@ -328,6 +348,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6120940689491781809, guid: f4824725b2a24de4aa2207b941a67bef, type: 3}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[5]._waveSettings.Array.data[0]._enemy
+      value: 
+      objectReference: {fileID: 4864061667914979165, guid: 603eabe34d49b7d4ba88394ee1c5f3e8, type: 3}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[0]._waveSettings.Array.data[3]._spawnDelay
       value: 1
       objectReference: {fileID: 0}
@@ -352,21 +376,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1832983640}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[1]._waveSettings.Array.data[0]._neededSpawner
+      value: 
+      objectReference: {fileID: 1832983640}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[1]._waveSettings.Array.data[9]._neededSpawner
       value: 
       objectReference: {fileID: 170329565}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[2]._waveSettings.Array.data[0]._neededSpawner
+      value: 
+      objectReference: {fileID: 1832983640}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[2]._waveSettings.Array.data[9]._neededSpawner
       value: 
       objectReference: {fileID: 170329565}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[3]._waveSettings.Array.data[0]._neededSpawner
+      value: 
+      objectReference: {fileID: 1832983640}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[3]._waveSettings.Array.data[9]._neededSpawner
       value: 
       objectReference: {fileID: 170329565}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[4]._waveSettings.Array.data[0]._neededSpawner
+      value: 
+      objectReference: {fileID: 1832983640}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[4]._waveSettings.Array.data[9]._neededSpawner
       value: 
       objectReference: {fileID: 170329565}
+    - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: _waves.Array.data[5]._waveSettings.Array.data[0]._neededSpawner
+      value: 
+      objectReference: {fileID: 1832983640}
     - target: {fileID: 7861490998036516486, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -479,7 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_Maxima: 100
   vida: 100
-  dps: 1
+  dps: 50
 --- !u!136 &299418470
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -630,7 +674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_Maxima: 100
   vida: 100
-  dps: 1
+  dps: 50
 --- !u!136 &331126591
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -781,7 +825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_Maxima: 100
   vida: 100
-  dps: 1
+  dps: 50
 --- !u!136 &715575704
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -932,7 +976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_Maxima: 100
   vida: 100
-  dps: 1
+  dps: 50
 --- !u!136 &790502582
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1083,7 +1127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_Maxima: 100
   vida: 100
-  dps: 1
+  dps: 50
 --- !u!136 &866666797
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1234,7 +1278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_Maxima: 100
   vida: 100
-  dps: 1
+  dps: 50
 --- !u!136 &870880234
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1385,7 +1429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_Maxima: 100
   vida: 100
-  dps: 1
+  dps: 50
 --- !u!136 &1151901174
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1630,7 +1674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_Maxima: 100
   vida: 100
-  dps: 2000
+  dps: 50
 --- !u!136 &1479221987
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1781,7 +1825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida_Maxima: 100
   vida: 100
-  dps: 1
+  dps: 50
 --- !u!136 &1483504414
 CapsuleCollider:
   m_ObjectHideFlags: 0
