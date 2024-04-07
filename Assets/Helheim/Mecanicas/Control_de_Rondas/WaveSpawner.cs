@@ -33,6 +33,17 @@ public class WaveSpawner : MonoBehaviour
 
             StartCoroutine(SpawnEnemyInWave());
         }
+        else if (_currentWaveIndex < _waves.Length - 1) // Solo incrementa si no estamos en la última ola
+        {
+            _currentWaveIndex++;
+            LaunchWave(); // Lanza la siguiente ola
+        }
+        else
+        {
+            // Detener el juego
+            _currentWaveIndex++;
+            Time.timeScale = 0f;
+        }
     }
 
     public void LaunchWave()
@@ -40,14 +51,10 @@ public class WaveSpawner : MonoBehaviour
         if (_activeEnemies == 0 && _currentWaveIndex < _waves.Length) // Solo lanza la siguiente ola si no hay enemigos activos
         {
             _enemiesLeftToSpawn = _waves[_currentWaveIndex].WaveSettings.Length;
-            _currentEnemyIndex = 0;
+            _currentEnemyIndex = 0; // Reinicia _currentEnemyIndex
             if (this != null)
             {
                 StartCoroutine(SpawnEnemyInWave());
-            }
-            if (_currentWaveIndex < _waves.Length - 1) // Solo incrementa si no estamos en la última ola
-            {
-                _currentWaveIndex++;
             }
         }
     }
