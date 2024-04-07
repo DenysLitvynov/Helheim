@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -51,8 +51,6 @@ public class WaveSpawner : MonoBehaviour
             }
         }
     }
-
-
 
     // Método para incrementar el contador de enemigos activos
     public void IncrementActiveEnemies()
