@@ -5,17 +5,22 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  tags:
-  - Aliado
   - Enemigo
+  - Aliado
+  - Personaje
+  - CanvasCartas
+  - Personaje Colocado
+  - Character Prefab
+  - Casilla
+  - Entorno
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Casilla
   - Water
   - UI
-  - 
+  - Personaje
   - 
   - 
   - 

@@ -181,9 +181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_maxima: 50
-  vida: 50
+  vida_maxima: 10
+  vida: 10
   dano_enemigo: 25
+  cartas: {fileID: 0}
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!114 &4131145796101953283
 MonoBehaviour:
   m_ObjectHideFlags: 0

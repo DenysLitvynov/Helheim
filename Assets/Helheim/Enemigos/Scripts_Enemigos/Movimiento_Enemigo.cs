@@ -62,7 +62,7 @@ public class Movimiento_Enemigo : MonoBehaviour
     {
         if (collision.gameObject.tag == "Aliado")//Habra que hacer alguna funcion que al chocar devuelva el tag del objeto 
             //Asi establecer que daсo recibe el jefe.
-        {
+            {
             esta_en_combate = true;
             aliadoIdentificado = collision.gameObject;
         }

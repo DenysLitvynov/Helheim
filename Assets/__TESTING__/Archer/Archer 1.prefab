@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8835340563779096401}
   - component: {fileID: 5681043869105347648}
   - component: {fileID: 6619400846910469475}
-  m_Layer: 0
+  - component: {fileID: 8950301760843404656}
+  m_Layer: 6
   m_Name: Archer 1
-  m_TagString: Aliado
+  m_TagString: Personaje
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670238640148300106}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.998792, z: -0, w: 0.049138427}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 23.129183, y: 3.84, z: -4.1951466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -35,7 +36,7 @@ Transform:
   - {fileID: 3390306306661986262}
   - {fileID: 3867202079214112850}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -174.367, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!54 &5681043869105347648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75,40 +76,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 50
   vida: 50
   dps: 5
---- !u!1 &4165013011120615240
-GameObject:
+--- !u!114 &8950301760843404656
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5820172462050756918}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5820172462050756918
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4165013011120615240}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0.48, y: 0.06, z: 0.69}
-  m_LocalScale: {x: 4.509845, y: 1.001936, z: 9.204844}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8729056292349419928}
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+  m_GameObject: {fileID: 1670238640148300106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cddb9e89fcd2560c09f3262ce41c5e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowPrefab: {fileID: 1937487355970088736, guid: b2689b5abe9e711b4a07f438f949f6ca, type: 3}
+  spawnInterval: 3
+  colocado: 0
 --- !u!1 &4684016669180331006
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +107,7 @@ GameObject:
   - component: {fileID: 5206020194259737154}
   - component: {fileID: 8878108595295320852}
   - component: {fileID: 2183658758871833497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Brazo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +215,7 @@ GameObject:
   - component: {fileID: 7805261822224107622}
   - component: {fileID: 4440381398032730912}
   - component: {fileID: 1922777068097961349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: helm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +320,7 @@ GameObject:
   - component: {fileID: 6006823157851898183}
   - component: {fileID: 4999830005501876504}
   - component: {fileID: 6954142846889238845}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,7 +425,7 @@ GameObject:
   - component: {fileID: 321919671057855016}
   - component: {fileID: 5830730944772767106}
   - component: {fileID: 7043982688483746445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: arco
   m_TagString: Aliado
   m_Icon: {fileID: 0}
@@ -458,8 +444,7 @@ Transform:
   m_LocalPosition: {x: 0.01000471, y: -0.96014327, z: -0.21002315}
   m_LocalScale: {x: 0.38704878, y: 2.4057262, z: 0.23691954}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5820172462050756918}
+  m_Children: []
   m_Father: {fileID: 1992494575779572760}
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
 --- !u!33 &321919671057855016
@@ -545,7 +530,7 @@ GameObject:
   - component: {fileID: 5778418924441624287}
   - component: {fileID: 171032635793830148}
   - component: {fileID: 8439719278680835501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Brazo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +637,7 @@ GameObject:
   - component: {fileID: 7020137971539803664}
   - component: {fileID: 1087339558987317843}
   - component: {fileID: 7354565892147799194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

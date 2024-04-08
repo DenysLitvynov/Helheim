@@ -6,7 +6,7 @@ public class Movimento_Frecha : MonoBehaviour
 {
     public float velocita = 5f; // Velocità di movimento
     public Vector3 direzione = Vector3.forward; // Direzione di movimento
-    private bool combate_aliado = false;
+    //private bool combate_aliado = false;
     public float dps = 40f;
 
     void Update()
@@ -21,7 +21,10 @@ public class Movimento_Frecha : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-            combate_aliado = true;
+            //combate_aliado = true;
+        }
+        else if(collision.gameObject.tag == "Entorno"){
+            Destroy(gameObject);
         }
     }
 
@@ -29,8 +32,7 @@ public class Movimento_Frecha : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-
             Destroy(gameObject);        
-            }
+         }
     }
 }
