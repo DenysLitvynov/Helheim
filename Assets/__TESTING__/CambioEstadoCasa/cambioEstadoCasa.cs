@@ -37,9 +37,9 @@ public class CambioDeCasa : MonoBehaviour
 
             Casa.SetActive(false);
 
-           CasaEstado2.SetActive(true);
+            CasaEstado2.SetActive(true);
 
-           CasaEstado3.SetActive(false);
+            CasaEstado3.SetActive(false);
             
         }
 
