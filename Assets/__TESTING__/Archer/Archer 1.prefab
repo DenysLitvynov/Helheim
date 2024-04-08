@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8835340563779096401}
   - component: {fileID: 5681043869105347648}
   - component: {fileID: 6619400846910469475}
+  - component: {fileID: 8950301760843404656}
   m_Layer: 6
   m_Name: Archer 1
   m_TagString: Personaje
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670238640148300106}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: -0.00000004371139}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 23.129183, y: 3.84, z: -4.1951466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -35,7 +36,7 @@ Transform:
   - {fileID: 3390306306661986262}
   - {fileID: 3867202079214112850}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -174.367, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!54 &5681043869105347648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -79,45 +80,13 @@ MonoBehaviour:
   vida_Maxima: 50
   vida: 50
   dps: 5
---- !u!1 &4165013011120615240
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5820172462050756918}
-  - component: {fileID: 6552740144435937624}
-  m_Layer: 6
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5820172462050756918
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4165013011120615240}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0.48, y: 0.06, z: 0.69}
-  m_LocalScale: {x: 4.509845, y: 1.001936, z: 9.204844}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8729056292349419928}
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
---- !u!114 &6552740144435937624
+--- !u!114 &8950301760843404656
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4165013011120615240}
+  m_GameObject: {fileID: 1670238640148300106}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cddb9e89fcd2560c09f3262ce41c5e6f, type: 3}
@@ -125,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 1937487355970088736, guid: b2689b5abe9e711b4a07f438f949f6ca, type: 3}
   spawnInterval: 3
+  colocado: 0
 --- !u!1 &4684016669180331006
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,8 +444,7 @@ Transform:
   m_LocalPosition: {x: 0.01000471, y: -0.96014327, z: -0.21002315}
   m_LocalScale: {x: 0.38704878, y: 2.4057262, z: 0.23691954}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5820172462050756918}
+  m_Children: []
   m_Father: {fileID: 1992494575779572760}
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
 --- !u!33 &321919671057855016

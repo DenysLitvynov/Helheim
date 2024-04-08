@@ -11,14 +11,16 @@ TagManager:
   - CanvasCartas
   - Personaje Colocado
   - Character Prefab
+  - Casilla
+  - Entorno
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Casilla
   - Water
   - UI
-  - 
+  - Personaje
   - 
   - 
   - 

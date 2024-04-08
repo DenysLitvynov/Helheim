@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocita: 1.5
-  direzione: {x: 8, y: -0.2, z: -1}
+  direzione: {x: 8, y: 1, z: -1}
   dps: 40
 --- !u!1 &4392218443905247162
 GameObject:

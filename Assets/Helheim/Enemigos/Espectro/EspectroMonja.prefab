@@ -339,3 +339,6 @@ MonoBehaviour:
   vida_maxima: 100
   vida: 100
   "da\u0441o_espectro": 50
+  cartas: {fileID: 0}
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}

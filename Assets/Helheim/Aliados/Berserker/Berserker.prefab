@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 1765805375156559531}
   m_Layer: 0
   m_Name: Berserker
-  m_TagString: Aliado
+  m_TagString: Personaje
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -507,6 +507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 8
   esta_en_combate: 0
+  colocado: 0
 --- !u!114 &3444464094624016040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,6 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 600
   vida: 600
   dps: 700

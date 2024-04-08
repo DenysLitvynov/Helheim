@@ -23,6 +23,9 @@ public class Movimento_Frecha : MonoBehaviour
         {
             //combate_aliado = true;
         }
+        else if(collision.gameObject.tag == "Entorno"){
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionExit(Collision collision)
