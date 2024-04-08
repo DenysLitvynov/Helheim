@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a802d548ee721bc478a970ffc5ce5cd9, type: 3}
+  m_Name: GuerreroLVL1
+  m_EditorClassIdentifier: 
+  characterIcon: {fileID: 2800000, guid: 454ee93d46569fe4b921aa2a2d573259, type: 3}
+  characterSprite: {fileID: 8255698430681968762, guid: 8edcb5a673fe2dc4ab1af520ba110ba5, type: 3}
+  panelCanvas: {fileID: 1744721947743016550, guid: f168f7a9e77b591438597826b4055608, type: 3}
+  levelCard: {fileID: 21300000, guid: fb0d3813c1744c443a0bdeb7ece24c1f, type: 3}
+  nombre: Guerrero
+  descripcion: "Son las tropas con menos salud pero que pueden hacer da\xF1o desde
+    lejos. Estas tropas no se mueven. Los arqueros disparan en l\xEDnea recta para
+    maximizar el da\xF1o. "
+  cooldown: 10
