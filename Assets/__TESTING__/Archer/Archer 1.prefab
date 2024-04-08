@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8835340563779096401}
   - component: {fileID: 5681043869105347648}
   - component: {fileID: 6619400846910469475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Archer 1
   m_TagString: Personaje
   m_Icon: {fileID: 0}
@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 50
   vida: 50
   dps: 5
@@ -88,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5820172462050756918}
   - component: {fileID: 6552740144435937624}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +137,7 @@ GameObject:
   - component: {fileID: 5206020194259737154}
   - component: {fileID: 8878108595295320852}
   - component: {fileID: 2183658758871833497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Brazo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +245,7 @@ GameObject:
   - component: {fileID: 7805261822224107622}
   - component: {fileID: 4440381398032730912}
   - component: {fileID: 1922777068097961349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: helm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +350,7 @@ GameObject:
   - component: {fileID: 6006823157851898183}
   - component: {fileID: 4999830005501876504}
   - component: {fileID: 6954142846889238845}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +455,7 @@ GameObject:
   - component: {fileID: 321919671057855016}
   - component: {fileID: 5830730944772767106}
   - component: {fileID: 7043982688483746445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: arco
   m_TagString: Aliado
   m_Icon: {fileID: 0}
@@ -560,7 +561,7 @@ GameObject:
   - component: {fileID: 5778418924441624287}
   - component: {fileID: 171032635793830148}
   - component: {fileID: 8439719278680835501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Brazo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,7 +668,7 @@ GameObject:
   - component: {fileID: 7020137971539803664}
   - component: {fileID: 1087339558987317843}
   - component: {fileID: 7354565892147799194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cuerpo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
