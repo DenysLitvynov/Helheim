@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5681043869105347648}
   - component: {fileID: 6619400846910469475}
   m_Layer: 0
-  m_Name: Archer
+  m_Name: Archer 1
   m_TagString: Aliado
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
