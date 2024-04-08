@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
-    [SerializeField] private Waves[] _waves;
+    [SerializeField] public Waves[] _waves;
     private int _currentEnemyIndex;
     public int _currentWaveIndex; // Inicializa a 0
     private int _enemiesLeftToSpawn;
@@ -69,9 +69,9 @@ public class WaveSpawner : MonoBehaviour
 
     private void CheckWaveCompletion()
     {
-        if (_activeEnemies == 0 && _currentWaveIndex < _waves.Length - 1 && !_waves[_currentWaveIndex].IsCompleted) // Solo incrementa si no estamos en la última ola, no hay enemigos activos y la ronda actual no está completada
+        if (_activeEnemies == 0 && _currentWaveIndex < _waves.Length - 1) // Solo incrementa si no estamos en la última ola, no hay enemigos activos y la ronda actual no está completada
         {
-            _waves[_currentWaveIndex].IsCompleted = true; // Marca la ronda como completada
+            //_waves[_currentWaveIndex].IsCompleted = true; // Marca la ronda como completada
             LaunchWave(); // Lanza la siguiente ola
         }
         else if (_activeEnemies == 0 && _currentWaveIndex == _waves.Length - 1) // Si estamos en la última ola y todos los enemigos han sido destruidos
