@@ -20,15 +20,7 @@ public class Aliado_stats : MonoBehaviour
         }
     }
 
-    private void recibirDaсo(float daсo)
-    {
-        if (combate_aliado == true)
-        {
-            vida -= daсo * Time.deltaTime;
-            // Accede a la variable da�o_boss3 del enemigo
-            recibirDano(enemigo.dano_enemigo);
-        }
-    }
+    
 
     private void recibirDano(float dano)
     {

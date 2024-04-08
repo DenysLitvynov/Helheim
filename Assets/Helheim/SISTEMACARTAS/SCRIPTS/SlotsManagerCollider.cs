@@ -34,7 +34,7 @@ public class SlotsManagerCollider : MonoBehaviour
     private void OnMouseDown(){
         if(colocandoPersoanje==true){
                 character = GameObject.FindGameObjectWithTag("Personaje");
-                character.tag="Personaje Colocado";
+                character.tag="Aliado";
                 character.transform.SetParent(this.transform);
                
                 Vector3 pos=new Vector3(0, 0, -1);

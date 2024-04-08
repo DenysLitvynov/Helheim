@@ -8,7 +8,7 @@ public class SpawnArrow : MonoBehaviour
     public float spawnInterval = 3f; // Intervallo di tempo tra uno spawn e l'altro
 
     private float timer; // Timer per tenere traccia del tempo
-    private bool arrowGenerated = true; // Flag per indicare se una freccia è già stata generata
+    
 
     void Start()
     {

@@ -5,9 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  tags:
-  - Aliado
   - Enemigo
+  - Aliado
+  - Personaje
+  - CanvasCartas
+  - Personaje Colocado
+  - Character Prefab
   layers:
   - Default
   - TransparentFX

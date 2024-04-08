@@ -23,7 +23,8 @@ public class ComportamientoBarra : MonoBehaviour
         if (vidaActual <= 0f)
         {
             // Detener el juego
-            GameManager.Instance.GameOver();
+            Time.timeScale = 0f;
+            Debug.Log("GameOver");
         }
 
     }

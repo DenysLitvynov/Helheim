@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: ArqueroLVL1
   m_EditorClassIdentifier: 
   characterIcon: {fileID: 2800000, guid: f1d39e82cca708f429c2d51aa70b1f03, type: 3}
-  characterSprite: {fileID: 1761784545550669205, guid: 44585bf723f71234f8f601bf7cc3354d, type: 3}
+  characterSprite: {fileID: 1670238640148300106, guid: ba9294cbcdb23175195e90bfbbde3e8e, type: 3}
   panelCanvas: {fileID: 1744721947743016550, guid: f168f7a9e77b591438597826b4055608, type: 3}
   levelCard: {fileID: 21300000, guid: fb0d3813c1744c443a0bdeb7ece24c1f, type: 3}
   nombre: Arquero
   descripcion: "Son las tropas con menos salud pero que pueden hacer da\xF1o desde
     lejos. Estas tropas no se mueven. Los arqueros disparan en l\xEDnea recta para
     maximizar el da\xF1o. "
-  cooldown: 5
+  cooldown: 3

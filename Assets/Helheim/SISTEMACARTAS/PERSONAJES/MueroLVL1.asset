@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: MueroLVL1
   m_EditorClassIdentifier: 
   characterIcon: {fileID: 2800000, guid: 8225245787921ce478b5040c7ace3d4c, type: 3}
-  characterSprite: {fileID: 275801921465438977, guid: 4bcadabdbdd7b7148acbc60cdf14a773, type: 3}
+  characterSprite: {fileID: 3041956482045275434, guid: 3efc177248a3b4b42a268c31ee2a8941, type: 3}
   panelCanvas: {fileID: 1744721947743016550, guid: f168f7a9e77b591438597826b4055608, type: 3}
   levelCard: {fileID: 21300000, guid: fb0d3813c1744c443a0bdeb7ece24c1f, type: 3}
   nombre: Muero
   descripcion: Para a los enemigos
-  cooldown: 20
+  cooldown: 3
