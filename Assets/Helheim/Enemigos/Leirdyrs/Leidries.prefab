@@ -183,12 +183,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_maxima: 100
+  vida_maxima: 50
   vida: 100
   dano_enemigo: 15
   cartas: {fileID: 0}
-  martillo: {fileID: 0}
-  berserk: {fileID: 0}
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!114 &1129740062306130957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 001ede33f0db3f64cb7a49b7e2826780, type: 2}
+  - {fileID: 2100000, guid: 3a111f198e631894fb024ddfb192f68c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

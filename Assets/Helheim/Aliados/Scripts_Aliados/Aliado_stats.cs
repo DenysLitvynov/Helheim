@@ -11,6 +11,11 @@ public class Aliado_stats : MonoBehaviour
     private Enemigo_stats enemigo;
     private Espectro_Stats espectro;
 
+    private void Start()
+    {
+        vida = vida_Maxima;
+    }
+
     private void Update()
     {
         if (combate_aliado == true)

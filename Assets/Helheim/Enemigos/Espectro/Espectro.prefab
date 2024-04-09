@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7a4cb03a1bf2f49904bf9dd5745609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_maxima: 100
+  vida_maxima: 20
   vida: 100
   "da\u0441o_espectro": 50
   cartas: {fileID: 0}

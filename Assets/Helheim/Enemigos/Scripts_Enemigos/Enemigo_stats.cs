@@ -17,6 +17,7 @@ public class Enemigo_stats : MonoBehaviour
 
     private void Start()
     {
+        vida = vida_maxima;
         GameObject characterManagerObject = GameObject.Find("Game Manager");
         combate = GetComponent<Movimiento_Enemigo>();
         cartas = characterManagerObject.GetComponent<CharacterCardManager>();

@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 50
   vida: 50
   dps: 5
@@ -279,7 +280,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 64189e8048ee7bb88b8e3b0aa3e45db3, type: 2}
+  - {fileID: 2100000, guid: 31ce9847485da48448fadc4672377aca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -704,7 +705,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 64189e8048ee7bb88b8e3b0aa3e45db3, type: 2}
+  - {fileID: 2100000, guid: 31ce9847485da48448fadc4672377aca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
