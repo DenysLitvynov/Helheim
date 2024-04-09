@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 700477373565183839}
   serializedVersion: 2
   m_LocalRotation: {x: 0.66412723, y: -0, z: -0, w: 0.74761957}
-  m_LocalPosition: {x: -0.547, y: 0.203, z: -0.342}
+  m_LocalPosition: {x: -0.547, y: 0.298, z: 0.457}
   m_LocalScale: {x: 0.45826906, y: 0.5753219, z: 0.4126111}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -186,6 +186,9 @@ MonoBehaviour:
   vida_maxima: 100
   vida: 100
   dano_enemigo: 15
+  cartas: {fileID: 0}
+  martillo: {fileID: 0}
+  berserk: {fileID: 0}
 --- !u!114 &1129740062306130957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,7 +695,7 @@ Transform:
   m_GameObject: {fileID: 8128905852012872506}
   serializedVersion: 2
   m_LocalRotation: {x: 0.66412723, y: -0, z: -0, w: 0.74761957}
-  m_LocalPosition: {x: 0.49199998, y: 0.20300007, z: -0.342}
+  m_LocalPosition: {x: 0.49, y: 0.29, z: 0.42}
   m_LocalScale: {x: 0.45826906, y: 0.5753219, z: 0.4126111}
   m_ConstrainProportionsScale: 0
   m_Children: []

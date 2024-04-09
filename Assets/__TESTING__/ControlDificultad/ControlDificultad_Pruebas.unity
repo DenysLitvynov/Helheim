@@ -142,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _waves.Array.data[0]._waveSettings.Array.size
@@ -1231,6 +1231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 100
   vida: 100
   dps: 50
@@ -1382,6 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 100
   vida: 100
   dps: 50
@@ -1538,6 +1540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 100
   vida: 100
   dps: 50
@@ -1689,6 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 100
   vida: 100
   dps: 50
@@ -1840,6 +1844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 100
   vida: 100
   dps: 50
@@ -1991,6 +1996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 100
   vida: 100
   dps: 50
@@ -2147,6 +2153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 100
   vida: 100
   dps: 50
@@ -2397,6 +2404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 100
   vida: 100
   dps: 50
@@ -2548,6 +2556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 100
   vida: 100
   dps: 50
