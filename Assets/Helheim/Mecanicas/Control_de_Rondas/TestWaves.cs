@@ -18,7 +18,7 @@ public class TestWaves : MonoBehaviour
         {
             _waveSpawner._lastEnemy = null; // Establece la referencia al último enemigo a null
         }
-        if (_waveSpawner._activeEnemies == 0 && _waveSpawner._currentWaveIndex < _waveSpawner._waves.Length - 1)
+        if (_waveSpawner._activeEnemies == 0 && _waveSpawner._currentWaveIndex < _waveSpawner._waves.Length - 1 && _waveSpawner._enemiesLeftToSpawn == 0)
         {
             _waveSpawner.LaunchWave(); // Lanza la siguiente ola solo si no estás en la última ola
         }

@@ -7,7 +7,7 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] public Waves[] _waves;
     private int _currentEnemyIndex;
     public int _currentWaveIndex; // Inicializa a 0
-    private int _enemiesLeftToSpawn;
+    public int _enemiesLeftToSpawn;
     public int _activeEnemies; // Nuevo contador
     public GameObject _lastEnemy; // Referencia al último enemigo
 
@@ -20,7 +20,7 @@ public class WaveSpawner : MonoBehaviour
 
     private IEnumerator SpawnEnemyInWave()
     {
-        if (_enemiesLeftToSpawn > 0 && _currentEnemyIndex < _waves[_currentWaveIndex].WaveSettings.Length)
+        if (_enemiesLeftToSpawn > 0 && _currentWaveIndex < _waves.Length && _currentEnemyIndex < _waves[_currentWaveIndex].WaveSettings.Length)
         {
             yield return new WaitForSeconds(_waves[_currentWaveIndex]
                 .WaveSettings[_currentEnemyIndex]
@@ -29,9 +29,9 @@ public class WaveSpawner : MonoBehaviour
                 .WaveSettings[_currentEnemyIndex].Enemy,
                 _waves[_currentWaveIndex].WaveSettings[_currentEnemyIndex]
                 .NeededSpawner.transform.position, Quaternion.identity);
-            _enemiesLeftToSpawn--;
             _currentEnemyIndex++;
             _activeEnemies++; // Incrementa el contador cuando se genera un enemigo
+            _enemiesLeftToSpawn--; // Decrementa el contador después de que un enemigo ha sido generado
 
             StartCoroutine(SpawnEnemyInWave());
         }
@@ -40,6 +40,7 @@ public class WaveSpawner : MonoBehaviour
             CheckWaveCompletion(); // Verifica si la ola actual ha sido completada
         }
     }
+
 
     public void LaunchWave()
     {
@@ -69,17 +70,21 @@ public class WaveSpawner : MonoBehaviour
 
     private void CheckWaveCompletion()
     {
-        if (_activeEnemies == 0 && _currentWaveIndex < _waves.Length - 1) // Solo incrementa si no estamos en la última ola, no hay enemigos activos y la ronda actual no está completada
+        // Solo cambia de ronda si no quedan enemigos por generar y no hay enemigos activos
+        if (_enemiesLeftToSpawn == 0 && _activeEnemies == 0)
         {
-            //_waves[_currentWaveIndex].IsCompleted = true; // Marca la ronda como completada
-            LaunchWave(); // Lanza la siguiente ola
-        }
-        else if (_activeEnemies == 0 && _currentWaveIndex == _waves.Length - 1) // Si estamos en la última ola y todos los enemigos han sido destruidos
-        {
-            // Detener el juego
-            Time.timeScale = 0f;
+            if (_currentWaveIndex < _waves.Length - 1)
+            {
+                LaunchWave(); // Lanza la siguiente ola
+            }
+            else if (_currentWaveIndex == _waves.Length - 1) // Si estamos en la última ola
+            {
+                // Detener el juego
+                Time.timeScale = 0f;
+            }
         }
     }
+
 
     // Método para incrementar el contador de enemigos activos
     public void IncrementActiveEnemies()

@@ -35,8 +35,15 @@ public class LaMonja_Stats : MonoBehaviour
     {
         if (combate.esta_en_combate == true)
         {
-            // Accede a la variable dps del aliado
-            recibirDano(aliado.dps);
+            // Comprueba si aliado no es null antes de acceder a aliado.dps
+            if (aliado != null)
+            {
+                recibirDano(aliado.dps);
+            }
+            else
+            {
+                Debug.Log("Aliado es null");
+            }
         }
     }
 
