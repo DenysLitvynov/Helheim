@@ -35,12 +35,24 @@ public class Estado_Movimiento_Enemigo : Estado_Base_Enemigo
         {
             GetNextWaypoint(enemigo.gameObject);
         }
-        
+
+        if (esta_en_combate==true)
+        {
+            enemigo.CambiarEstado(enemigo.estadoCombate);
+        }
+
     }
 
 
     public override void OnCollisionEnter(Controlador_de_Estados enemigo, Collision collision)
     {
+
+        if (collision.gameObject.CompareTag("Aliado"))//Habra que hacer alguna funcion que al chocar devuelva el tag del objeto 
+                                                 //Asi establecer que da?o recibe el jefe.
+        {
+            esta_en_combate = true;
+            aliadoIdentificado = collision.gameObject;
+        }
 
     }
 

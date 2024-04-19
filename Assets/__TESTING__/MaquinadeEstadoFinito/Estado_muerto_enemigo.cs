@@ -6,6 +6,8 @@ public class Estado_muerto_enemigo : Estado_Base_Enemigo
 {
     public override void EnterState(Controlador_de_Estados enemigo)
     {
+        Debug.Log("HOLA  DESDE EL ESTADO MUERTO");
+        enemigo.destruir();
 
     }
 

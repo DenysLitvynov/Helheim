@@ -13,10 +13,23 @@ public class Controlador_de_Estados : MonoBehaviour
     public Estado_muerto_enemigo estadoMuerto = new Estado_muerto_enemigo();
     //========================================================================
 
+    //========================================================================
+    //STATS
+    public float vida = 100f;
+    public float velocidad = 10f;
+    public float vidaMaxima;
+    public float dano;
+    public float dano_Recibido;
+    //========================================================================
+
+    void Start() {
+    
+        estadoMovimiento.velocidad = velocidad;
+        estadoCombate.vida = vidaMaxima;
+        estadoCombate.vidaMaxima = vidaMaxima;
+        estadoCombate.dano_recibido = dano_Recibido;
 
 
-    void Start()
-    {
         //Inicialiamos el primer estado(en cual empieza)
         estadoActual = estadoMovimiento;
 
@@ -38,6 +51,11 @@ public class Controlador_de_Estados : MonoBehaviour
         estadoActual=estado;
         estadoActual.EnterState(this);
     }
-    
-    
+
+    public void destruir()
+    {
+        Destroy(gameObject);
+    }
+
+
 }
