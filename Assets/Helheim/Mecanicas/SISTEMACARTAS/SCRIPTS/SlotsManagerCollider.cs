@@ -40,6 +40,11 @@ public class SlotsManagerCollider : MonoBehaviour
   
         if(colocandoPersoanje==true){
             character = GameObject.FindGameObjectWithTag("Personaje");
+            if(character == null) {
+                colocandoPersoanje = false;
+                gameCanvas.SetActive(true);
+                return;
+            }
             Movimiento_Aliodos characterScript = character.GetComponent<Movimiento_Aliodos>();
             SpawnArrow spawnScript = character.GetComponent<SpawnArrow>();
             if (characterScript != null) {
