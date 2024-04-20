@@ -14,12 +14,15 @@ public class TestWaves : MonoBehaviour
     private void OnDestroy()
     {
         _waveSpawner._activeEnemies--; // Decrementa el contador cuando se destruye un enemigo
-        if (gameObject == _waveSpawner._lastEnemy) // Si el enemigo destruido es el �ltimo enemigo
+        if (gameObject == _waveSpawner._lastEnemy) // Si el enemigo destruido es el último enemigo
         {
-            _waveSpawner._lastEnemy = null; // Establece la referencia al �ltimo enemigo a null
+            _waveSpawner._lastEnemy = null; // Establece la referencia al último enemigo a null
         }
-        if (_waveSpawner._activeEnemies == 0)
-            _waveSpawner.LaunchWave();
+        if (_waveSpawner._activeEnemies == 0 && _waveSpawner._currentWaveIndex < _waveSpawner._waves.Length - 1 && _waveSpawner._enemiesLeftToSpawn == 0)
+        {
+            _waveSpawner.LaunchWave(); // Lanza la siguiente ola solo si no estás en la última ola
+        }
     }
 }
+
 

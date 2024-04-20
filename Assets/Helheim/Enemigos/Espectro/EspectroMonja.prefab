@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 2230287229033064371}
   m_Layer: 0
   m_Name: EspectroMonja
-  m_TagString: Enemy
+  m_TagString: Enemigo
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,3 +339,6 @@ MonoBehaviour:
   vida_maxima: 100
   vida: 100
   "da\u0441o_espectro": 50
+  cartas: {fileID: 0}
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}

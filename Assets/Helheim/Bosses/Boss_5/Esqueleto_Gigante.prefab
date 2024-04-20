@@ -399,6 +399,9 @@ MonoBehaviour:
   vida_maxima: 700
   vida: 700
   dano_enemigo: 30
+  cartas: {fileID: 0}
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!114 &5544951492302320833
 MonoBehaviour:
   m_ObjectHideFlags: 0

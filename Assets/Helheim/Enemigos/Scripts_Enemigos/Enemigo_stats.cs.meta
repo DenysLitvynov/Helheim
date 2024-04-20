@@ -3,7 +3,10 @@ guid: d41075c849690954ca5f67f2f17645c7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cartas: {instanceID: 0}
+  - martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  - berserk: {fileID: 11400000, guid: b2a4c3f1a69e686498739ca35694608f, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

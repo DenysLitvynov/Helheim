@@ -4,31 +4,34 @@ using UnityEngine;
 
 public class Aliado_stats : MonoBehaviour
 {
-    private bool combate_aliado = false;
+    public bool combate_aliado = false;
     public float vida_Maxima = 50f;//La vida maxima del aliado, solo para comparar y saber si se muere de una vez
     public float vida = 50f; // La vida del aliado
     public float dps = 5f;//da�o que causa el enemigo(el aliado tomara esto como parametro en recibirDa�o())
     private Enemigo_stats enemigo;
     private Espectro_Stats espectro;
 
+    private void Start()
+    {
+        vida = vida_Maxima;
+    }
+
     private void Update()
     {
         if (combate_aliado == true)
         {
             // Accede a la variable da�o_boss3 del enemigo
-            recibirDano(enemigo.dano_enemigo);
+            if(enemigo!=null){
+                recibirDano(enemigo.dano_enemigo);
+            }else if(espectro!=null){
+                recibirDano(espectro.daсo_espectro);
+
+            }
+            
         }
     }
 
-    private void recibirDaсo(float daсo)
-    {
-        if (combate_aliado == true)
-        {
-            vida -= daсo * Time.deltaTime;
-            // Accede a la variable da�o_boss3 del enemigo
-            recibirDano(enemigo.dano_enemigo);
-        }
-    }
+    
 
     private void recibirDano(float dano)
     {

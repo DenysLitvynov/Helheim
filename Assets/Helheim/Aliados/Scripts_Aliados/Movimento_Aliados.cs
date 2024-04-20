@@ -13,7 +13,7 @@ public class Movimiento_Aliodos : MonoBehaviour
     private int waypointIndex = 0;
     public bool esta_en_combate = false;
     private GameObject aliadoIdentificado;
-
+    public bool colocado = false; 
 
     private void Start()
     {
@@ -26,7 +26,7 @@ public class Movimiento_Aliodos : MonoBehaviour
 
     private void Update()
     {
-        if (!esta_en_combate)
+        if (!esta_en_combate && colocado)
         {
             Vector3 dir = target.position - transform.position;
             transform.Translate(dir.normalized * velocidad * Time.deltaTime, Space.World);
