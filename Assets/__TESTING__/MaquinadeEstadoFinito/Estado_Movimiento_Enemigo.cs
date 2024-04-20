@@ -10,20 +10,19 @@ public class Estado_Movimiento_Enemigo : Estado_Base_Enemigo
     private Transform target;
     private Waypoints caminos;
     private int waypointIndex = 0;
-    public bool esta_en_combate = false;
+    public bool esta_en_combate;
     private GameObject aliadoIdentificado;
+    public int filaSelecionada;
     
 
 
     public override void EnterState(Controlador_de_Estados enemigo)//el start del estado
     {
         Debug.Log("EMPEZANDO MOVIMIENTO");
-
-        int numeroAleatorio = UnityEngine.Random.Range(1, 9);
-        GameObject objWaypoints = GameObject.Find("LINEA" + numeroAleatorio);
+        GameObject objWaypoints = GameObject.Find("LINEA" + filaSelecionada);
         caminos = objWaypoints.GetComponent<Waypoints>();
-
         target = caminos.points[waypointIndex];
+       
     }
 
     public override void UpdateState(Controlador_de_Estados enemigo)//el update del estado
@@ -36,11 +35,7 @@ public class Estado_Movimiento_Enemigo : Estado_Base_Enemigo
             GetNextWaypoint(enemigo.gameObject);
         }
 
-        if (esta_en_combate==true)
-        {
-            enemigo.CambiarEstado(enemigo.estadoCombate);
-        }
-
+        if (esta_en_combate==true){ enemigo.CambiarEstado(enemigo.estadoCombate); }
     }
 
 
@@ -58,12 +53,14 @@ public class Estado_Movimiento_Enemigo : Estado_Base_Enemigo
 
     void GetNextWaypoint(GameObject gameObject)
     {
+
         waypointIndex++;
         if (waypointIndex >= caminos.points.Length - 1)
         {
             Controlador_de_Estados.Destroy(gameObject);
             return;
         }
+
         target = caminos.points[waypointIndex];
     }
 

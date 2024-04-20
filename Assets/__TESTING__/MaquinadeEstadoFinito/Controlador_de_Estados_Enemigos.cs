@@ -23,12 +23,14 @@ public class Controlador_de_Estados : MonoBehaviour
     //========================================================================
 
     void Start() {
-    
+
+        int numeroAleatorio = UnityEngine.Random.Range(1, 9);
         estadoMovimiento.velocidad = velocidad;
         estadoCombate.vida = vidaMaxima;
         estadoCombate.vidaMaxima = vidaMaxima;
         estadoCombate.dano_recibido = dano_Recibido;
 
+        estadoMovimiento.filaSelecionada = numeroAleatorio;
 
         //Inicialiamos el primer estado(en cual empieza)
         estadoActual = estadoMovimiento;

@@ -9,5 +9,5 @@ public abstract class Estado_Base_Enemigo
     public abstract void UpdateState(Controlador_de_Estados enemigo);
 
     public abstract void OnCollisionEnter(Controlador_de_Estados enemigo,Collision collision);
-    
+
 }
