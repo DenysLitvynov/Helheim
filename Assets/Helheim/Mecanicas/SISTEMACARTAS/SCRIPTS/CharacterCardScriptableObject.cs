@@ -12,4 +12,5 @@ public class CharacterCardScriptableObject : ScriptableObject
    public string descripcion;
 
    public float cooldown;
+   public int colocados=0;
 }

@@ -68,18 +68,21 @@ public class Enemigo_stats : MonoBehaviour
             combate.esta_en_combate = false;
         }
     }
-    public void cartaAleatoria(){
-        
-        cartas.amtOfCards++;
-        
-        if(GenerateRandomNumber()==1){
-            cartas.characterCardSO[cartas.amtOfCards-1]=martillo;
-        }else{
-            cartas.characterCardSO[cartas.amtOfCards-1]=berserk;
-        }
 
-        cartas.characterCards = new GameObject[cartas.amtOfCards];
-        cartas.AddCharacterCard(cartas.amtOfCards-1);
+    public void cartaAleatoria(){
+        if(cartas.amtOfCards<10){
+            cartas.amtOfCards++;
+            
+            if(GenerateRandomNumber()==1){
+                cartas.characterCardSO[cartas.amtOfCards-1]=martillo;
+            }else{
+                cartas.characterCardSO[cartas.amtOfCards-1]=berserk;
+            }
+
+            cartas.characterCards = new GameObject[cartas.amtOfCards];
+            cartas.AddCharacterCard(cartas.amtOfCards-1);
+        }
+        
         
     }
 
@@ -98,6 +101,7 @@ public class Enemigo_stats : MonoBehaviour
             return 2;
         }
     }
+
     bool DropCarta()
     {
         // Genera un número aleatorio entre 0 (inclusive) y 1 (exclusivo)
@@ -106,4 +110,5 @@ public class Enemigo_stats : MonoBehaviour
         // Si el número generado es menor o igual a 0.2, devuelve verdadero; de lo contrario, devuelve falso
         return randomNumber <= 0.2f;
     }
+    
 }
