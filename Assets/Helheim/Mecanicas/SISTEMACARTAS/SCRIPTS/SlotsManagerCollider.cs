@@ -12,12 +12,22 @@ public class SlotsManagerCollider : MonoBehaviour
     //public CharacterManager carta;
     Canvas panelCanvas;
     GameObject gameCanvas;
+    GameObject slotActual = null;
 
     
 
     void Start(){
         gameCanvas=GameObject.FindWithTag("CanvasCartas");
         panelCanvas=gameCanvas.GetComponent<Canvas>();
+    }
+
+    void Update()
+    {
+        // Verificar si se ha presionado cualquier tecla y si se está en modo de colocación
+        if (Input.anyKeyDown && colocandoPersoanje)
+        {
+            TryPlaceCharacter();
+        }
     }
 
    
@@ -31,20 +41,24 @@ public class SlotsManagerCollider : MonoBehaviour
                
                 Vector3 pos=new Vector3(0, 0, -1);
                 character.transform.localPosition = pos;
-                
+
+            if (colocandoPersoanje)
+            {
+                slotActual = this.gameObject;
             }
+            else
+            {
+                slotActual = null;
+            }
+
+        }
         //} 
     }
     
-    private void OnMouseDown(){
+     void TryPlaceCharacter(){
   
         if(colocandoPersoanje==true){
             character = GameObject.FindGameObjectWithTag("Personaje");
-            if(character == null) {
-                colocandoPersoanje = false;
-                gameCanvas.SetActive(true);
-                return;
-            }
             Movimiento_Aliodos characterScript = character.GetComponent<Movimiento_Aliodos>();
             SpawnArrow spawnScript = character.GetComponent<SpawnArrow>();
             if (characterScript != null) {
@@ -54,10 +68,13 @@ public class SlotsManagerCollider : MonoBehaviour
             }
                         
             character.tag="Aliado";
-            character.transform.SetParent(this.transform);
-                    
-            Vector3 pos=new Vector3(0, 0, -1);
-            character.transform.localPosition = pos;
+            if (slotActual!=null)
+            {
+                character.transform.SetParent(slotActual.transform);
+                Vector3 pos = new Vector3(0, 0, -1);
+                character.transform.localPosition = pos;
+            }
+           
             
             gameCanvas.SetActive(true);
             foreach(SlotsManagerCollider slots in GameObject.FindObjectsOfType<SlotsManagerCollider>()){
@@ -69,8 +86,3 @@ public class SlotsManagerCollider : MonoBehaviour
 
 
 }
-
-        
-        
-    
-
