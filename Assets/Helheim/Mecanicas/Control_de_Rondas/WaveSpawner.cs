@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -81,6 +82,8 @@ public class WaveSpawner : MonoBehaviour
             {
                 // Detener el juego
                 Time.timeScale = 0f;
+
+                SceneManager.LoadScene("PantallaHasGanado");
             }
         }
     }

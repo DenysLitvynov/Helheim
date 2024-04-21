@@ -10,5 +10,8 @@ EditorBuildSettings:
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/__TESTING__/Pantalla_Win/PantallaHasGanado.unity
-    guid: 64ada54219a3259438c58bed571ce463
+    guid: 603ad14bcdb826a43942f094a554bf20
+  - enabled: 1
+    path: Assets/__TESTING__/Pantalla_Lose/PantallaHasPerdido.unity
+    guid: 0e9466b0a3ed9f247b8f826de368250c
   m_configObjects: {}
