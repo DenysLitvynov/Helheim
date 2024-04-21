@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5848420003076806183}
   m_Layer: 0
   m_Name: Penitente3
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 10
+  esta_en_combate: 0
 --- !u!1 &2027564641248557782
 GameObject:
   m_ObjectHideFlags: 0
