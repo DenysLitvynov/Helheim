@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PauseManu : MonoBehaviour
 {
     public GameObject PausePanel;
     // Start is called before the first frame update
-    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string mainMenuSceneName = "MenuInicial"; // Nome della scena del menu principale
+
 
     public void Pause(){
         PausePanel.SetActive(true);
@@ -21,5 +19,11 @@ public class PauseManu : MonoBehaviour
     public void Continue(){
         PausePanel.SetActive(false);
         Time.timeScale=1;
+    }
+
+    public void GoToMainMenuScene()
+    {
+        // Carica la scena del menu principale
+        SceneManager.LoadScene(mainMenuSceneName);
     }
 }
