@@ -8,7 +8,15 @@ public class Movimento_Frecha : MonoBehaviour
     public Vector3 direzione = Vector3.forward; // Direzione di movimento
     //private bool combate_aliado = false;
     public float dps = 40f;
+    public float delay = 4f; // Tempo di ritardo prima della cancellazione
 
+    void Start()
+    {
+        // Avvia la funzione di cancellazione dopo il ritardo specificato
+        Invoke("DeleteObject", delay);
+    }
+
+    
     void Update()
     {
         // Calcola il vettore di spostamento moltiplicando la direzione per la velocità e il tempo trascorso dall'ultimo frame
@@ -27,7 +35,11 @@ public class Movimento_Frecha : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    void DeleteObject()
+    {
+        // Cancella l'oggetto
+        Destroy(gameObject);
+    }
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Enemigo")
