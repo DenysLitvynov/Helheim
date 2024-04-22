@@ -69,8 +69,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6474736a29d24f6af7481ca1bcd72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocita: 0.5
-  direzione: {x: 30, y: 0.6, z: -1}
+  velocita: 0.2
+  direzione: {x: 50, y: 0.8, z: 0.1}
   dps: 40
 --- !u!1 &4392218443905247162
 GameObject:
