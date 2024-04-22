@@ -115,9 +115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combate_aliado: 0
-  vida_Maxima: 50
+  vida_Maxima: 100
   vida: 50
-  dps: 5
+  dps: 20
 --- !u!1 &4684016669180331006
 GameObject:
   m_ObjectHideFlags: 0

@@ -69,8 +69,9 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
-    private void CheckWaveCompletion()
+    public void CheckWaveCompletion()
     {
+        Debug.Log("CheckWaveCompletion called. _enemiesLeftToSpawn: " + _enemiesLeftToSpawn + ", _activeEnemies: " + _activeEnemies); // Agrega esta línea
         // Solo cambia de ronda si no quedan enemigos por generar y no hay enemigos activos
         if (_enemiesLeftToSpawn == 0 && _activeEnemies == 0)
         {
@@ -80,9 +81,7 @@ public class WaveSpawner : MonoBehaviour
             }
             else if (_currentWaveIndex == _waves.Length - 1) // Si estamos en la última ola
             {
-                // Detener el juego
-                Time.timeScale = 0f;
-
+                Debug.Log("HAS GANADO");
                 SceneManager.LoadScene("PantallaHasGanado");
             }
         }
@@ -98,7 +97,7 @@ public class WaveSpawner : MonoBehaviour
 
 
 
-[System.Serializable]
+    [System.Serializable]
 public class Waves
 {
     [SerializeField] private WaveSettings[] _waveSettings;
