@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7735807853294698185}
   - component: {fileID: 5843132573484091944}
   - component: {fileID: 1131232517314612854}
+  - component: {fileID: 8795729362568859572}
   m_Layer: 0
   m_Name: Frecha
   m_TagString: Aliado
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1937487355970088736}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: -1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.279, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -69,9 +70,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6474736a29d24f6af7481ca1bcd72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocita: 0.2
-  direzione: {x: 50, y: 0.8, z: 0.1}
+  velocita: 0.5
+  direzione: {x: 30, y: 2, z: -1}
   dps: 40
+--- !u!54 &8795729362568859572
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937487355970088736}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &4392218443905247162
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,6 +112,7 @@ GameObject:
   - component: {fileID: 6122517084910106634}
   - component: {fileID: 5048487354583328677}
   - component: {fileID: 6198208623821391045}
+  - component: {fileID: 5893895721020420754}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -179,3 +208,24 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!65 &5893895721020420754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392218443905247162}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.481235, y: 2, z: 1.0960565}
+  m_Center: {x: 4.7406535, y: 5.878345e-11, z: -0.048026983}

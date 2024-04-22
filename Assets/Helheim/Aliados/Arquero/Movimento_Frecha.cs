@@ -27,13 +27,11 @@ public class Movimento_Frecha : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemigo")
+        if (collision.gameObject.tag == "Enemigo" || collision.gameObject.tag == "Entorno")
         {
-            //combate_aliado = true;
-        }
-        else if(collision.gameObject.tag == "Entorno"){
             Destroy(gameObject);
         }
+       
     }
     void DeleteObject()
     {

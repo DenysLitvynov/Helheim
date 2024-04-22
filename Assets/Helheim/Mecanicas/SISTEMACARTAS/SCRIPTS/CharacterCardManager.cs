@@ -25,7 +25,7 @@ public class CharacterCardManager : MonoBehaviour
     public float cooldown;
     public int colocados;
     
-    
+    public static GameObject casillaActual;
 
     private void Start(){
         characterCards = new GameObject[amtOfCards];

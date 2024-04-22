@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 422383579144601286}
   - component: {fileID: 1754354683818856916}
   - component: {fileID: 6619400846910469475}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Warrior 3
   m_TagString: Personaje
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combate_aliado: 0
+  combate_enemigo: 0
   vida_Maxima: 150
   vida: 50
   dps: 30

@@ -10,10 +10,10 @@ public class SlotsManagerCollider : MonoBehaviour
     public GameObject character;
     public bool colocandoPersoanje=false;
     //public CharacterManager carta;
-    Canvas panelCanvas;
+    Canvas panelCanvas; 
     GameObject gameCanvas;
-    GameObject slotActual = null;
-
+    public GameObject slotActual = null;
+    public GameObject characterMov;
     
 
     void Start(){
@@ -42,47 +42,66 @@ public class SlotsManagerCollider : MonoBehaviour
                 Vector3 pos=new Vector3(0, 0, -1);
                 character.transform.localPosition = pos;
 
-            if (colocandoPersoanje)
-            {
-                slotActual = this.gameObject;
-            }
-            else
-            {
-                slotActual = null;
-            }
-
+             
         }
         //} 
+    }
+    void OnCollisionEnter(Collision collision){
+        if (collision.gameObject.tag == "Personaje" ){
+            CharacterCardManager.casillaActual = this.gameObject;
+        }
+    }
+
+    void OnCollisionExit(Collision collision){
+        if (collision.gameObject.tag == "Aliado" && collision.gameObject.layer == LayerMask.NameToLayer("Corredores"))
+        {
+            VaciarCasilla();
+        }
     }
     
      void TryPlaceCharacter(){
   
-        if(colocandoPersoanje==true){
+        if(colocandoPersoanje==true ){
             character = GameObject.FindGameObjectWithTag("Personaje");
             Movimiento_Aliodos characterScript = character.GetComponent<Movimiento_Aliodos>();
-            SpawnArrow spawnScript = character.GetComponent<SpawnArrow>();
+           
+            Movimiento_Berserk berserkerScript = character.GetComponent<Movimiento_Berserk>();
+            
+            SpawnArrow spawnScript = character.GetComponentInChildren<SpawnArrow>();
+
             if (characterScript != null) {
                 characterScript.colocado=true;
             }else if(spawnScript!=null){
                 spawnScript.colocado=true;
+            }else if(berserkerScript!=null){
+                berserkerScript.colocado=true;
             }
                         
             character.tag="Aliado";
-            if (slotActual!=null)
+            
+            if (CharacterCardManager.casillaActual!=null)
             {
-                character.transform.SetParent(slotActual.transform);
+                character.transform.SetParent(CharacterCardManager.casillaActual.transform);
                 Vector3 pos = new Vector3(0, 0, -1);
                 character.transform.localPosition = pos;
-            }
+            } 
            
             
             gameCanvas.SetActive(true);
             foreach(SlotsManagerCollider slots in GameObject.FindObjectsOfType<SlotsManagerCollider>()){
                 slots.colocandoPersoanje=false;
+                slots.slotActual=null;
             }
         }
     }
-
+    
+    void VaciarCasilla(){
+        for (int i = transform.childCount - 1; i >= 0; i--)
+        {
+            //Destroy(transform.GetChild(i).gameObject);
+            character.transform.SetParent(character.transform.parent.parent);
+        }
+    }
 
 
 }

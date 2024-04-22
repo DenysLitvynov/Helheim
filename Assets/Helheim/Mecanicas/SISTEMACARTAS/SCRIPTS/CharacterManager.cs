@@ -50,8 +50,11 @@ public class CharacterManager : MonoBehaviour,IPointerClickHandler
             tiempoUltimaColocacion = Time.time;
 
             //Un 10% de probabilidades de mejorar la carta
-            if(randomNumber()){
+            if(randomNumber() && levelCard.name!="LVL3" && nombre !="Berserk" && nombre !="Mjolnir"){
                 MejorarCarta(nombre);
+            }
+            if(nombre =="Berserk" ||  nombre =="Mjolnir"){
+                Destroy(gameObject);
             }
             
   
