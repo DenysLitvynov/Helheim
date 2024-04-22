@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 900
   vida: 900
   dps: 50
@@ -305,6 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 500
   vida: 500
   dps: 500
@@ -437,6 +439,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Aliado
       objectReference: {fileID: 0}
+    - target: {fileID: 1754354683818856916, guid: 9476e3ae26b24e84fb38b49e507503ec, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8835340563779096401, guid: 9476e3ae26b24e84fb38b49e507503ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.91
@@ -517,6 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 500
   vida: 500
   dps: 500
@@ -666,6 +673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 500
   vida: 500
   dps: 500
@@ -815,6 +823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 500
   vida: 500
   dps: 500
@@ -964,6 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 900
   vida: 900
   dps: 50
@@ -1218,6 +1228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 900
   vida: 900
   dps: 50
@@ -1367,6 +1378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 500
   vida: 500
   dps: 500
@@ -1826,6 +1838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 500
   vida: 500
   dps: 500
@@ -1956,6 +1969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 900
   vida: 900
   dps: 50
@@ -2105,6 +2119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 900
   vida: 900
   dps: 50
@@ -2254,6 +2269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 500
   vida: 500
   dps: 500
@@ -2403,6 +2419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 500
   vida: 500
   dps: 500
@@ -2552,6 +2569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 500
   vida: 500
   dps: 500
@@ -2701,6 +2719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 900
   vida: 900
   dps: 50
@@ -2850,6 +2869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 900
   vida: 900
   dps: 50
@@ -2999,6 +3019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combate_aliado: 0
   vida_Maxima: 900
   vida: 900
   dps: 50

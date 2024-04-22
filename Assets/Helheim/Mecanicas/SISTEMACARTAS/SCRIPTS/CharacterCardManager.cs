@@ -23,6 +23,7 @@ public class CharacterCardManager : MonoBehaviour
     public string descripcion;
 
     public float cooldown;
+    public int colocados;
     
     
 
@@ -39,7 +40,9 @@ public class CharacterCardManager : MonoBehaviour
         CharacterManager cardManager= card.GetComponent<CharacterManager>();
 
         cardManager.characterPrefab = characterCardSO[index].characterSprite;
+        cardManager.levelCard= characterCardSO[index].levelCard;
         cardManager.tiempoEspera=characterCardSO[index].cooldown;
+        cardManager.nombre=characterCardSO[index].nombre;
         //cardManager.panelCanvas= characterCardSO[index].panelCanvas;
 
         characterCards[index] = card;
@@ -51,6 +54,7 @@ public class CharacterCardManager : MonoBehaviour
         descripcion = characterCardSO[index].descripcion;
 
         cooldown = characterCardSO[index].cooldown;
+        colocados=characterCardSO[index].colocados;
 
         //Actualiza la UI
         card.GetComponent<Image>().sprite= levelCard;

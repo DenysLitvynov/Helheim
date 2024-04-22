@@ -16,6 +16,7 @@ MonoBehaviour:
   characterSprite: {fileID: 360986445036381433, guid: 9fd64256a68315646b692af352cded97, type: 3}
   panelCanvas: {fileID: 1744721947743016550, guid: f168f7a9e77b591438597826b4055608, type: 3}
   levelCard: {fileID: 21300000, guid: fb0d3813c1744c443a0bdeb7ece24c1f, type: 3}
-  nombre: Muero
+  nombre: Muro
   descripcion: Para a los enemigos
   cooldown: 3
+  colocados: 0
