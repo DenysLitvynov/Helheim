@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8835340563779096401}
   - component: {fileID: 5681043869105347648}
+  - component: {fileID: 4317639166135529665}
   - component: {fileID: 6619400846910469475}
-  - component: {fileID: 8950301760843404656}
   m_Layer: 6
   m_Name: Archer 1
   m_TagString: Personaje
@@ -64,6 +64,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &4317639166135529665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670238640148300106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cddb9e89fcd2560c09f3262ce41c5e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowPrefab: {fileID: 0}
+  spawnInterval: 3
+  colocado: 0
 --- !u!114 &6619400846910469475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,21 +95,6 @@ MonoBehaviour:
   vida_Maxima: 50
   vida: 50
   dps: 5
---- !u!114 &8950301760843404656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670238640148300106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cddb9e89fcd2560c09f3262ce41c5e6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arrowPrefab: {fileID: 1937487355970088736, guid: b2689b5abe9e711b4a07f438f949f6ca, type: 3}
-  spawnInterval: 3
-  colocado: 0
 --- !u!1 &4684016669180331006
 GameObject:
   m_ObjectHideFlags: 0

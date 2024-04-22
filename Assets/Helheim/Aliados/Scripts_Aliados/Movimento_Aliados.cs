@@ -17,17 +17,66 @@ public class Movimiento_Aliodos : MonoBehaviour
 
     private void Start()
     {
-        //ControllaPosizioneNemici();
         
-        GameObject objWaypoints = GameObject.Find("LINEA" + 3);
-        caminos = objWaypoints.GetComponent<Waypoints>();
-        target = caminos.points[waypointIndex];
     }
 
     private void Update()
     {
+        if(!colocado){
+        
+        float xCoordinate = transform.position.x;
+        float zCoordinate = transform.position.z;
+
+        // Stampiamo le coordinate per verificarle
+        if(zCoordinate==(-10.83056f)){
+
+            Debug.Log("Linea 1");
+            GameObject objWaypoints = GameObject.Find("LINEA" + 1);
+            caminos = objWaypoints.GetComponent<Waypoints>();
+            target = caminos.points[waypointIndex];
+        }else if(zCoordinate==(-9.759438f)){
+            Debug.Log("Linea 2");
+            GameObject objWaypoints = GameObject.Find("LINEA" + 2);
+            caminos = objWaypoints.GetComponent<Waypoints>();
+            target = caminos.points[waypointIndex];
+        }else if(zCoordinate==(-8.250564f)){
+            Debug.Log("Linea 3");
+            GameObject objWaypoints = GameObject.Find("LINEA" + 3);
+            caminos = objWaypoints.GetComponent<Waypoints>();
+            target = caminos.points[waypointIndex];
+        }else if(zCoordinate==(-7.179438f)){
+            Debug.Log("Linea 4");
+            GameObject objWaypoints = GameObject.Find("LINEA" + 4);
+            caminos = objWaypoints.GetComponent<Waypoints>();
+            target = caminos.points[waypointIndex];
+        }else if(zCoordinate==(-5.680563f)){
+            Debug.Log("Linea 5");
+            GameObject objWaypoints = GameObject.Find("LINEA" + 5);
+            caminos = objWaypoints.GetComponent<Waypoints>();
+            target = caminos.points[waypointIndex];
+        }else if(zCoordinate==(-4.609437f)){
+            Debug.Log("Linea 6");
+            GameObject objWaypoints = GameObject.Find("LINEA" + 6);
+            caminos = objWaypoints.GetComponent<Waypoints>();
+            target = caminos.points[waypointIndex];
+        }else if(zCoordinate==(-3.100563f)){
+            Debug.Log("Linea 7");
+            GameObject objWaypoints = GameObject.Find("LINEA" + 7);
+            caminos = objWaypoints.GetComponent<Waypoints>();
+            target = caminos.points[waypointIndex];
+        }else if(zCoordinate==(-2.029437f)){
+            Debug.Log("Linea 8");
+            GameObject objWaypoints = GameObject.Find("LINEA" + 8);
+            caminos = objWaypoints.GetComponent<Waypoints>();
+            target = caminos.points[waypointIndex];
+        }
+        Debug.Log("Coordinate sull'asse delle x: " + xCoordinate);
+        Debug.Log("Coordinate sull'asse delle z: " + zCoordinate);
+        
+        }
         if (!esta_en_combate && colocado)
         {
+
             Vector3 dir = target.position - transform.position;
             transform.Translate(dir.normalized * velocidad * Time.deltaTime, Space.World);
 
@@ -43,6 +92,9 @@ public class Movimiento_Aliodos : MonoBehaviour
             // Establece que el jefe ya no est� en combate.
             esta_en_combate = false;
         }
+
+         //19.53277
+
         
     }
 
@@ -65,6 +117,12 @@ public class Movimiento_Aliodos : MonoBehaviour
     velocidad = 0f;
 }
 
+void move()
+{
+    // Interrompi il movimento impostando la velocità a zero
+    velocidad = 3f;
+}
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -73,6 +131,7 @@ public class Movimiento_Aliodos : MonoBehaviour
         {
             esta_en_combate = true;
             aliadoIdentificado = collision.gameObject;
+            StopMovement();
         }
     }
 
@@ -80,6 +139,7 @@ public class Movimiento_Aliodos : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigos")
         {
+            move();
             aliadoIdentificado = null;//Si el objeto con el que se paro de colosionar es Aliado. Es null, lo cual significa que
             // Esto indica que este objeto ya no est� en contacto con el objeto "Aliado".
             esta_en_combate = false;
