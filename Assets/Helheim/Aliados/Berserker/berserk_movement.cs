@@ -29,11 +29,11 @@ public class Movimiento_Berserk : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemigo")//Habra que hacer alguna funcion que al chocar devuelva el tag del objeto 
-                                                   //Asi establecer que da�o recibe el jefe.
-        {
+        if (collision.gameObject.tag == "Enemigo"){
             esta_en_combate = true;
             aliadoIdentificado = collision.gameObject;
+        }else if(collision.gameObject.tag=="Entorno"){
+            Destroy(gameObject);
         }
     }
 

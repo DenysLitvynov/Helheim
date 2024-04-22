@@ -23,7 +23,7 @@ public class SpawnArrow : MonoBehaviour
             // Genera una nuova freccia istanziando il prefabbricato nella posizione del generatore
             GameObject arrow = Instantiate(arrowPrefab, transform.position, transform.rotation);
              // Ajusta la rotación del objeto para que apunte hacia la derecha
-            arrow.transform.Rotate(0, -180, 0); // Rotación de -90 grados sobre el eje Z para que apunte hacia la derecha
+            arrow.transform.Rotate(0, 180, 0); // Rotación de -90 grados sobre el eje Z para que apunte hacia la derecha
         }
         
     }

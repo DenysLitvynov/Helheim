@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class SalirAInicio : MonoBehaviour
 {
-    // Método para cambiar de escena al hacer clic en el botón
+    // Mï¿½todo para cambiar de escena al hacer clic en el botï¿½n
     public void OnClickHandler()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("MenuInicial");
 
         Debug.Log("Cambio de pantalla!");
 

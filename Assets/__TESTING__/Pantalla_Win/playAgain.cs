@@ -6,14 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class CambiarLaEscena : MonoBehaviour
 {
-    // Método para cambiar de escena al hacer clic en el botón
-    public void OnClickHandler()
+    // Mï¿½todo para cambiar de escena al hacer clic en el botï¿½n
+    public void Quit()
+    {
+            SceneManager.LoadScene("MenuInicial");
+
+        Debug.Log("Cambio de pantalla!");
+
+    }
+    public void PlayAgain()
     {
             SceneManager.LoadScene("EscenaFinal");
 
         Debug.Log("Cambio de pantalla!");
 
-        }
-       
+    }  
    
 }

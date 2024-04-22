@@ -441,8 +441,7 @@ GameObject:
   - component: {fileID: 7559535917773345733}
   - component: {fileID: 1242979859344640327}
   - component: {fileID: 2097530402022438228}
-  - component: {fileID: 8677512047496802432}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Berserker
   m_TagString: Personaje
   m_Icon: {fileID: 0}
@@ -504,7 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combate_aliado: 0
+  combate_enemigo: 0
   vida_Maxima: 600
   vida: 600
   dps: 700
@@ -522,20 +521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 7
   esta_en_combate: 0
-  colocado: 1
---- !u!114 &8677512047496802432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4522584218602092892}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbecde8b536c32e46964e2badc83e55e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiempoEnMilisegundos: 2600
+  colocado: 0
 --- !u!1 &5704213626543634076
 GameObject:
   m_ObjectHideFlags: 0

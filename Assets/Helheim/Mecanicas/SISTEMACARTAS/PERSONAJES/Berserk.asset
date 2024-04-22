@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Berserk
   m_EditorClassIdentifier: 
   characterIcon: {fileID: 2800000, guid: 5980d60e1528d23469844d61b1033bb2, type: 3}
-  characterSprite: {fileID: 7892696425338371119, guid: e60659fd51848414a888b08682a80de4, type: 3}
+  characterSprite: {fileID: 4522584218602092892, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
   panelCanvas: {fileID: 1744721947743016550, guid: f168f7a9e77b591438597826b4055608, type: 3}
   levelCard: {fileID: 21300000, guid: ec94a1cde23bc1e48ac7446d2a26a1b1, type: 3}
   nombre: Berserk
