@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -435,7 +435,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5822942822335512138, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
   m_PrefabInstance: {fileID: 1463897074}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2004056540308949025
+--- !u!1001 &1241018221734866454
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -443,55 +443,63 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.36
+    - target: {fileID: 1242979859344640327, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
+      propertyPath: vida
+      value: 1000
       objectReference: {fileID: 0}
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
+    - target: {fileID: 1242979859344640327, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
+      propertyPath: vida_Maxima
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522584218602092892, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
+      propertyPath: m_Name
+      value: Berserker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 8.1
       objectReference: {fileID: 0}
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.02
+      value: -6.93
       objectReference: {fileID: 0}
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.012719433
       objectReference: {fileID: 0}
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.9999191
       objectReference: {fileID: 0}
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 178.542
       objectReference: {fileID: 0}
-    - target: {fileID: 420311746499139349, guid: e60659fd51848414a888b08682a80de4, type: 3}
+    - target: {fileID: 5667017286026651246, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892696425338371119, guid: e60659fd51848414a888b08682a80de4, type: 3}
-      propertyPath: m_Name
-      value: Berserker
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e60659fd51848414a888b08682a80de4, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -499,4 +507,4 @@ SceneRoots:
   - {fileID: 926342531}
   - {fileID: 1296739163}
   - {fileID: 1463897074}
-  - {fileID: 2004056540308949025}
+  - {fileID: 1241018221734866454}
