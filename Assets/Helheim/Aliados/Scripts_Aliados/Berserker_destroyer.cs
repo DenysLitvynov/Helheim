@@ -23,7 +23,7 @@ public class Berserker_destroyer : MonoBehaviour
         }
         else
         {
-            // El objeto se está moviendo, actualizar la posición anterior
+            // El objeto se estï¿½ moviendo, actualizar la posiciï¿½n anterior
             posicionAnterior = transform.position;
         }
     }
