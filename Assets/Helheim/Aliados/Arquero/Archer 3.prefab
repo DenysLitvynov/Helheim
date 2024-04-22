@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddb9e89fcd2560c09f3262ce41c5e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowPrefab: {fileID: 0}
+  arrowPrefab: {fileID: 1937487355970088736, guid: b2689b5abe9e711b4a07f438f949f6ca, type: 3}
   spawnInterval: 3
   colocado: 0
 --- !u!114 &6619400846910469475
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combate_aliado: 0
+  combate_enemigo: 0
   vida_Maxima: 50
   vida: 50
   dps: 5
@@ -104,7 +104,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5820172462050756918}
-  - component: {fileID: 6489247234214992924}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -127,21 +126,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8729056292349419928}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
---- !u!114 &6489247234214992924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4165013011120615240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cddb9e89fcd2560c09f3262ce41c5e6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arrowPrefab: {fileID: 1937487355970088736, guid: b2689b5abe9e711b4a07f438f949f6ca, type: 3}
-  spawnInterval: 3
-  colocado: 1
 --- !u!1 &4684016669180331006
 GameObject:
   m_ObjectHideFlags: 0
