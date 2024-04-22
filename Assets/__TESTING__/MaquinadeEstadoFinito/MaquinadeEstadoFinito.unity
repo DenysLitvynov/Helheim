@@ -2014,7 +2014,7 @@ MonoBehaviour:
   combate_aliado: 0
   vida_Maxima: 50
   vida: 50
-  dps: 700
+  dps: 50
 --- !u!114 &827910490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2110,7 +2110,7 @@ MonoBehaviour:
   combate_aliado: 0
   vida_Maxima: 50
   vida: 50
-  dps: 700
+  dps: 50
 --- !u!114 &830213562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3149,7 +3149,7 @@ MonoBehaviour:
   combate_aliado: 0
   vida_Maxima: 50
   vida: 50
-  dps: 700
+  dps: 50
 --- !u!114 &1251437410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3560,7 +3560,7 @@ MonoBehaviour:
   combate_aliado: 0
   vida_Maxima: 50
   vida: 50
-  dps: 700
+  dps: 50
 --- !u!114 &1433697858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4679,7 +4679,7 @@ MonoBehaviour:
   combate_aliado: 0
   vida_Maxima: 50
   vida: 50
-  dps: 700
+  dps: 50
 --- !u!114 &1903053734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5311,7 +5311,7 @@ MonoBehaviour:
   combate_aliado: 0
   vida_Maxima: 50
   vida: 50
-  dps: 700
+  dps: 50
 --- !u!114 &2095723948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6434,7 +6434,7 @@ MonoBehaviour:
   combate_aliado: 0
   vida_Maxima: 50
   vida: 50
-  dps: 700
+  dps: 50
 --- !u!4 &6624775690158982062
 Transform:
   m_ObjectHideFlags: 0
