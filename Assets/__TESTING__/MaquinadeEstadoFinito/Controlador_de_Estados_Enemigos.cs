@@ -19,18 +19,17 @@ public class Controlador_de_Estados : MonoBehaviour
     public float velocidad = 10f;
     public float vidaMaxima;
     public float dano;
-    public float dano_Recibido;
     //========================================================================
 
     void Start() {
-
+        //ASIGNACIONES ESTADO MOVIMIENTO
         int numeroAleatorio = UnityEngine.Random.Range(1, 9);
         estadoMovimiento.velocidad = velocidad;
+        estadoMovimiento.filaSelecionada = numeroAleatorio;
+
+        //ASIGNACIONES ESTADO COMBATE
         estadoCombate.vida = vidaMaxima;
         estadoCombate.vidaMaxima = vidaMaxima;
-        estadoCombate.dano_recibido = dano_Recibido;
-
-        estadoMovimiento.filaSelecionada = numeroAleatorio;
 
         //Inicialiamos el primer estado(en cual empieza)
         estadoActual = estadoMovimiento;
@@ -43,6 +42,7 @@ public class Controlador_de_Estados : MonoBehaviour
     {
         estadoActual.UpdateState(this);
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         estadoActual.OnCollisionEnter(this,collision);
@@ -58,6 +58,4 @@ public class Controlador_de_Estados : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-
 }

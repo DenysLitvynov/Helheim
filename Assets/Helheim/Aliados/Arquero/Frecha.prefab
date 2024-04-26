@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7735807853294698185}
   - component: {fileID: 5843132573484091944}
   - component: {fileID: 1131232517314612854}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Frecha
   m_TagString: Aliado
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 6122517084910106634}
   - component: {fileID: 5048487354583328677}
   - component: {fileID: 6198208623821391045}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

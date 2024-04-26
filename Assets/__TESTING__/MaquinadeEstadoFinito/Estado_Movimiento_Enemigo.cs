@@ -10,19 +10,15 @@ public class Estado_Movimiento_Enemigo : Estado_Base_Enemigo
     private Transform target;
     private Waypoints caminos;
     private int waypointIndex = 0;
-    public bool esta_en_combate;
-    private GameObject aliadoIdentificado;
     public int filaSelecionada;
+    private Movimento_Frecha frecha;
     
-
-
     public override void EnterState(Controlador_de_Estados enemigo)//el start del estado
     {
         Debug.Log("EMPEZANDO MOVIMIENTO");
         GameObject objWaypoints = GameObject.Find("LINEA" + filaSelecionada);
         caminos = objWaypoints.GetComponent<Waypoints>();
         target = caminos.points[waypointIndex];
-       
     }
 
     public override void UpdateState(Controlador_de_Estados enemigo)//el update del estado
@@ -35,20 +31,36 @@ public class Estado_Movimiento_Enemigo : Estado_Base_Enemigo
             GetNextWaypoint(enemigo.gameObject);
         }
 
-        if (esta_en_combate==true){ enemigo.CambiarEstado(enemigo.estadoCombate); }
     }
-
 
     public override void OnCollisionEnter(Controlador_de_Estados enemigo, Collision collision)
     {
-
-        if (collision.gameObject.CompareTag("Aliado"))//Habra que hacer alguna funcion que al chocar devuelva el tag del objeto 
-                                                 //Asi establecer que da?o recibe el jefe.
+        if (collision.gameObject.CompareTag("Aliado"))
         {
-            esta_en_combate = true;
-            aliadoIdentificado = collision.gameObject;
+            enemigo.CambiarEstado(enemigo.estadoCombate);
         }
+        else if (collision.gameObject.CompareTag("Flecha"))
+        {
+            Debug.Log("Flecha");
+            frecha = collision.gameObject.GetComponent<Movimento_Frecha>();
+            enemigo.estadoCombate.recibirDano(enemigo,frecha.dps);
+        }
+        /*
+           if (collision.gameObject.layer == LayerMask.NameToLayer("Flecha"))
+           {
+               frecha = collision.gameObject.GetComponent<Movimento_Frecha>();
+               // Obtiene una referencia al componente Estado_combate_enemigo
+               enemigo.estadoCombate.recibirDano(frecha.dps, enemigo);
+               /*
+               Debug.Log("DAÑO DE LA FLECHA:" +enemigo.estadoCombate.dano_recibido);
+               Debug.Log("VIDA ACTUAL:" + enemigo.estadoCombate.vida);
 
+           }
+           else
+           {
+               enemigo.CambiarEstado(enemigo.estadoCombate);
+           }
+           */
     }
 
     void GetNextWaypoint(GameObject gameObject)
