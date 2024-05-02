@@ -7,25 +7,27 @@ public class Estado_muerto_enemigo : Estado_Base_Enemigo
     public CharacterCardManager cartas;
     public CharacterCardScriptableObject martillo;
     public CharacterCardScriptableObject berserk;
+
     public override void EnterState(Controlador_de_Estados enemigo)
     {
         Debug.Log("HOLA  DESDE EL ESTADO MUERTO");
         enemigo.destruir();
         GameObject characterManagerObject = GameObject.Find("Game Manager");
         cartas = characterManagerObject.GetComponent<CharacterCardManager>();
+        //berserk= Resources.Load<CharacterCardScriptableObject>("Berserk");
+        //martillo = Resources.Load<CharacterCardScriptableObject>("Mjolnir");
 
-
-    }
-
-    public override void UpdateState(Controlador_de_Estados enemigo)
-    {
-
-    }
-
-    public override void OnCollisionEnter(Controlador_de_Estados enemigo, Collision collision)
-    {
+        if (DropCarta())
+        {
+            cartaAleatoria();
+        }
 
     }
+
+    public override void UpdateState(Controlador_de_Estados enemigo) {}
+
+    public override void OnCollisionEnter(Controlador_de_Estados enemigo, Collision collision){}
+
     //----------------------------------------------------------------------------
     //DROPEO DE CARTAS
     //----------------------------------------------------------------------------

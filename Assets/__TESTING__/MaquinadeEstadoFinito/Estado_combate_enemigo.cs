@@ -29,7 +29,7 @@ public class Estado_combate_enemigo : Estado_Base_Enemigo
         else
         {
             recibirDano(enemigo, aliado.dps);
-            Debug.Log("VIDA:" +vida);
+            //Debug.Log("VIDA:" +vida);
         }
     }
     public override void OnCollisionEnter(Controlador_de_Estados enemigo, Collision collision)
@@ -49,7 +49,16 @@ public class Estado_combate_enemigo : Estado_Base_Enemigo
     public void recibirDano(Controlador_de_Estados enemigo,float dano_recibido)
     {
         vida -= dano_recibido * Time.deltaTime;
-        Debug.Log("Dano : " + dano_recibido);
+        //Debug.Log("Dano : " + dano_recibido);
+
+        if (dano_recibido==35f)
+        {
+            Debug.Log("VIDA RESTADA POR 35: " + vida);
+        }
+        else
+        {
+            Debug.Log("VIDA RESTADA POR OTROS: " + vida);
+        }
         if (vida <= 0 || dano_recibido >= vidaMaxima)
         {
             enemigo.CambiarEstado(enemigo.estadoMuerto);

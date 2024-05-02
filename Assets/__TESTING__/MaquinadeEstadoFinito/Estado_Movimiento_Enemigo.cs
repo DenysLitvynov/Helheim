@@ -16,7 +16,7 @@ public class Estado_Movimiento_Enemigo : Estado_Base_Enemigo
     public override void EnterState(Controlador_de_Estados enemigo)//el start del estado
     {
         Debug.Log("EMPEZANDO MOVIMIENTO");
-        GameObject objWaypoints = GameObject.Find("LINEA" + filaSelecionada);
+        GameObject objWaypoints = GameObject.Find("LINEA" +3);//fila selecionada
         caminos = objWaypoints.GetComponent<Waypoints>();
         target = caminos.points[waypointIndex];
     }
@@ -41,9 +41,9 @@ public class Estado_Movimiento_Enemigo : Estado_Base_Enemigo
         }
         else if (collision.gameObject.CompareTag("Flecha"))
         {
-            Debug.Log("Flecha");
             frecha = collision.gameObject.GetComponent<Movimento_Frecha>();
             enemigo.estadoCombate.recibirDano(enemigo,frecha.dps);
+            Debug.Log("VIDA PERDIDA EN MOVIMIENTO:"+enemigo.estadoCombate.vida);
         }
         /*
            if (collision.gameObject.layer == LayerMask.NameToLayer("Flecha"))
