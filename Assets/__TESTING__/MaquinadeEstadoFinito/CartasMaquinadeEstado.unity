@@ -143,6 +143,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &2000971 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9175225400437393802, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -163,6 +165,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &6540395
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +296,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &22344184
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +426,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &38010287
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +463,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!65 &38010289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -647,6 +657,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &63471490
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +906,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!65 &70990549
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1083,6 +1097,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &99485184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6049879326073581587, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -1103,6 +1119,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &105003138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1156,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!65 &105003140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1222,6 +1242,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &114276503 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2105951755578490084, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -1242,6 +1264,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &131514517 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5704026786183845802, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -1340,6 +1364,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &150907651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,6 +1491,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &166668790 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 918300328591942674, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -1485,6 +1513,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &183358379 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 182876344570898162, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -1505,6 +1535,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &196829644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,6 +1572,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!65 &196829646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1624,6 +1658,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &244376731 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7202350151861277289, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -1644,6 +1680,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &257611642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7651922644479791000, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -1664,6 +1702,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &261601408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,6 +1922,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &325646363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,11 +1954,11 @@ Transform:
   m_GameObject: {fileID: 325646363}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.43, y: 8.02, z: -7.1}
-  m_LocalScale: {x: 4.0499997, y: 1.643, z: 4.9365997}
+  m_LocalPosition: {x: -1102.2711, y: -453.0952, z: -18.099174}
+  m_LocalScale: {x: 10.161898, y: 4.122469, z: 12.386476}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1208889077}
+  m_Father: {fileID: 1613273063}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &325646365
 MonoBehaviour:
@@ -2053,6 +2095,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &344569141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,6 +2226,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &361355234 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6751891333672169485, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -2202,6 +2248,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &410570183 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 759249781073977560, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -2222,6 +2270,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &433599731 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4093582081856916796, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -2242,6 +2292,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &435556086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5367259719396201691, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -2262,6 +2314,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &456318155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4157848248182398494, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -2282,6 +2336,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &457627972 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4818892163008179276, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -2485,6 +2541,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &482541910 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5334569189267074146, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -2505,6 +2563,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &493486495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2676,6 +2736,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &514829055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,6 +2826,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &558002202
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3174,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &601957457 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2612617420485960330, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -3130,6 +3196,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &608269421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8019433668850772587, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -3150,6 +3218,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &616623396
 GameObject:
   m_ObjectHideFlags: 0
@@ -3185,6 +3255,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!65 &616623398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3347,6 +3419,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &675938107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6609322678450168233, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -3367,6 +3441,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1001 &677641034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4357,9 +4433,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7861490998036516486, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       insertIndex: -1
       addedObject: {fileID: 711202360}
-    - targetCorrespondingSourceObject: {fileID: 7861490998036516486, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 325646364}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
 --- !u!1 &685334025 stripped
@@ -4382,6 +4455,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &690083620 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4916499073930613666, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -4402,6 +4477,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &693358118 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7658897862442892231, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -4422,6 +4499,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &701853148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,6 +4645,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!65 &704901034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4744,6 +4825,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &711202354
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,6 +4998,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &730133689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1593384579389011112, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -4935,6 +5020,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &739706042 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4107969882873584315, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -4955,6 +5042,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &751538288
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,6 +5172,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &759081676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5991678549162589966, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5103,6 +5194,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &759147215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 996530337637418328, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5123,6 +5216,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &766531113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9171799508990891016, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5143,6 +5238,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &766620062
 GameObject:
   m_ObjectHideFlags: 0
@@ -5270,6 +5367,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &774100155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4888649194249937967, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5290,6 +5389,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &779920894 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8544818558956258493, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5310,6 +5411,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &799644224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8483745530186164792, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5330,6 +5433,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &801372728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9050380055637430489, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5350,6 +5455,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &805924606 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7070620202488169513, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5370,6 +5477,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &820251599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8368820414925950107, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5390,6 +5499,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &827599736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1121200674347007760, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5410,6 +5521,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &829996739
 GameObject:
   m_ObjectHideFlags: 0
@@ -5539,6 +5652,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &839305293
 GameObject:
   m_ObjectHideFlags: 0
@@ -5668,6 +5783,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &853181043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4029818627966338006, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5688,6 +5805,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &854517092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8826827630340962593, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5708,6 +5827,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &908467407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5485671075925737776, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5728,6 +5849,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &911921516
 GameObject:
   m_ObjectHideFlags: 0
@@ -5855,6 +5978,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &957050722 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5711227295778070576, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -5875,6 +6000,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -6070,6 +6197,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &982236582 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5812088264263573919, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6090,6 +6219,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &999042041 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6799325108758702779, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6110,6 +6241,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1039613997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 475042983001413382, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6130,6 +6263,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1042710526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6528589666222411425, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6150,6 +6285,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1053086894
 GameObject:
   m_ObjectHideFlags: 0
@@ -6278,6 +6415,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1059052612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4198498916259540899, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6298,6 +6437,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1059306991
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,6 +6605,7 @@ MonoBehaviour:
   nombre: 
   descripcion: 
   cooldown: 0
+  colocados: 0
 --- !u!4 &1063901279
 Transform:
   m_ObjectHideFlags: 0
@@ -6499,6 +6641,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1075183507 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4105643630710180995, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6519,6 +6663,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1077536698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8769182673325601118, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6539,6 +6685,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1090271007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4123799585327725115, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6769,6 +6917,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1137597583 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 782860327752301660, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6789,6 +6939,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1155582726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5879716502563318411, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6809,6 +6961,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1162018508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1860055275259187408, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6829,6 +6983,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1162394754 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4602157169637180307, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -6849,6 +7005,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1185222681
 GameObject:
   m_ObjectHideFlags: 0
@@ -6983,6 +7141,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1253629572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1500468204477286286, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7003,6 +7163,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1278513909 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7810964077872028768, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7023,6 +7185,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1281361093 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7860354492769224011, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7043,6 +7207,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1282973714
 GameObject:
   m_ObjectHideFlags: 0
@@ -7168,6 +7334,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1300810902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3914755044619993625, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7188,6 +7356,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1311406642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3788072722887238264, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7208,6 +7378,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1343285134 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6719495847378971770, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7228,6 +7400,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1347287043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5468352316453317779, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7248,6 +7422,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1358470850 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1137371205244163013, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
@@ -7273,6 +7449,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1388618319 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8629187666207544682, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7293,6 +7471,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1395685939 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 233144881496353080, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7313,6 +7493,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1398849792 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3396825570012912596, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7333,6 +7515,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1398883035 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4123253456125640302, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7353,6 +7537,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1401315592 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 651170745401877036, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7373,6 +7559,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1428365705 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4043986624784753078, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7393,6 +7581,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1431743036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6927420629419355062, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7413,6 +7603,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1441261128 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2297442672404587680, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7433,6 +7625,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1462361016
 GameObject:
   m_ObjectHideFlags: 0
@@ -7468,6 +7662,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!65 &1462361018
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7659,6 +7855,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1486329595 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4769586706726050798, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7679,6 +7877,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1486468586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5042379185801143946, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7699,6 +7899,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1500638063 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2761126420077568667, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7719,6 +7921,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1511031620
 GameObject:
   m_ObjectHideFlags: 0
@@ -7844,6 +8048,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1515877081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8602157202059209076, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
@@ -7869,6 +8075,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1524420903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2487028629938837026, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7889,6 +8097,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1531041898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1062147772713601113, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -7909,6 +8119,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1553421312
 GameObject:
   m_ObjectHideFlags: 0
@@ -8222,6 +8434,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1580535494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3864426161211086772, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -8242,6 +8456,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1586792765 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6230249040155484202, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -8340,6 +8556,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1595658208 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2881696698194943745, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -8360,6 +8578,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1595763797 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6795115164164047410, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -8380,6 +8600,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1601205007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3442692837216027059, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -8400,6 +8622,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1608951842 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 294154245480153985, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -8420,6 +8644,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1609644524 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5224587223478182316, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -8440,6 +8666,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1613273059
 GameObject:
   m_ObjectHideFlags: 0
@@ -8537,6 +8765,7 @@ RectTransform:
   - {fileID: 279622625}
   - {fileID: 1943100182}
   - {fileID: 1099145504}
+  - {fileID: 325646364}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8564,6 +8793,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1624922774
 GameObject:
   m_ObjectHideFlags: 0
@@ -8802,6 +9033,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1680522450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6395793588231291855, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -8822,6 +9055,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1697831736
 GameObject:
   m_ObjectHideFlags: 0
@@ -9056,6 +9291,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1751892845 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8276293408183548157, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
@@ -9081,6 +9318,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1778732979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3327233636280912178, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -9101,6 +9340,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1804330144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 29914637213464101, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -9121,6 +9362,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1806135534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4678595600022003846, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -9141,6 +9384,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1807091153 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1257484435611904548, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -9161,6 +9406,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1001 &1808707731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9357,6 +9604,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1893100006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3808345095530305412, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
@@ -9382,6 +9631,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1915088380
 GameObject:
   m_ObjectHideFlags: 0
@@ -9570,6 +9821,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1942582113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7357555793037381158, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -9590,6 +9843,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1943100181
 GameObject:
   m_ObjectHideFlags: 0
@@ -9686,6 +9941,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1968241063 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2907100154762212977, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -9706,6 +9963,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1972987680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4432558827822168708, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -9726,6 +9985,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &1990911833
 GameObject:
   m_ObjectHideFlags: 0
@@ -9761,6 +10022,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!65 &1990911835
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9845,6 +10108,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &2014876489
 GameObject:
   m_ObjectHideFlags: 0
@@ -9880,6 +10145,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!65 &2014876491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10396,6 +10663,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &2076959415 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8762572007908515349, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
@@ -10416,6 +10685,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!224 &2079428028 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7120862996550157891, guid: f168f7a9e77b591438597826b4055608, type: 3}
@@ -10441,6 +10712,8 @@ MonoBehaviour:
   tiempoPasado: 0
   character: {fileID: 0}
   colocandoPersoanje: 0
+  slotActual: {fileID: 0}
+  characterMov: {fileID: 0}
 --- !u!1 &2082426591
 GameObject:
   m_ObjectHideFlags: 0
@@ -10679,6 +10952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PausePanel: {fileID: 2099125054}
+  mainMenuSceneName: MenuInicial
 --- !u!4 &5214477948310850
 Transform:
   m_ObjectHideFlags: 0
@@ -10942,6 +11216,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 40
   dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!1001 &2510731566485502684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10953,6 +11229,10 @@ PrefabInstance:
     - target: {fileID: 1358312326283417961, guid: c258d04e80766a449bcfcea0cb136d70, type: 3}
       propertyPath: m_Name
       value: Canvas Pausa
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358312326283417961, guid: c258d04e80766a449bcfcea0cb136d70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2531725221247702440, guid: c258d04e80766a449bcfcea0cb136d70, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -12486,6 +12766,10 @@ PrefabInstance:
     - target: {fileID: 8498402108908366098, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
       propertyPath: m_Name
       value: CasillasPosicionamiento
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498402108908366098, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8544818558956258493, guid: 48c0724a32946b14eb23eea263ca2419, type: 3}
       propertyPath: m_Name

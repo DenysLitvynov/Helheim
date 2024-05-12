@@ -19,6 +19,10 @@ public class Controlador_de_Estados : MonoBehaviour
     public float velocidad = 10f;
     public float vidaMaxima;
     public float dano;
+
+    //DROPS
+    public CharacterCardScriptableObject martillo;
+    public CharacterCardScriptableObject berserk;
     //========================================================================
 
     void Start() {
@@ -30,6 +34,10 @@ public class Controlador_de_Estados : MonoBehaviour
         //ASIGNACIONES ESTADO COMBATE
         estadoCombate.vida = vidaMaxima;
         estadoCombate.vidaMaxima = vidaMaxima;
+
+        //ASIGNACION PARA ESTADO MUERTO(PARA CONTROLAR EL DROPEO DE CARTAS)
+          estadoMuerto.berserk = berserk;
+          estadoMuerto.martillo = martillo;
 
         //Inicialiamos el primer estado(en cual empieza)
         estadoActual = estadoMovimiento;

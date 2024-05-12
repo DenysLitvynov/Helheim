@@ -14,8 +14,8 @@ public class Estado_muerto_enemigo : Estado_Base_Enemigo
         enemigo.destruir();
         GameObject characterManagerObject = GameObject.Find("Game Manager");
         cartas = characterManagerObject.GetComponent<CharacterCardManager>();
-        //berserk= Resources.Load<CharacterCardScriptableObject>("Berserk");
-        //martillo = Resources.Load<CharacterCardScriptableObject>("Mjolnir");
+        berserk= Resources.Load<CharacterCardScriptableObject>("Berserk");
+        martillo = Resources.Load<CharacterCardScriptableObject>("Mjolnir");
 
         if (DropCarta())
         {
