@@ -521,6 +521,7 @@ MonoBehaviour:
   velocita: 1.5
   direzione: {x: 8, y: 1, z: -1}
   dps: 35
+  delay: 4
 --- !u!136 &513759616
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -910,6 +911,7 @@ MonoBehaviour:
   velocita: 1.5
   direzione: {x: 8, y: 1, z: -1}
   dps: 35
+  delay: 4
 --- !u!136 &888973092
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1142,7 +1144,7 @@ Transform:
   m_GameObject: {fileID: 1045545718}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 5.11, y: 15.19, z: -8.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1477,7 +1479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combate_aliado: 0
+  combate_enemigo: 0
   vida_Maxima: 50
   vida: 50
   dps: 5
@@ -2683,6 +2685,7 @@ MonoBehaviour:
   velocita: 1.5
   direzione: {x: 8, y: 1, z: -1}
   dps: 10
+  delay: 4
 --- !u!136 &2969246108039799715
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3107,6 +3110,8 @@ MonoBehaviour:
   velocidad: 5
   vidaMaxima: 500
   dano: 0
+  martillo: {fileID: 0}
+  berserk: {fileID: 0}
 --- !u!4 &3979281464285480700
 Transform:
   m_ObjectHideFlags: 0
@@ -4451,7 +4456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combate_aliado: 0
+  combate_enemigo: 0
   vida_Maxima: 50
   vida: 50
   dps: 50
@@ -4467,7 +4472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combate_aliado: 0
+  combate_enemigo: 0
   vida_Maxima: 50
   vida: 50
   dps: 5
@@ -4483,7 +4488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combate_aliado: 0
+  combate_enemigo: 0
   vida_Maxima: 50
   vida: 50
   dps: 5
@@ -4499,7 +4504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combate_aliado: 0
+  combate_enemigo: 0
   vida_Maxima: 50
   vida: 50
   dps: 5
@@ -5673,6 +5678,8 @@ MonoBehaviour:
   velocidad: 0.4
   vidaMaxima: 700
   dano: 0
+  martillo: {fileID: 0}
+  berserk: {fileID: 0}
 --- !u!4 &8835340562392195205
 Transform:
   m_ObjectHideFlags: 0
