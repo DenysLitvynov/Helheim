@@ -16,7 +16,7 @@ public class Estado_Movimiento_Enemigo : Estado_Base_Enemigo
     public override void EnterState(Controlador_de_Estados enemigo)//el start del estado
     {
         Debug.Log("EMPEZANDO MOVIMIENTO");
-        GameObject objWaypoints = GameObject.Find("LINEA" +3);//fila selecionada
+        GameObject objWaypoints = GameObject.Find("LINEA" + filaSelecionada);//fila selecionada
         caminos = objWaypoints.GetComponent<Waypoints>();
         target = caminos.points[waypointIndex];
     }
