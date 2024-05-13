@@ -16,7 +16,7 @@ public class Estado_combate_enemigo : Estado_Base_Enemigo
 
     public override void EnterState(Controlador_de_Estados enemigo)
     {
-        Debug.Log("HOLA DESDE EL ESTADO COMBATE");
+        vida = vidaMaxima;
     }
 
     public override void UpdateState(Controlador_de_Estados enemigo)

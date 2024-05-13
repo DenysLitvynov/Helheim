@@ -3526,7 +3526,7 @@ GameObject:
   - component: {fileID: 544037138}
   - component: {fileID: 544037137}
   - component: {fileID: 544037136}
-  - component: {fileID: 544037135}
+  - component: {fileID: 544037139}
   m_Layer: 0
   m_Name: HelWarrior (4)
   m_TagString: Enemigo
@@ -3534,24 +3534,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &544037135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544037134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f0111af0a8456429ae983e97d21f2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 0
-  velocidad: 5
-  vidaMaxima: 300
-  dano: 50
-  martillo: {fileID: 0}
-  berserk: {fileID: 0}
 --- !u!65 &544037136
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3616,6 +3598,23 @@ Transform:
   - {fileID: 37703656}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &544037139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544037134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f98a85b28b5af2419dcc2af02a24666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 10
+  vidaMaxima: 100
+  dano: 50
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!1 &553946365
 GameObject:
   m_ObjectHideFlags: 0
@@ -3837,7 +3836,7 @@ GameObject:
   - component: {fileID: 575568348}
   - component: {fileID: 575568347}
   - component: {fileID: 575568346}
-  - component: {fileID: 575568345}
+  - component: {fileID: 575568349}
   m_Layer: 0
   m_Name: HelWarrior (3)
   m_TagString: Enemigo
@@ -3845,24 +3844,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &575568345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575568344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f0111af0a8456429ae983e97d21f2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 0
-  velocidad: 5
-  vidaMaxima: 300
-  dano: 100
-  martillo: {fileID: 0}
-  berserk: {fileID: 0}
 --- !u!65 &575568346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3927,6 +3908,23 @@ Transform:
   - {fileID: 145861875}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &575568349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575568344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f98a85b28b5af2419dcc2af02a24666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 10
+  vidaMaxima: 800
+  dano: 800
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!1 &692868691
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,7 +4519,7 @@ GameObject:
   - component: {fileID: 796710454}
   - component: {fileID: 796710453}
   - component: {fileID: 796710452}
-  - component: {fileID: 796710451}
+  - component: {fileID: 796710455}
   m_Layer: 0
   m_Name: HelWarrior (1)
   m_TagString: Enemigo
@@ -4529,24 +4527,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &796710451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796710450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f0111af0a8456429ae983e97d21f2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 0
-  velocidad: 5
-  vidaMaxima: 300
-  dano: 100
-  martillo: {fileID: 0}
-  berserk: {fileID: 0}
 --- !u!65 &796710452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4611,6 +4591,23 @@ Transform:
   - {fileID: 71025980}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &796710455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796710450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f98a85b28b5af2419dcc2af02a24666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 10
+  vidaMaxima: 100
+  dano: 0
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!1 &823970814
 GameObject:
   m_ObjectHideFlags: 0
@@ -10962,7 +10959,7 @@ GameObject:
   - component: {fileID: 1727746724}
   - component: {fileID: 1727746723}
   - component: {fileID: 1727746722}
-  - component: {fileID: 1727746721}
+  - component: {fileID: 1727746725}
   m_Layer: 0
   m_Name: HelWarrior (2)
   m_TagString: Enemigo
@@ -10970,24 +10967,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1727746721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727746720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f0111af0a8456429ae983e97d21f2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 0
-  velocidad: 5
-  vidaMaxima: 300
-  dano: 100
-  martillo: {fileID: 0}
-  berserk: {fileID: 0}
 --- !u!65 &1727746722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11052,6 +11031,23 @@ Transform:
   - {fileID: 882633283}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1727746725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727746720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f98a85b28b5af2419dcc2af02a24666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 10
+  vidaMaxima: 800
+  dano: 800
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!1 &1831382901
 GameObject:
   m_ObjectHideFlags: 0
@@ -12100,7 +12096,7 @@ GameObject:
   - component: {fileID: 1933680862}
   - component: {fileID: 1933680861}
   - component: {fileID: 1933680860}
-  - component: {fileID: 1933680859}
+  - component: {fileID: 1933680863}
   m_Layer: 0
   m_Name: HelWarrior (5)
   m_TagString: Enemigo
@@ -12108,24 +12104,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1933680859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933680858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f0111af0a8456429ae983e97d21f2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 0
-  velocidad: 5
-  vidaMaxima: 300
-  dano: 50
-  martillo: {fileID: 0}
-  berserk: {fileID: 0}
 --- !u!65 &1933680860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12190,6 +12168,23 @@ Transform:
   - {fileID: 829214843}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1933680863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933680858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f98a85b28b5af2419dcc2af02a24666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 10
+  vidaMaxima: 800
+  dano: 800
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!1 &1953554039
 GameObject:
   m_ObjectHideFlags: 0
@@ -13970,15 +13965,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3924063650172759823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f0111af0a8456429ae983e97d21f2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f98a85b28b5af2419dcc2af02a24666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 0
-  velocidad: 5
-  vidaMaxima: 300
-  dano: 100
-  martillo: {fileID: 0}
-  berserk: {fileID: 0}
+  velocidad: 10
+  vidaMaxima: 800
+  dano: 800
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!23 &4440381397035880602
 MeshRenderer:
   m_ObjectHideFlags: 0

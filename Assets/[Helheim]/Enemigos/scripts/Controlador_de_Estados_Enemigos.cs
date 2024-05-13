@@ -15,9 +15,8 @@ public class Controlador_de_Estados : MonoBehaviour
 
     //========================================================================
     //STATS
-    public float vida = 100f;
     public float velocidad = 10f;
-    public float vidaMaxima;
+    public float vidaMaxima = 100f;
     public float dano;
 
     //DROPS
@@ -32,7 +31,6 @@ public class Controlador_de_Estados : MonoBehaviour
         estadoMovimiento.filaSelecionada = numeroAleatorio;
 
         //ASIGNACIONES ESTADO COMBATE
-        estadoCombate.vida = vidaMaxima;
         estadoCombate.vidaMaxima = vidaMaxima;
 
         //ASIGNACION PARA ESTADO MUERTO(PARA CONTROLAR EL DROPEO DE CARTAS)
