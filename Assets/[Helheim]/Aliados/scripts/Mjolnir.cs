@@ -41,13 +41,13 @@ public class Mjolnir : MonoBehaviour
             {
                 
 
-                Enemigo_stats enemigo = other.GetComponent<Enemigo_stats>();
+                Controlador_de_Estados enemigo = other.GetComponent<Controlador_de_Estados>();
 
                 if(enemigo != null)
                 {
-                    enemigo.vida -= danomartillo;
+                    enemigo.estadoCombate.vida -= danomartillo;
 
-                    if (enemigo.vida <= 0)
+                    if (enemigo.estadoCombate.vida <= 0)
                     {
                         Destroy(other.gameObject);
 
@@ -57,7 +57,7 @@ public class Mjolnir : MonoBehaviour
                     else
                     {
 
-                        Debug.Log( "Enemigo dañado,vida restante " + enemigo.vida.ToString());
+                        //Debug.Log( "Enemigo dañado,vida restante " + enemigo.vida.ToString());
                     }
                 }
             }

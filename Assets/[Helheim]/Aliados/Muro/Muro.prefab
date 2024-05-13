@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8785416760733145509}
-  - component: {fileID: 4399365805260909712}
   - component: {fileID: 173711793516218925}
+  - component: {fileID: 1554936169000852110}
   m_Layer: 0
   m_Name: Muro
   m_TagString: Personaje
@@ -34,19 +34,6 @@ Transform:
   - {fileID: 3209493679594670881}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4399365805260909712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360986445036381433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 561bfaf8ce7593646b807f4e7778626f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 100
 --- !u!54 &173711793516218925
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -74,6 +61,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1554936169000852110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360986445036381433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combate_enemigo: 0
+  vida_Maxima: 50
+  vida: 50
+  dps: 0.01
 --- !u!1 &7022907858010748654
 GameObject:
   m_ObjectHideFlags: 0

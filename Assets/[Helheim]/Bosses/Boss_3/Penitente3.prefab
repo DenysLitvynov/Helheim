@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3021245386363760126}
   - component: {fileID: 2630637971944201640}
   - component: {fileID: 5426230264103420425}
+  - component: {fileID: 3068599062904970065}
   m_Layer: 0
   m_Name: Penitente3
   m_TagString: Enemigo
@@ -108,6 +109,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a9d357ae8146d4d8adc69f11a8deed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3068599062904970065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6147746530071803745}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f98a85b28b5af2419dcc2af02a24666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 1
+  vidaMaxima: 250
+  dano: 35
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!1001 &1798427300850828433
 PrefabInstance:
   m_ObjectHideFlags: 0
