@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7735807853294698185}
   - component: {fileID: 5843132573484091944}
   - component: {fileID: 1131232517314612854}
+  - component: {fileID: 8795729362568859572}
   m_Layer: 7
   m_Name: Frecha
-  m_TagString: Aliado
+  m_TagString: Flecha
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,6 +73,7 @@ MonoBehaviour:
   velocita: 0.5
   direzione: {x: 30, y: 2, z: -1}
   dps: 40
+  delay: 4
 --- !u!54 &8795729362568859572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -111,6 +113,7 @@ GameObject:
   - component: {fileID: 6122517084910106634}
   - component: {fileID: 5048487354583328677}
   - component: {fileID: 6198208623821391045}
+  - component: {fileID: 5893895721020420754}
   m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
