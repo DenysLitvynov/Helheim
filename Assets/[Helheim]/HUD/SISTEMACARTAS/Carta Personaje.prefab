@@ -91,9 +91,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4024be55f19c454488ba158c8a27e294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterCardScriptableObject: {fileID: 0}
-  characterSprite: {fileID: 0}
-  characterPrefab: {fileID: 1761784545550669205, guid: 44585bf723f71234f8f601bf7cc3354d, type: 3}
+  cancelarPanel: {fileID: 7932596070554080951, guid: 0b4aa7bec56b1a04ba460f46a85efc95, type: 3}
+  characterPrefab: {fileID: 7106319363141222854, guid: 22c40bae332392f40991a640215cd721, type: 3}
+  levelCard: {fileID: 0}
+  colocandoPersonaje: 0
+  tiempoEspera: 0
+  nombre: 
+  cartas: {fileID: 0}
 --- !u!1 &4687282137524147117
 GameObject:
   m_ObjectHideFlags: 0
