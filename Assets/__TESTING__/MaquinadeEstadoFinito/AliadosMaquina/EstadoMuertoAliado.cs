@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EstadoMuertoAliado : MonoBehaviour
+public class EstadoMuertoAliado : Estado_Base_ALIADO
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //abstract on each method means we need to define their funcitonality in classes that derive from the base state
+    public override void EnterState(Controlador_De_Estados_ALIADOS aliado) { }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public override void UpdateState(Controlador_De_Estados_ALIADOS alidao) { }
+
+    public override void OnCollisionEnter(Controlador_De_Estados_ALIADOS aliado, Collision collision) { }
 }

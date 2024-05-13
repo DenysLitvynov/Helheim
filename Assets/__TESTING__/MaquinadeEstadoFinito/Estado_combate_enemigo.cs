@@ -10,9 +10,8 @@ public class Estado_combate_enemigo : Estado_Base_Enemigo
     public float vida;
     public float vidaMaxima;
     public float dano_recibido;
-    private float danoTotal;
     //COSAS DE ALIADOS
-    private Aliado_stats aliado;
+    private Controlador_De_Estados_ALIADOS aliado;
     private Movimento_Frecha frecha;
 
     public override void EnterState(Controlador_de_Estados enemigo)
@@ -37,7 +36,7 @@ public class Estado_combate_enemigo : Estado_Base_Enemigo
         if (collision.gameObject.CompareTag("Aliado"))
         {
             // Obtiene una referencia al objeto del aliado
-            aliado = collision.gameObject.GetComponent<Aliado_stats>();
+            aliado = collision.gameObject.GetComponent<Controlador_De_Estados_ALIADOS>();
         }
         else if (collision.gameObject.CompareTag("Flecha")) 
         {

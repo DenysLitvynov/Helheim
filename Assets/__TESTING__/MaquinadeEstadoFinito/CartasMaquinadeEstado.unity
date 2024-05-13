@@ -3516,6 +3516,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Entorno
       objectReference: {fileID: 0}
+    - target: {fileID: 3145667355397604591, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4620723171082480398, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
       propertyPath: _currentWaveIndex
       value: 0

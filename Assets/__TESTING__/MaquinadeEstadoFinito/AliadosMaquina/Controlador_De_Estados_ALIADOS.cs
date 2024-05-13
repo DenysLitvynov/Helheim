@@ -14,22 +14,22 @@ public class Controlador_De_Estados_ALIADOS : MonoBehaviour
 
     //========================================================================
     //STATS
-    public float vida = 100f;
-    public float velocidad = 10f;
-    public float vidaMaxima;
-    public float dano;
+    public float velocidad = 5f;
+    public float vidaMaxima=100f;
+    public float dps;
     //========================================================================
 
     void Start()
     {
-        /*
+        
         //ASIGNACIONES ESTADO COMBATE
         estadoCombate.vida = vidaMaxima;
-        estadoCombate.vidaMaxima = vidaMaxima;
+        estadoCombate.vida_Maxima = vidaMaxima;
 
+        estadoMovimiento.velocidad=velocidad;
         //Inicialiamos el primer estado(en cual empieza)
         estadoActual = estadoMovimiento;
-        */
+        
 
         //"this" es una referencia al contexto(this EXACT monobehavour script)
         estadoActual.EnterState(this);
