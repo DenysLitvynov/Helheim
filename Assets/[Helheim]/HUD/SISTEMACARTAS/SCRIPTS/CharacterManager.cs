@@ -8,9 +8,7 @@ using UnityEngine.Windows;
 public class CharacterManager : MonoBehaviour,IPointerClickHandler
 {
 
-   
-   
-
+    public GameObject panelCanvas;
     public GameObject characterPrefab;
     public Sprite levelCard;
 
@@ -26,7 +24,6 @@ public class CharacterManager : MonoBehaviour,IPointerClickHandler
     {
         GameObject characterManagerObject = GameObject.Find("Game Manager");
         cartas = characterManagerObject.GetComponent<CharacterCardManager>();
-        
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -34,9 +31,12 @@ public class CharacterManager : MonoBehaviour,IPointerClickHandler
        
         if (Time.time - tiempoUltimaColocacion >= tiempoEspera || tiempoUltimaColocacion == Mathf.NegativeInfinity)
         {
-          
+            
             //Sirve para saber si se esta colocando un personaje o no;
             colocandoPersonaje=true;
+            //Desactiva el canvas
+            panelCanvas=GameObject.FindWithTag("CanvasCartas");
+            panelCanvas.SetActive(false);
 
             foreach(SlotsManagerCollider slots in GameObject.FindObjectsOfType<SlotsManagerCollider>()){
                 slots.colocandoPersoanje=true;
