@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 913316551620236238}
   - component: {fileID: 4526310371727803900}
   - component: {fileID: 1545897355034907385}
-  - component: {fileID: 8819123502253947508}
   m_Layer: 0
   m_Name: Penitente1
   m_TagString: Enemigo
@@ -31,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.67, y: 3.84, z: -1.89}
-  m_LocalScale: {x: 0.8309202, y: 0.8309202, z: 0.8309202}
+  m_LocalScale: {x: 0.5924701, y: 0.5924701, z: 0.5924701}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4511400355432774677}
@@ -109,23 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a9d357ae8146d4d8adc69f11a8deed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8819123502253947508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2452543340082555685}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f98a85b28b5af2419dcc2af02a24666, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 1
-  vidaMaxima: 250
-  dano: 35
-  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
-  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!1001 &4112085277702970366
 PrefabInstance:
   m_ObjectHideFlags: 0

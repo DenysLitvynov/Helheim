@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5727678625743995528}
   - component: {fileID: 5544951492302320833}
   - component: {fileID: 7340291195748378519}
-  - component: {fileID: 5596742567596730328}
   m_Layer: 0
   m_Name: Esqueleto_Gigante
   m_TagString: Enemigo
@@ -109,23 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a9d357ae8146d4d8adc69f11a8deed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5596742567596730328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3782844528531234085}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f98a85b28b5af2419dcc2af02a24666, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 1
-  vidaMaxima: 700
-  dano: 20
-  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
-  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!1 &7592642464432664874
 GameObject:
   m_ObjectHideFlags: 0
