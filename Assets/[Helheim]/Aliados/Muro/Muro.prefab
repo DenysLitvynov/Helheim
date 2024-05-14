@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 173711793516218925}
   - component: {fileID: 1554936169000852110}
   - component: {fileID: 7372791927000571147}
+  - component: {fileID: 4760995956077105135}
   m_Layer: 0
   m_Name: Muro
   m_TagString: Personaje
@@ -77,7 +78,7 @@ MonoBehaviour:
   combate_enemigo: 0
   vida_Maxima: 50
   vida: 50
-  dps: 0.01
+  dps: 0
 --- !u!65 &7372791927000571147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -99,6 +100,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.4818943, z: 2.452473}
   m_Center: {x: 6.609596e-11, y: 1.2990909, z: -0.16642363}
+--- !u!114 &4760995956077105135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360986445036381433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52b0f47ce2e8d77e84f3512947a6180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 0
+  esta_en_combate: 0
+  colocado: 0
 --- !u!1001 &1966856931550576877
 PrefabInstance:
   m_ObjectHideFlags: 0

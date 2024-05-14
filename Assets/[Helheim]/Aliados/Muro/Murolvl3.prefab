@@ -158,9 +158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combate_enemigo: 0
-  vida_Maxima: 50
+  vida_Maxima: 200
   vida: 50
-  dps: 0.01
+  dps: 0
 --- !u!65 &7372791927000571147
 BoxCollider:
   m_ObjectHideFlags: 0

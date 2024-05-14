@@ -8,12 +8,14 @@ public class Movimiento_Aliodos : MonoBehaviour
 
     public float velocidad = 5f;
     public bool esta_en_combate = false;
+    private float velocidad2;
     public bool colocado = false;
 
     private GameObject aliadoIdentificado;
 
     private void Start()
     {
+        velocidad2 = velocidad;
     }
 
     private void Update()
@@ -25,7 +27,7 @@ public class Movimiento_Aliodos : MonoBehaviour
             if(xCoordinate>18.53277f){
                 StopMovement();
             }else{
-                velocidad = 3f;
+                velocidad = velocidad2;
             }
         }
         /*
