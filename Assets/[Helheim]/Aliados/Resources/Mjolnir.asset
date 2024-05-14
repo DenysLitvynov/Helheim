@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a802d548ee721bc478a970ffc5ce5cd9, type: 3}
+  m_Name: Mjolnir
+  m_EditorClassIdentifier: 
+  characterIcon: {fileID: 2800000, guid: afacbec88c1f9a443a9ad18117aacde8, type: 3}
+  characterSprite: {fileID: 6528601464902779195, guid: 336aee8b5d1bcbb449529b646fdec6d7, type: 3}
+  panelCanvas: {fileID: 1744721947743016550, guid: f168f7a9e77b591438597826b4055608, type: 3}
+  levelCard: {fileID: 21300000, guid: ec94a1cde23bc1e48ac7446d2a26a1b1, type: 3}
+  nombre: Mjolnir
+  descripcion: Es una carta especial, al aterrizar, fulmina todo lo que se encuentre
+    en su cruz 3x3, donde el martillo cae en el centro a menos que sea un jefe.
+  cooldown: 0
+  colocados: 0

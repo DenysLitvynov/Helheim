@@ -64,6 +64,10 @@ public class Movimiento_Aliodos : MonoBehaviour
             aliadoIdentificado = collision.gameObject;
             StopMovement();
         }
+        else if (collision.gameObject.tag == "Entorno")
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionExit(Collision collision)

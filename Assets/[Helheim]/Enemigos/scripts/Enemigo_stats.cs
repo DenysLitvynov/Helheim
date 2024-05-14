@@ -26,12 +26,10 @@ public class Enemigo_stats : MonoBehaviour
     private void Update()
     {
         if (combate.esta_en_combate == true && aliado != null)
-            {
-                // Accede a la variable dps del aliado
-                recibirDano(aliado.dps);
-            }else if (combate.esta_en_combate == true && frecha != null){
-                recibirDano(frecha.dps);
-            }
+        {
+            // Accede a la variable dps del aliado
+            recibirDano(aliado.dps);
+        }
     }
 
     private void recibirDano(float dano)
@@ -55,9 +53,13 @@ public class Enemigo_stats : MonoBehaviour
         if (collision.gameObject.tag == "Aliado")
         {
             combate.esta_en_combate = true;
-            frecha = collision.gameObject.GetComponent<Movimento_Frecha>();
             // Obtiene una referencia al objeto del aliado
             aliado = collision.gameObject.GetComponent<Aliado_stats>();
+        }
+        else if (collision.gameObject.CompareTag("Flecha"))
+        {
+            frecha = collision.gameObject.GetComponent<Movimento_Frecha>();
+            recibirDano(frecha.dps);
         }
     }
 
