@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1754354683818856916}
   - component: {fileID: 6619400846910469475}
   m_Layer: 7
-  m_Name: Warrior 1
+  m_Name: Warrior 4
   m_TagString: Personaje
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670238640148300106}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.99999976, z: -0.0006524629, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 23.368008, y: 3.84, z: -4.004137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -37,7 +37,7 @@ Transform:
   - {fileID: 3390306306661986262}
   - {fileID: 5586194428093334194}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -180.075, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!54 &5681043869105347648
 Rigidbody:
   m_ObjectHideFlags: 0
