@@ -8739,8 +8739,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.845781, y: 6.3366547, z: 12.535416}
-  m_Center: {x: -4.4228907, y: 2.6683273, z: -3.197791}
+  m_Size: {x: 10.447184, y: 6.3366547, z: 12.535416}
+  m_Center: {x: -4.723592, y: 2.6683273, z: -3.197791}
 --- !u!1 &759360270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4815650012810181372, guid: d77def6766d200f429a933536ae3c40b, type: 3}
@@ -8765,8 +8765,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10.95129, y: 6.935096, z: 6.724689}
+  m_Center: {x: -4.975645, y: 2.967548, z: 0.07497668}
 --- !u!1 &763059347 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3584932663310371598, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
@@ -10958,6 +10958,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: -0.0000076293945, y: 0, z: 0.0000038146973}
+--- !u!1001 &1136031334
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 360986445036381433, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_Name
+      value: Muro3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.500566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785416760733145509, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 183cad9eac7ec90479f2065f58de56e6, type: 3}
 --- !u!1001 &1146553009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15469,12 +15526,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8630236898321658829, guid: c258d04e80766a449bcfcea0cb136d70, type: 3}
       propertyPath: m_text
-      value: QUIT
+      value: EXIT TO MAIN MENU
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630236898321658829, guid: c258d04e80766a449bcfcea0cb136d70, type: 3}
+      propertyPath: m_fontSize
+      value: 19.9
       objectReference: {fileID: 0}
     - target: {fileID: 8630236898321658829, guid: c258d04e80766a449bcfcea0cb136d70, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 8ac00a8b4aa38c148a57aa4405744aeb, type: 2}
+    - target: {fileID: 8630236898321658829, guid: c258d04e80766a449bcfcea0cb136d70, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 19.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8630236898321658829, guid: c258d04e80766a449bcfcea0cb136d70, type: 3}
       propertyPath: m_sharedMaterial
       value: 
@@ -15553,3 +15618,4 @@ SceneRoots:
   - {fileID: 155684985}
   - {fileID: 1477052420}
   - {fileID: 188248129}
+  - {fileID: 1136031334}

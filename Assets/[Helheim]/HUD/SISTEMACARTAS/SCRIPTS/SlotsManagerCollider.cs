@@ -26,7 +26,22 @@ public class SlotsManagerCollider : MonoBehaviour
         // Verificar si se ha presionado cualquier tecla y si se está en modo de colocación
         if (Input.anyKeyDown && colocandoPersoanje)
         {
-            TryPlaceCharacter();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                character = GameObject.FindGameObjectWithTag("Personaje");
+                Destroy(character);
+                foreach (SlotsManagerCollider slots in GameObject.FindObjectsOfType<SlotsManagerCollider>())
+                {
+                    slots.colocandoPersoanje = false;
+                    slots.slotActual = null;
+                }
+
+            }
+            else
+            {
+                TryPlaceCharacter();
+            }
+            
         }
     }
 
