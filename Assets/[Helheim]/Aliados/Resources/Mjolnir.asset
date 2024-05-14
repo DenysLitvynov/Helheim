@@ -20,3 +20,4 @@ MonoBehaviour:
   descripcion: Es una carta especial, al aterrizar, fulmina todo lo que se encuentre
     en su cruz 3x3, donde el martillo cae en el centro a menos que sea un jefe.
   cooldown: 0
+  colocados: 0
