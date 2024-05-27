@@ -14,13 +14,13 @@ public class CambioDeCasa : MonoBehaviour
     {
         float saludActual = vida.vidaActual;
 
-        if (saludActual <= 25)
+        if (saludActual <= 33)
         {
             Casa.SetActive(false);
             CasaEstado2.SetActive(false);
             CasaEstado3.SetActive(true);
         }
-        else if (saludActual <= 50)
+        else if (saludActual <= 66)
         {
             Casa.SetActive(false);
             CasaEstado2.SetActive(true);
