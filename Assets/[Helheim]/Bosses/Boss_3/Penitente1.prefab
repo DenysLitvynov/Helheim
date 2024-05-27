@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4526310371727803900}
   - component: {fileID: 1545897355034907385}
   - component: {fileID: 5217886336129042222}
+  - component: {fileID: 625672004515683503}
   m_Layer: 0
   m_Name: Penitente1
   m_TagString: Enemigo
@@ -51,6 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 3
   esta_en_combate: 0
+  animator: {fileID: 625672004515683503}
 --- !u!54 &913316551620236238
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -94,6 +96,7 @@ MonoBehaviour:
   vida: 250
   dano_enemigo: 35
   cartas: {fileID: 0}
+  particulasMuerte: {fileID: 0}
   martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
   berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!114 &1545897355034907385
@@ -129,6 +132,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.9999999, y: 3.4444373, z: 1.9775311}
   m_Center: {x: 0, y: 1.2222198, z: -0.05051298}
+--- !u!95 &625672004515683503
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2452543340082555685}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 7c580402dda84bb44bf79bbd691f2a3c, type: 3}
+  m_Controller: {fileID: 9100000, guid: af520d3ca0a0e21438fd234beb5b9cc1, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6420586827905036111
 PrefabInstance:
   m_ObjectHideFlags: 0

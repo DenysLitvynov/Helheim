@@ -75,9 +75,9 @@ GameObject:
   - component: {fileID: 4193540477488070375}
   - component: {fileID: -759458937477484992}
   - component: {fileID: 4710616447554038920}
-  - component: {fileID: -9012247748661151284}
   - component: {fileID: 2343017589864112011}
   - component: {fileID: -3921165751929326019}
+  - component: {fileID: 8328216984558058033}
   m_Layer: 0
   m_Name: HelWarrior
   m_TagString: Enemigo
@@ -93,7 +93,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576776858767351060}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.85652375, z: -0, w: -0.5161076}
+  m_LocalRotation: {x: -0, y: -0.7112527, z: -0, w: 0.7029364}
   m_LocalPosition: {x: 13.041451, y: 0, z: 1.295569}
   m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
   m_ConstrainProportionsScale: 0
@@ -101,7 +101,7 @@ Transform:
   - {fileID: 7080011921667976624}
   - {fileID: 6671363636015120787}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -477.857, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.674, z: 0}
 --- !u!54 &4193540477488070375
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   vida: 100
   dano_enemigo: 10
   cartas: {fileID: 0}
+  particulasMuerte: {fileID: 1179168509732900640, guid: 6b625974d012f9748b25d1e1042bdcfd, type: 3}
   martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
   berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
 --- !u!114 &4710616447554038920
@@ -161,27 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 1
   esta_en_combate: 0
---- !u!65 &-9012247748661151284
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576776858767351060}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.5, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  animator: {fileID: -3921165751929326019}
 --- !u!114 &2343017589864112011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +196,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &8328216984558058033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576776858767351060}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.942921, y: 25.870762, z: 18.76908}
+  m_Center: {x: 2.3546247, y: 12.434818, z: 0.48873082}
 --- !u!1 &846189969014962381
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +295,6 @@ GameObject:
   - component: {fileID: 7434069695608862305}
   - component: {fileID: 1623905780193012338}
   - component: {fileID: 3960747982490218447}
-  - component: {fileID: 4743677147691390793}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -368,27 +369,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4743677147691390793
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276395588431042679}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
-  m_Center: {x: -0.0000009536744, y: -0.0000009536744, z: 0}
 --- !u!1 &1301382058274617186
 GameObject:
   m_ObjectHideFlags: 0
