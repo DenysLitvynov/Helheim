@@ -12,6 +12,10 @@ public class Movimiento_Aliodos : MonoBehaviour
     public bool colocado = false;
 
     private GameObject aliadoIdentificado;
+    public ParticleSystem spawn;
+    private bool spawnEffectInstanciado = false;
+    // Offset fijo para la posición Y
+    private float fixedYOffset = 2.0f; // Ajusta este valor según sea necesario
 
     private void Start()
     {
@@ -37,6 +41,15 @@ public class Movimiento_Aliodos : MonoBehaviour
         {
             // Establece que el jefe ya no est� en combate.
             esta_en_combate = false;
+        }
+        if (colocado && !spawnEffectInstanciado)
+        {
+            // Usa la posición del transform y ajusta solo el eje Y
+            Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + fixedYOffset, transform.position.z);
+            // Ajuste de rotación para que el sistema de partículas mire hacia arriba
+            Quaternion rotation = Quaternion.Euler(-90, 0, 0);
+            ParticleSystem effectInstance = Instantiate(spawn, spawnPosition, rotation);
+            spawnEffectInstanciado = true;
         }
 
     }

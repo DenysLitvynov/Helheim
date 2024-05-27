@@ -94,8 +94,7 @@ MonoBehaviour:
   velocidad: 7
   esta_en_combate: 0
   colocado: 0
-  spawn: {fileID: 0}
-  fixedYOffset: 0.1
+  spawn: {fileID: 5586318276742224296, guid: 1a4f36a94c6ff4a43884eac17eed039e, type: 3}
 --- !u!65 &4430292458110751496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -189,6 +188,10 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9144552343380577265, guid: ab85d081bb4b4e949b77806b8aee06a8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5f431defb3a9b72489ae8c7258da2736, type: 2}
     - target: {fileID: 9144552343380577265, guid: ab85d081bb4b4e949b77806b8aee06a8, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 

@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 173711793516218925}
   - component: {fileID: 1554936169000852110}
   - component: {fileID: 7372791927000571147}
+  - component: {fileID: -1705869801923527181}
   m_Layer: 0
   m_Name: Murolvl3
   m_TagString: Personaje
@@ -182,6 +183,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 3.4234219, z: 2.452473}
   m_Center: {x: -5.0144264e-12, y: 1.7698385, z: -0.16642363}
+--- !u!114 &-1705869801923527181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360986445036381433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52b0f47ce2e8d77e84f3512947a6180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 0
+  esta_en_combate: 0
+  colocado: 0
+  spawn: {fileID: 5586318276742224296, guid: 1a4f36a94c6ff4a43884eac17eed039e, type: 3}
 --- !u!1 &2906337982268788896
 GameObject:
   m_ObjectHideFlags: 0
