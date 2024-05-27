@@ -8,24 +8,26 @@ public class SpawnArrow : MonoBehaviour
     public float spawnInterval = 3f; // Intervallo di tempo tra uno spawn e l'altro
 
     private float timer; // Timer per tenere traccia del tempo
-    public bool colocado=false;
+    public bool colocado = false;
 
     void Start()
     {
-        // Invoca repetidamente la función GenerateArrow cada 4 segundos, comenzando después de 0 segundos.
-        InvokeRepeating("GenerateArrow", 1f, spawnInterval);
+        // Invoca repetidamente la funzione GenerateArrow ogni spawnInterval secondi, iniziando dopo 1 secondo.
+        InvokeRepeating("GenerateArrow", 1.75f, spawnInterval);
     }
-
 
     public void GenerateArrow()
     {
-        if(colocado){
-            // Genera una nuova freccia istanziando il prefabbricato nella posizione del generatore
+        if (colocado)
+        {
+            // Genera una nuova freccia istanziando il prefab nella posizione e rotazione del generatore
             GameObject arrow = Instantiate(arrowPrefab, transform.position, transform.rotation);
-             // Ajusta la rotación del objeto para que apunte hacia la derecha
-            arrow.transform.Rotate(0, 180, 0); // Rotación de -90 grados sobre el eje Z para que apunte hacia la derecha
+            Debug.Log("Freccia generata alla posizione: " + transform.position + " con rotazione: " + transform.rotation);
+
+            // Regola la rotazione dell'oggetto per farlo puntare a destra
+            arrow.transform.Rotate(0, 180, 0); // Rotazione di 180 gradi sull'asse Y per farla puntare a destra
+            Debug.Log("Freccia ruotata a: " + arrow.transform.rotation);
         }
-        
     }
-    
 }
+

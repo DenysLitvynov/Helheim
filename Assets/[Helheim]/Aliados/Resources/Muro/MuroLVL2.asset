@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MuroLVL2
   m_EditorClassIdentifier: 
   characterIcon: {fileID: 2800000, guid: 8225245787921ce478b5040c7ace3d4c, type: 3}
-  characterSprite: {fileID: 360986445036381433, guid: 5b092d6e71e424b439c6e73899c41fa8, type: 3}
+  characterSprite: {fileID: 360986445036381433, guid: d56f4a14d0311a7418cc61462772ec8e, type: 3}
   panelCanvas: {fileID: 1744721947743016550, guid: f168f7a9e77b591438597826b4055608, type: 3}
   levelCard: {fileID: 21300000, guid: ef92f09d63890894497b43dd68d115f0, type: 3}
   nombre: Muro

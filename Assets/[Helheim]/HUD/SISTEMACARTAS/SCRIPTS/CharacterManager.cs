@@ -35,8 +35,8 @@ public class CharacterManager : MonoBehaviour,IPointerClickHandler
             //Sirve para saber si se esta colocando un personaje o no;
             colocandoPersonaje=true;
             //Desactiva el canvas
-            panelCanvas=GameObject.FindWithTag("CanvasCartas");
-            panelCanvas.SetActive(false);
+           // panelCanvas=GameObject.FindWithTag("CanvasCartas");
+           // panelCanvas.SetActive(false);
 
             foreach(SlotsManagerCollider slots in GameObject.FindObjectsOfType<SlotsManagerCollider>()){
                 slots.colocandoPersoanje=true;
