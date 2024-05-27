@@ -20,9 +20,9 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 230, y: -50, z: 0}
-  m_EntryPosition: {x: 360, y: 20, z: 0}
-  m_ExitPosition: {x: 470, y: 250, z: 0}
+  m_AnyStatePosition: {x: 230, y: -40, z: 0}
+  m_EntryPosition: {x: 360, y: 40, z: 0}
+  m_ExitPosition: {x: 510, y: -40, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 7167788483333966002}
 --- !u!1102 &-104161294581068056
@@ -61,8 +61,8 @@ AnimatorController:
   m_Name: boss1control
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Combate
-    m_Type: 9
+  - m_Name: sCombate
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -89,7 +89,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Combate
+    m_ConditionEvent: sCombate
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -104161294581068056}
@@ -141,7 +141,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Combate
+    m_ConditionEvent: sCombate
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7167788483333966002}
