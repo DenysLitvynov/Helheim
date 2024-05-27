@@ -94,6 +94,8 @@ MonoBehaviour:
   velocidad: 7
   esta_en_combate: 0
   colocado: 0
+  spawn: {fileID: 0}
+  fixedYOffset: 0.1
 --- !u!65 &4430292458110751496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -137,7 +139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab85d081bb4b4e949b77806b8aee06a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.21
+      value: 0.037
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab85d081bb4b4e949b77806b8aee06a8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -145,7 +147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab85d081bb4b4e949b77806b8aee06a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.007
+      value: -0.003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab85d081bb4b4e949b77806b8aee06a8, type: 3}
       propertyPath: m_LocalRotation.w
