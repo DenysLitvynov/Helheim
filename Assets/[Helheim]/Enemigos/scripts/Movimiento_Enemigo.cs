@@ -12,6 +12,7 @@ public class Movimiento_Enemigo : MonoBehaviour
     public bool esta_en_combate = false;
     private GameObject aliadoIdentificado;
     [SerializeField] Animator animator;  // Referencia al Animator
+    
 
     private void Start()
     {
@@ -68,6 +69,7 @@ public class Movimiento_Enemigo : MonoBehaviour
         {
             esta_en_combate = true;
             aliadoIdentificado = collision.gameObject;
+         
         }
     }
 
