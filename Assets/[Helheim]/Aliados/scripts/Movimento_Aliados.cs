@@ -25,7 +25,7 @@ public class Movimiento_Aliodos : MonoBehaviour
             transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
             float xCoordinate = transform.position.x;
             if(xCoordinate>18.53277f){
-                StopMovement();
+                //StopMovement();
             }else{
                 velocidad = velocidad2;
             }
@@ -68,7 +68,8 @@ public class Movimiento_Aliodos : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Entorno")
         {
-            Destroy(gameObject);
+         
+            Destroy(this.gameObject);
         }
     }
 

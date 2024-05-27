@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3972360314706106694}
+  - component: {fileID: 3299228922732197118}
+  - component: {fileID: 2551326363420378217}
   m_Layer: 0
   m_Name: BOSQUE
-  m_TagString: Untagged
+  m_TagString: Entorno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
