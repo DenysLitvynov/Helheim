@@ -619,7 +619,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3804901403325540891}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: be81f816309c2f40c998db2a39e08345, type: 3}
   m_Controller: {fileID: 9100000, guid: 1b67ec8f82d9759b2a2b730b165e93ad, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -694,6 +694,8 @@ MonoBehaviour:
   velocidad: 5
   esta_en_combate: 0
   colocado: 0
+  spawn: {fileID: 5586318276742224296, guid: 1a4f36a94c6ff4a43884eac17eed039e, type: 3}
+  animator: {fileID: -4353741144568019450}
 --- !u!114 &6790834655807475201
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ArqueroLVL2
   m_EditorClassIdentifier: 
   characterIcon: {fileID: 2800000, guid: f1d39e82cca708f429c2d51aa70b1f03, type: 3}
-  characterSprite: {fileID: 1462288544407644206, guid: ee3385228de413de7bf857161c266103, type: 3}
+  characterSprite: {fileID: 5547683239768185982, guid: f546bbcb9f845f94da445693078c1087, type: 3}
   panelCanvas: {fileID: 1744721947743016550, guid: f168f7a9e77b591438597826b4055608, type: 3}
   levelCard: {fileID: 21300000, guid: ef92f09d63890894497b43dd68d115f0, type: 3}
   nombre: Arquero
