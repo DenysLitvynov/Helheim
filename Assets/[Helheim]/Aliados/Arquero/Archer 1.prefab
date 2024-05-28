@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8835340563779096401}
   - component: {fileID: 5681043869105347648}
   - component: {fileID: 6619400846910469475}
+  - component: {fileID: 6659225036277659086}
   m_Layer: 6
   m_Name: Archer 1
   m_TagString: Personaje
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1670238640148300106}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 23.129183, y: 3.959, z: -4.1951466}
+  m_LocalPosition: {x: 22.28, y: 3.959, z: -7.39}
   m_LocalScale: {x: 0.7808, y: 0.7808, z: 0.7808}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -77,6 +78,27 @@ MonoBehaviour:
   vida_Maxima: 50
   vida: 50
   dps: 15
+--- !u!65 &6659225036277659086
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670238640148300106}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5344883, y: 2.0402484, z: 0.8433972}
+  m_Center: {x: -0.32322133, y: 1.0221536, z: 0.1300963}
 --- !u!1 &6758242858274341713
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8729056292349419928
 Transform:
   m_ObjectHideFlags: 0
@@ -107,7 +129,7 @@ Transform:
   m_GameObject: {fileID: 6758242858274341713}
   serializedVersion: 2
   m_LocalRotation: {x: 0.62775767, y: 0.33225822, z: 0.35675585, w: 0.60683614}
-  m_LocalPosition: {x: -0.804, y: -0.1880001, z: 0.5752104}
+  m_LocalPosition: {x: -1.041, y: 0.329, z: 0.695}
   m_LocalScale: {x: 0.001480301, y: 0.000099999976, z: 0.00010000004}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -223,6 +245,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8835340563779096401}
     m_Modifications:
+    - target: {fileID: 2888714235132361799, guid: ce79cd435ef8afaf5b689e35814b6a1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.086
+      objectReference: {fileID: 0}
+    - target: {fileID: 2888714235132361799, guid: ce79cd435ef8afaf5b689e35814b6a1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 2888714235132361799, guid: ce79cd435ef8afaf5b689e35814b6a1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.626
+      objectReference: {fileID: 0}
     - target: {fileID: 4475928287365069050, guid: ce79cd435ef8afaf5b689e35814b6a1a, type: 3}
       propertyPath: m_Name
       value: Archer 1
@@ -241,15 +275,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6613476532736747489, guid: ce79cd435ef8afaf5b689e35814b6a1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.17
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 6613476532736747489, guid: ce79cd435ef8afaf5b689e35814b6a1a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.229
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6613476532736747489, guid: ce79cd435ef8afaf5b689e35814b6a1a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.27
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 6613476532736747489, guid: ce79cd435ef8afaf5b689e35814b6a1a, type: 3}
       propertyPath: m_LocalRotation.w

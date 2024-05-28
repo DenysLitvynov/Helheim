@@ -43,8 +43,12 @@ public class CharacterManager : MonoBehaviour,IPointerClickHandler
                 slots.tiempoPasado=Time.time;
             }
             //Crea el personaje
-            
-            character = Instantiate(characterPrefab, new Vector3(0, 0, -1) ,Quaternion.Euler(0,180,0));  
+            if(nombre!="Guerrero"){
+                character = Instantiate(characterPrefab, new Vector3(0, 0, -1) ,Quaternion.Euler(0,180,0));  
+            }else{
+                character = Instantiate(characterPrefab, new Vector3(0, 0, -1),Quaternion.Euler(0,90,0));  
+            }
+      
             character.GetComponent<MeshRenderer>();
             // Actualiza el tiempo de la última colocación
             tiempoUltimaColocacion = Time.time;

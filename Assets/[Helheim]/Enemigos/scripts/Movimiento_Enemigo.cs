@@ -5,14 +5,14 @@ using System;
 
 public class Movimiento_Enemigo : MonoBehaviour
 {
-
-
     public float velocidad = 10f;
     private Transform target;
     private Waypoints caminos;
     private int waypointIndex = 0;
     public bool esta_en_combate = false;
     private GameObject aliadoIdentificado;
+    [SerializeField] Animator animator;  // Referencia al Animator
+    
 
     private void Start()
     {
@@ -24,6 +24,9 @@ public class Movimiento_Enemigo : MonoBehaviour
         waypointIndex = ClosestWaypoint();
 
         target = caminos.points[waypointIndex];
+
+        // Obtener el Animator adjunto al GameObject
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -38,13 +41,15 @@ public class Movimiento_Enemigo : MonoBehaviour
                 GetNextWaypoint();
             }
         }
-        //Si el jefe estб en combate pero el
-        //objeto "Aliado" con el que estaba en combate ha sido destruido (es decir, aliadoIdentificado es null)...
+        // Si el jefe está en combate pero el objeto "Aliado" con el que estaba en combate ha sido destruido (es decir, aliadoIdentificado es null)...
         else if (aliadoIdentificado == null)
         {
-            // Establece que el jefe ya no estб en combate.
+            // Establece que el jefe ya no está en combate.
             esta_en_combate = false;
         }
+
+        // Establecer el booleano en el Animator
+        animator.SetBool("EstaEnCombate", esta_en_combate);
     }
 
     void GetNextWaypoint()
@@ -60,11 +65,11 @@ public class Movimiento_Enemigo : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Aliado")//Habra que hacer alguna funcion que al chocar devuelva el tag del objeto 
-            //Asi establecer que daсo recibe el jefe.
-            {
+        if (collision.gameObject.tag == "Aliado") // Habrá que hacer alguna función que al chocar devuelva el tag del objeto 
+        {
             esta_en_combate = true;
             aliadoIdentificado = collision.gameObject;
+         
         }
     }
 
@@ -72,13 +77,13 @@ public class Movimiento_Enemigo : MonoBehaviour
     {
         if (collision.gameObject.tag == "Aliado")
         {
-            aliadoIdentificado = null;//Si el objeto con el que se paro de colosionar es Aliado. Es null, lo cual significa que
-            // Esto indica que este objeto ya no estб en contacto con el objeto "Aliado".
+            aliadoIdentificado = null; // Si el objeto con el que se paró de colisionar es Aliado, es null, lo cual significa que
+            // esto indica que este objeto ya no está en contacto con el objeto "Aliado".
             esta_en_combate = false;
         }
     }
 
-    // metodo necesario para el correcto espawneo de los enemigos
+    // Método necesario para el correcto espawneo de los enemigos
     private int ClosestWaypoint()
     {
         int closestIndex = 0;
@@ -97,4 +102,3 @@ public class Movimiento_Enemigo : MonoBehaviour
         return closestIndex;
     }
 }
-

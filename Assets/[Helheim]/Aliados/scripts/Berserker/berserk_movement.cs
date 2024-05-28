@@ -7,8 +7,12 @@ public class Movimiento_Berserk : MonoBehaviour
     public float velocidad = 5f;
     public bool esta_en_combate = false;
     public bool colocado = false;
-
+    public ParticleSystem spawn;
     private GameObject aliadoIdentificado;
+    private bool spawnEffectInstanciado = false;
+
+    // Offset fijo para la posición Y
+    private float fixedYOffset = 2.0f; // Ajusta este valor según sea necesario
 
     private void Update()
     {
@@ -16,23 +20,33 @@ public class Movimiento_Berserk : MonoBehaviour
         {
             transform.Translate(Vector3.left * velocidad * Time.deltaTime);
         }
-        /*
-        IF esta en combate y el objeto "Aliado" combatiente ha sido destruido 
-        */
-        else if (aliadoIdentificado == null)
+
+        if (esta_en_combate && aliadoIdentificado == null)
         {
-            // Establece que el jefe ya no est� en combate.
+            // Establece que el jefe ya no está en combate.
             esta_en_combate = false;
         }
 
+        if (colocado && !spawnEffectInstanciado)
+        {
+            // Usa la posición del transform y ajusta solo el eje Y
+            Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + fixedYOffset, transform.position.z);
+            // Ajuste de rotación para que el sistema de partículas mire hacia arriba
+            Quaternion rotation = Quaternion.Euler(-90, 0, 0);
+            ParticleSystem effectInstance = Instantiate(spawn, spawnPosition, rotation);
+            spawnEffectInstanciado = true;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemigo"){
+        if (collision.gameObject.tag == "Enemigo")
+        {
             esta_en_combate = true;
             aliadoIdentificado = collision.gameObject;
-        }else if(collision.gameObject.tag=="Entorno"){
+        }
+        else if (collision.gameObject.tag == "Entorno")
+        {
             Destroy(gameObject);
         }
     }
@@ -41,9 +55,9 @@ public class Movimiento_Berserk : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemigo")
         {
-            aliadoIdentificado = null;//Si el objeto con el que se paro de colosionar es Aliado. Es null, lo cual significa que
-            // Esto indica que este objeto ya no est� en contacto con el objeto "Aliado".
+            aliadoIdentificado = null;
             esta_en_combate = false;
         }
     }
 }
+
