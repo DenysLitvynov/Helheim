@@ -9840,7 +9840,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 500
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -15178,9 +15178,17 @@ PrefabInstance:
       propertyPath: simulationSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2884439649954839021, guid: b011f553f4940b84dbfdce9d46b230c3, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 4768729707902078585, guid: b011f553f4940b84dbfdce9d46b230c3, type: 3}
       propertyPath: simulationSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4768729707902078585, guid: b011f553f4940b84dbfdce9d46b230c3, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5270184548597797206, guid: b011f553f4940b84dbfdce9d46b230c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15188,7 +15196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5270184548597797206, guid: b011f553f4940b84dbfdce9d46b230c3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.22
+      value: 16.65
       objectReference: {fileID: 0}
     - target: {fileID: 5270184548597797206, guid: b011f553f4940b84dbfdce9d46b230c3, type: 3}
       propertyPath: m_LocalPosition.z
