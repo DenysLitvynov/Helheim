@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: MisticoAliados
   m_Shader: {fileID: -6465566751694194690, guid: c7ab3a40f7d287a48976034d59f42187, type: 3}
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: -876546973899608171, guid: c7ab3a40f7d287a48976034d59f42187, type: 3}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -25,14 +25,10 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _BUILTIN_QueueControl: 0
-    - _BUILTIN_QueueOffset: 0
     - _FresnelPower: 0.76
     - _GlowSpread: 0.66
     m_Colors:
     - _FresnelColor: {r: 1, g: 0.5149178, b: 0, a: 0}
-    - _FresnelPower: {r: 1, g: 0, b: 0, a: 0}
-    - _InteriorColor: {r: 1, g: 1, b: 1, a: 0}
     - _InteriorPosition: {r: 0, g: 1.87, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7695683622347726910

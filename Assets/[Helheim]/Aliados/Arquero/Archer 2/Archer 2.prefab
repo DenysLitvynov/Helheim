@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 8277611297723924175}
   - component: {fileID: 1234739172426284462}
   - component: {fileID: 3460082856763229604}
+  - component: {fileID: 8582556873360520431}
   m_Layer: 0
   m_Name: Archer 2
   m_TagString: Aliado
@@ -488,6 +489,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 15, y: 30, z: 20}
   m_Center: {x: 0, y: 10, z: 0}
+--- !u!114 &8582556873360520431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462288544407644206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combate_enemigo: 0
+  vida_Maxima: 50
+  vida: 50
+  dps: 5
 --- !u!1 &1531872954669383392
 GameObject:
   m_ObjectHideFlags: 0

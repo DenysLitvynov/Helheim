@@ -8,7 +8,7 @@ public class Aliado_stats : MonoBehaviour
     public float vida_Maxima = 50f;//La vida maxima del aliado, solo para comparar y saber si se muere de una vez
     public float vida = 50f; // La vida del aliado
     public float dps = 5f;//da�o que causa el enemigo(el aliado tomara esto como parametro en recibirDa�o())
-    private Controlador_de_Estados enemigoControler;
+    //private Controlador_de_Estados enemigoControler;
     private Enemigo_stats enemigo;
     private Espectro_Stats espectro;
 
@@ -22,8 +22,8 @@ public class Aliado_stats : MonoBehaviour
         if (combate_enemigo == true)
         {
             // Accede a la variable da�o_boss3 del enemigo
-            if(enemigoControler!=null){
-                recibirDano(enemigoControler.dano);
+            if(enemigo!=null){
+                recibirDano(enemigo.dano_enemigo);
             }else if(espectro!=null){
                 recibirDano(espectro.daсo_espectro);
 
@@ -54,7 +54,7 @@ public class Aliado_stats : MonoBehaviour
             combate_enemigo = true;
             // Obtiene una referencia al objeto del aliado
             //enemigo = collision.gameObject.GetComponent<Enemigo_stats>();
-            enemigoControler = collision.gameObject.GetComponent<Controlador_de_Estados>();
+            enemigo = collision.gameObject.GetComponent<Enemigo_stats>();
             espectro = collision.gameObject.GetComponent<Espectro_Stats>();
         }
     }
