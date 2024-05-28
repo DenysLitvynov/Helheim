@@ -10,13 +10,13 @@ public class SpawnerDev : MonoBehaviour
     void Update()
     {
         // Si se presionan las teclas A y B al mismo tiempo, instancia el prefab1
-        if (Input.GetKey(KeyCode.A))
+        if ( Input.GetKey(KeyCode.E))
         {
             Instantiate(prefab1, transform.position, Quaternion.identity);
         }
 
         // Si se presionan las teclas X y Y al mismo tiempo, instancia el prefab2
-        if (Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.Y))
+        if (Input.GetKey(KeyCode.P))
         {
             Instantiate(prefab2, transform.position, Quaternion.identity);
         }

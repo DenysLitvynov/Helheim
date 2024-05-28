@@ -11,6 +11,7 @@ public class Aliado_stats : MonoBehaviour
     //private Controlador_de_Estados enemigoControler;
     private Enemigo_stats enemigo;
     private Espectro_Stats espectro;
+    public ParticleSystem particulasMuerte;
 
     private void Start()
     {
@@ -43,7 +44,7 @@ public class Aliado_stats : MonoBehaviour
         // Comprueba si la vida del aliado ha llegado a 0
         if (vida <= 0)
         {
-            Destroy(gameObject); // Destruye el aliado
+            Morir();// Destruye el aliado
         }
     }
 
@@ -65,5 +66,10 @@ public class Aliado_stats : MonoBehaviour
         {
             combate_enemigo = false;
         }
+    }
+    public void Morir()
+    {
+        Destroy(gameObject); // Destruye el enemigo
+        Instantiate(particulasMuerte, transform.position, Quaternion.identity);
     }
 }

@@ -95,7 +95,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7112527, z: -0, w: 0.7029364}
   m_LocalPosition: {x: 13.041451, y: 0, z: 1.295569}
-  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
+  m_LocalScale: {x: 0.058863, y: 0.058863, z: 0.058863}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7080011921667976624}
@@ -141,9 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_maxima: 100
-  vida: 100
-  dano_enemigo: 10
+  vida_maxima: 150
+  vida: 150
+  dano_enemigo: 35
   cartas: {fileID: 0}
   particulasMuerte: {fileID: 1179168509732900640, guid: 6b625974d012f9748b25d1e1042bdcfd, type: 3}
   martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
