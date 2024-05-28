@@ -16,10 +16,12 @@ public class Movimiento_Aliodos : MonoBehaviour
     private bool spawnEffectInstanciado = false;
     // Offset fijo para la posición Y
     private float fixedYOffset = 2.0f; // Ajusta este valor según sea necesario
+    [SerializeField] Animator animator;  // Referencia al Animator
 
     private void Start()
     {
         velocidad2 = velocidad;
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -33,7 +35,9 @@ public class Movimiento_Aliodos : MonoBehaviour
             }else{
                 velocidad = velocidad2;
             }
+
         }
+
         /*
         IF esta en combate y el objeto "Aliado" combatiente ha sido destruido 
         */
@@ -51,6 +55,10 @@ public class Movimiento_Aliodos : MonoBehaviour
             ParticleSystem effectInstance = Instantiate(spawn, spawnPosition, rotation);
             spawnEffectInstanciado = true;
         }
+
+        // Establecer el booleano en el Animator
+        animator.SetBool("EstaEnCombate", esta_en_combate);
+        animator.SetBool("Colocado", colocado);
 
     }
          //
