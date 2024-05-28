@@ -8,7 +8,7 @@ public class PauseManu : MonoBehaviour
 {
     public GameObject PausePanel;
     // Start is called before the first frame update
-
+    //Pau
     public string mainMenuSceneName = "MenuInicial"; // Nome della scena del menu principale
 
 

@@ -8,26 +8,36 @@ public class Movimiento_Aliodos : MonoBehaviour
 
     public float velocidad = 5f;
     public bool esta_en_combate = false;
+    private float velocidad2;
     public bool colocado = false;
 
     private GameObject aliadoIdentificado;
+    public ParticleSystem spawn;
+    private bool spawnEffectInstanciado = false;
+    // Offset fijo para la posición Y
+    private float fixedYOffset = 2.0f; // Ajusta este valor según sea necesario
+    [SerializeField] Animator animator;  // Referencia al Animator
 
     private void Start()
     {
+        velocidad2 = velocidad;
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         if (!esta_en_combate && colocado)
         {
-            transform.Translate(Vector3.left * velocidad * Time.deltaTime);
+            transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
             float xCoordinate = transform.position.x;
             if(xCoordinate>18.53277f){
-                StopMovement();
+                //StopMovement();
             }else{
-                velocidad = 3f;
+                velocidad = velocidad2;
             }
+
         }
+
         /*
         IF esta en combate y el objeto "Aliado" combatiente ha sido destruido 
         */
@@ -36,6 +46,19 @@ public class Movimiento_Aliodos : MonoBehaviour
             // Establece que el jefe ya no est� en combate.
             esta_en_combate = false;
         }
+        if (colocado && !spawnEffectInstanciado)
+        {
+            // Usa la posición del transform y ajusta solo el eje Y
+            Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + fixedYOffset, transform.position.z);
+            // Ajuste de rotación para que el sistema de partículas mire hacia arriba
+            Quaternion rotation = Quaternion.Euler(-90, 0, 0);
+            ParticleSystem effectInstance = Instantiate(spawn, spawnPosition, rotation);
+            spawnEffectInstanciado = true;
+        }
+
+        // Establecer el booleano en el Animator
+        animator.SetBool("EstaEnCombate", esta_en_combate);
+        animator.SetBool("Colocado", colocado);
 
     }
          //
@@ -66,7 +89,8 @@ public class Movimiento_Aliodos : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Entorno")
         {
-            Destroy(gameObject);
+         
+            Destroy(this.gameObject);
         }
     }
 

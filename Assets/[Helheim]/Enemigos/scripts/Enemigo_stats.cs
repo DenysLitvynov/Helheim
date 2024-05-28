@@ -11,6 +11,7 @@ public class Enemigo_stats : MonoBehaviour
     private Aliado_stats aliado;
     private Movimento_Frecha frecha;
     public CharacterCardManager cartas;
+    public ParticleSystem particulasMuerte;
 
     public CharacterCardScriptableObject martillo;
     public CharacterCardScriptableObject berserk;
@@ -44,7 +45,7 @@ public class Enemigo_stats : MonoBehaviour
             if(DropCarta()){
                 cartaAleatoria();
             }
-            Destroy(gameObject); // Destruye el enemigo
+            Morir();
         }
     }
 
@@ -112,5 +113,10 @@ public class Enemigo_stats : MonoBehaviour
         // Si el número generado es menor o igual a 0.2, devuelve verdadero; de lo contrario, devuelve falso
         return randomNumber <= 0.2f;
     }
-    
+    public void Morir()
+    {
+        Destroy(gameObject); // Destruye el enemigo
+        Instantiate(particulasMuerte, transform.position, Quaternion.identity);
+    }
+
 }

@@ -15,7 +15,9 @@ public class Estado_combate_enemigo : Estado_Base_Enemigo
     private Movimento_Frecha frecha;
 
     public override void EnterState(Controlador_de_Estados enemigo)
+    
     {
+        Debug.Log("Cambia MODO COMBATE");
         vida = vidaMaxima;
     }
 
