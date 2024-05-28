@@ -1692,6 +1692,7 @@ MonoBehaviour:
   vida_Maxima: 100
   vida: 100
   dps: 30
+  particulasMuerte: {fileID: 0}
 --- !u!65 &6139211149671894899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1725,7 +1726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d52b0f47ce2e8d77e84f3512947a6180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 0.3
+  velocidad: 1
   esta_en_combate: 0
   colocado: 0
   spawn: {fileID: 5586318276742224296, guid: 1a4f36a94c6ff4a43884eac17eed039e, type: 3}

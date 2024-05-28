@@ -230,6 +230,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 5375ae69c35679d44ab6905f81d61c59, type: 2}
+    - target: {fileID: -7511558181221131132, guid: 764b8b67b104a0347ba741c61309c0fe, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6eeaefc8df6338b4288d1feca6cc692f, type: 2}
     - target: {fileID: 919132149155446097, guid: 764b8b67b104a0347ba741c61309c0fe, type: 3}
       propertyPath: m_Name
       value: CasaEstado2 1
@@ -475,6 +479,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 5375ae69c35679d44ab6905f81d61c59, type: 2}
+    - target: {fileID: -7511558181221131132, guid: e61dd62062632974fa3094346635ba07, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6eeaefc8df6338b4288d1feca6cc692f, type: 2}
     - target: {fileID: 919132149155446097, guid: e61dd62062632974fa3094346635ba07, type: 3}
       propertyPath: m_Name
       value: CasaEstado1 1
@@ -1996,7 +2004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &448986268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8430,7 +8438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3972360314706106694, guid: d77def6766d200f429a933536ae3c40b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.35724068
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 3972360314706106694, guid: d77def6766d200f429a933536ae3c40b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8842,6 +8850,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 5375ae69c35679d44ab6905f81d61c59, type: 2}
+    - target: {fileID: -7511558181221131132, guid: dfa35391b2336d140bca3020aa208461, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6eeaefc8df6338b4288d1feca6cc692f, type: 2}
     - target: {fileID: 919132149155446097, guid: dfa35391b2336d140bca3020aa208461, type: 3}
       propertyPath: m_Name
       value: CasaEstado3 1
@@ -15065,13 +15077,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192253bf6a310f74c93ae47ce414c549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amtOfCards: 4
+  amtOfCards: 5
   characterCardSO:
   - {fileID: 11400000, guid: e911952b8bfbbc54d878a92f89569a6e, type: 2}
   - {fileID: 11400000, guid: 57732fa7918f82f4bb3ea2b8f6dc36af, type: 2}
   - {fileID: 11400000, guid: b2a4c3f1a69e686498739ca35694608f, type: 2}
   - {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -18576,7 +18588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: {fileID: 1915088383}
-  vidaActual: 100
+  vidaActual: 350
 --- !u!114 &1915088383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18752,7 +18764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1953194026
 MonoBehaviour:
   m_ObjectHideFlags: 0

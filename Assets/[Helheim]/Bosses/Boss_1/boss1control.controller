@@ -8,8 +8,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Combat
+  - m_ConditionMode: 2
+    m_ConditionEvent: EstaEnCombate
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3011741350574691099}
@@ -86,7 +86,7 @@ AnimatorController:
   m_Name: boss1control
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Combat
+  - m_Name: EstaEnCombate
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -141,7 +141,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Combat
+    m_ConditionEvent: EstaEnCombate
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2091076418738818101}

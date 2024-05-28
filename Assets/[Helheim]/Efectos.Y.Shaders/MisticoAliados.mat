@@ -25,6 +25,7 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
+    - _BUILTIN_QueueControl: 0
     - _FresnelPower: 0.76
     - _GlowSpread: 0.66
     m_Colors:

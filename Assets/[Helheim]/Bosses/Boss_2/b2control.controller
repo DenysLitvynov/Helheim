@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Combat
+    m_ConditionEvent: EstaEnCombate
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6897623843801700804}
@@ -46,7 +46,7 @@ AnimatorStateMachine:
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 190, y: 20, z: 0}
-  m_EntryPosition: {x: 90, y: 150, z: 0}
+  m_EntryPosition: {x: 80, y: 120, z: 0}
   m_ExitPosition: {x: 480, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 3030259165967269608}
@@ -59,7 +59,7 @@ AnimatorController:
   m_Name: b2control
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Combat
+  - m_Name: EstaEnCombate
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -113,8 +113,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Combat
+  - m_ConditionMode: 2
+    m_ConditionEvent: EstaEnCombate
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3030259165967269608}
