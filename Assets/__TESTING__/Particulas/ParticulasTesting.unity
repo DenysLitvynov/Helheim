@@ -6584,6 +6584,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5a5fbf199f818f46b92bc1cf9c7f591, type: 3}
+--- !u!1001 &797314376
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.077957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.7208195
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -37.468227
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634052008997232461, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782844528531234085, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: m_Name
+      value: Esqueleto_Gigante
+      objectReference: {fileID: 0}
+    - target: {fileID: 8444306915029864037, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
+      propertyPath: velocidad
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a9007195d03d622499fc8ff1258d2f81, type: 3}
 --- !u!1001 &840730794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28381,63 +28442,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb3582a6e87475e4ab1c2ff352d3933c, type: 3}
---- !u!1001 &2036179650
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.497178
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.8214722
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -36.237114
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7085961
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7056143
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -89.758
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7780569275497003256, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
-      propertyPath: m_Name
-      value: EsqueletoGigante
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
 --- !u!1 &2059739464
 GameObject:
   m_ObjectHideFlags: 0
@@ -29055,8 +29059,8 @@ SceneRoots:
   - {fileID: 1509311561}
   - {fileID: 840730794}
   - {fileID: 512068223}
-  - {fileID: 2036179650}
   - {fileID: 50054519}
   - {fileID: 1057847647}
   - {fileID: 1391263353}
   - {fileID: 1818130415}
+  - {fileID: 797314376}

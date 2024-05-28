@@ -20,14 +20,13 @@ public class SpawnArrow : MonoBehaviour
     {
         if (colocado)
         {
-            // Genera una nuova freccia istanziando il prefab nella posizione e rotazione del generatore
+            // Genera una nueva flecha instanciando el prefab en la posición del generador
             GameObject arrow = Instantiate(arrowPrefab, transform.position, transform.rotation);
-            Debug.Log("Freccia generata alla posizione: " + transform.position + " con rotazione: " + transform.rotation);
 
-            // Regola la rotazione dell'oggetto per farlo puntare a destra
-            arrow.transform.Rotate(0, 180, 0); // Rotazione di 180 gradi sull'asse Y per farla puntare a destra
-            Debug.Log("Freccia ruotata a: " + arrow.transform.rotation);
+            // Asegúrate de que la flecha se dispare en la dirección X del objeto SpawnArrow
+            Vector3 direction = transform.right; // Esto obtiene la dirección X del objeto SpawnArrow
+            arrow.transform.rotation = Quaternion.LookRotation(direction);
         }
     }
-}
 
+}
