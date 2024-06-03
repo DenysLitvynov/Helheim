@@ -17,13 +17,13 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.41960788, g: 0.4784314, b: 0.627451, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.05
+  m_FogDensity: 0.04
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1.91
+  m_AmbientSkyColor: {r: 0.043016177, g: 0.12370139, b: 0.6313841, a: 1}
+  m_AmbientEquatorColor: {r: 0.3660378, g: 0.3660378, b: 0.3660378, a: 1}
+  m_AmbientGroundColor: {r: 4.594794, g: 4.594794, b: 4.594794, a: 1}
+  m_AmbientIntensity: 2.18
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: dd6e9700d58a96441bfe2196bfe12551, type: 2}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 717059920}
-  m_IndirectSpecularColor: {r: 0.056551322, g: 0.20414856, b: 0.36109683, a: 1}
+  m_IndirectSpecularColor: {r: 0.056540407, g: 0.20408773, b: 0.36104533, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8548,8 +8548,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.3137255, g: 0.4039216, b: 0.5254902, a: 1}
-  m_Intensity: 2.02
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.94
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8607,13 +8607,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717059919}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.089655295, y: 0.43609062, z: -0.89532423, w: 0.013469066}
+  m_LocalRotation: {x: 0.17389114, y: 0.42125, z: -0.88283944, w: -0.11359972}
   m_LocalPosition: {x: 10.96, y: 24.67, z: -5.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 51.121, y: 375.931, z: 189.381}
+  m_LocalEulerAnglesHint: {x: 44.772, y: 325.437, z: 150.731}
 --- !u!1 &723570530 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2227417396625225246, guid: 9405db8d6c9a55a41aa0c53d6a015a44, type: 3}
