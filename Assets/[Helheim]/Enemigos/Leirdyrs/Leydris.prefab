@@ -453,7 +453,7 @@ MonoBehaviour:
   vida: 300
   dano_enemigo: 25
   cartas: {fileID: 0}
-  particulasMuerte: {fileID: 1179168509732900640, guid: 6b625974d012f9748b25d1e1042bdcfd, type: 3}
+  particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
   martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
   berserk: {fileID: 11400000, guid: b2a4c3f1a69e686498739ca35694608f, type: 2}
 --- !u!114 &7603413237113519247

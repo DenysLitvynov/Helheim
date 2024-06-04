@@ -163,6 +163,7 @@ MonoBehaviour:
   vida_Maxima: 200
   vida: 50
   dps: 0
+  particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
 --- !u!65 &7372791927000571147
 BoxCollider:
   m_ObjectHideFlags: 0

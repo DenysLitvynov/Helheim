@@ -70,6 +70,7 @@ public class Aliado_stats : MonoBehaviour
     public void Morir()
     {
         Destroy(gameObject); // Destruye el enemigo
-        Instantiate(particulasMuerte, transform.position, Quaternion.identity);
+        Vector3 posicion = transform.position + new Vector3(0, 1.0f, 0); // Ajusta el valor 1.0f según sea necesario
+        Instantiate(particulasMuerte, posicion, Quaternion.identity);
     }
 }
