@@ -15,7 +15,7 @@ public class Movimiento_Aliodos : MonoBehaviour
     public ParticleSystem spawn;
     private bool spawnEffectInstanciado = false;
     // Offset fijo para la posición Y
-    private float fixedYOffset = 2.0f; // Ajusta este valor según sea necesario
+    private float fixedYOffset = 0.15f; // Ajusta este valor según sea necesario
     [SerializeField] Animator animator;  // Referencia al Animator
 
     private void Start()

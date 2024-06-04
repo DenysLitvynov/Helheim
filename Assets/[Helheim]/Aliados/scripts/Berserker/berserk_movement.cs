@@ -12,7 +12,7 @@ public class Movimiento_Berserk : MonoBehaviour
     private bool spawnEffectInstanciado = false;
 
     // Offset fijo para la posición Y
-    private float fixedYOffset = 2.0f; // Ajusta este valor según sea necesario
+    private float fixedYOffset = 0.15f; // Ajusta este valor según sea necesario
 
     private void Update()
     {
