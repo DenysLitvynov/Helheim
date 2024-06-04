@@ -330,7 +330,6 @@ GameObject:
   - component: {fileID: 5009628268958624436}
   - component: {fileID: 3113603095801070471}
   - component: {fileID: 800267407583565866}
-  - component: {fileID: 8984196345210992317}
   - component: {fileID: 5816512188535963555}
   - component: {fileID: -5192209085398275435}
   m_Layer: 7
@@ -393,6 +392,7 @@ MonoBehaviour:
   vida_Maxima: 50
   vida: 50
   dps: 5
+  particulasMuerte: {fileID: 0}
 --- !u!114 &800267407583565866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,19 +410,6 @@ MonoBehaviour:
   colocado: 0
   spawn: {fileID: 5586318276742224296, guid: 1a4f36a94c6ff4a43884eac17eed039e, type: 3}
   animator: {fileID: 5009628268958624436}
---- !u!114 &8984196345210992317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886066013386696866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2feacfc9c1292143c9a3bc269b462e8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  auraColor: {r: 1, g: 0.84, b: 0, a: 1}
 --- !u!65 &5816512188535963555
 BoxCollider:
   m_ObjectHideFlags: 0
