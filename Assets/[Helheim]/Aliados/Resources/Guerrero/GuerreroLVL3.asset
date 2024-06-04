@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GuerreroLVL3
   m_EditorClassIdentifier: 
   characterIcon: {fileID: 2800000, guid: 454ee93d46569fe4b921aa2a2d573259, type: 3}
-  characterSprite: {fileID: 5547683239768185982, guid: a7a60b2a4eb65df4d82d23ad9f5810f6, type: 3}
+  characterSprite: {fileID: 292800853433214299, guid: 617cad061c02dd28984eb83ed479674b, type: 3}
   panelCanvas: {fileID: 1744721947743016550, guid: f168f7a9e77b591438597826b4055608, type: 3}
   levelCard: {fileID: 21300000, guid: ce03d4a3a7f27234f8d5be1934d57479, type: 3}
   nombre: Guerrero
