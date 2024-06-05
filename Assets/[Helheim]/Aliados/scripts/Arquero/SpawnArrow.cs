@@ -20,12 +20,12 @@ public class SpawnArrow : MonoBehaviour
     {
         if (colocado)
         {
-            // Genera una nueva flecha instanciando el prefab en la posición del generador
-            GameObject arrow = Instantiate(arrowPrefab, transform.position, transform.rotation);
+            // Genera una nueva flecha instanciando el prefab en la posiciï¿½n del generador
+            GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.Euler(0,0,0));
 
-            // Asegúrate de que la flecha se dispare en la dirección X del objeto SpawnArrow
-            Vector3 direction = transform.right; // Esto obtiene la dirección X del objeto SpawnArrow
-            arrow.transform.rotation = Quaternion.LookRotation(direction);
+            // Asegï¿½rate de que la flecha se dispare en la direcciï¿½n X del objeto SpawnArrow
+            //Vector3 direction = transform.right; // Esto obtiene la direcciï¿½n X del objeto SpawnArrow
+            //arrow.transform.rotation = Quaternion.LookRotation(direction);
         }
     }
 

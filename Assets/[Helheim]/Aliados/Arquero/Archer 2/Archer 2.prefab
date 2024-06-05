@@ -487,8 +487,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 15, y: 30, z: 20}
-  m_Center: {x: 0, y: 10, z: 0}
+  m_Size: {x: 7.3320804, y: 27.125025, z: 13.769334}
+  m_Center: {x: 0.22343439, y: 8.562513, z: 0.541125}
 --- !u!114 &8582556873360520431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,6 +505,7 @@ MonoBehaviour:
   vida_Maxima: 50
   vida: 50
   dps: 5
+  particulasMuerte: {fileID: 0}
 --- !u!1 &1531872954669383392
 GameObject:
   m_ObjectHideFlags: 0
