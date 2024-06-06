@@ -21,26 +21,38 @@ public class WaveSpawner : MonoBehaviour
 
     private IEnumerator SpawnEnemyInWave()
     {
-        if (_enemiesLeftToSpawn > 0 && _currentWaveIndex < _waves.Length && _currentEnemyIndex < _waves[_currentWaveIndex].WaveSettings.Length)
+        while (_enemiesLeftToSpawn > 0 && _currentWaveIndex < _waves.Length && _currentEnemyIndex < _waves[_currentWaveIndex].WaveSettings.Length)
         {
-            yield return new WaitForSeconds(_waves[_currentWaveIndex]
-                .WaveSettings[_currentEnemyIndex]
-                .SpawnDelay);
-            _lastEnemy = Instantiate(_waves[_currentWaveIndex]
-                .WaveSettings[_currentEnemyIndex].Enemy,
-                _waves[_currentWaveIndex].WaveSettings[_currentEnemyIndex]
-                .NeededSpawner.transform.position, Quaternion.identity);
-            _currentEnemyIndex++;
-            _activeEnemies++; // Incrementa el contador cuando se genera un enemigo
-            _enemiesLeftToSpawn--; // Decrementa el contador después de que un enemigo ha sido generado
+            WaveSettings currentWaveSetting = _waves[_currentWaveIndex].WaveSettings[_currentEnemyIndex];
+            if (currentWaveSetting != null && currentWaveSetting.NeededSpawner != null)
+            {
+                yield return new WaitForSeconds(currentWaveSetting.SpawnDelay);
 
-            StartCoroutine(SpawnEnemyInWave());
+                if (currentWaveSetting.Enemy != null)
+                {
+                    _lastEnemy = Instantiate(currentWaveSetting.Enemy, currentWaveSetting.NeededSpawner.transform.position, Quaternion.identity);
+                    _activeEnemies++;
+                    _enemiesLeftToSpawn--;
+                    _currentEnemyIndex++;
+                }
+                else
+                {
+                    Debug.LogWarning("Enemy prefab is null. Skipping this enemy.");
+                    _enemiesLeftToSpawn--;
+                    _currentEnemyIndex++;
+                }
+            }
+            else
+            {
+                Debug.LogWarning("WaveSettings or NeededSpawner is null. Skipping this enemy.");
+                _enemiesLeftToSpawn--;
+                _currentEnemyIndex++;
+            }
         }
-        else
-        {
-            CheckWaveCompletion(); // Verifica si la ola actual ha sido completada
-        }
+
+        CheckWaveCompletion();
     }
+
 
 
     public void LaunchWave()
