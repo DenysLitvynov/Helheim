@@ -1852,7 +1852,7 @@ MonoBehaviour:
   Casa: {fileID: 1953194025}
   CasaEstado2: {fileID: 1993186972}
   CasaEstado3: {fileID: 448986267}
-  vida: {fileID: 0}
+  vida: {fileID: 211605424}
 --- !u!54 &448986269
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17451,8 +17451,43 @@ PrefabInstance:
     - {fileID: 7912259016119473823, guid: f168f7a9e77b591438597826b4055608, type: 3}
     - {fileID: 2166727844703902120, guid: f168f7a9e77b591438597826b4055608, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8806805725257009959, guid: f168f7a9e77b591438597826b4055608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1808707733}
   m_SourcePrefab: {fileID: 100100000, guid: f168f7a9e77b591438597826b4055608, type: 3}
+--- !u!1 &1808707732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8806805725257009959, guid: f168f7a9e77b591438597826b4055608, type: 3}
+  m_PrefabInstance: {fileID: 1808707731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1808707733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808707732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 287b760772e331f78ac086fec74e044e, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &1814095733
 GameObject:
   m_ObjectHideFlags: 0
@@ -17924,7 +17959,7 @@ MonoBehaviour:
   Casa: {fileID: 1953194025}
   CasaEstado2: {fileID: 1993186972}
   CasaEstado3: {fileID: 448986267}
-  vida: {fileID: 0}
+  vida: {fileID: 211605424}
 --- !u!54 &1953194027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18109,7 +18144,7 @@ MonoBehaviour:
   Casa: {fileID: 1953194025}
   CasaEstado2: {fileID: 1993186972}
   CasaEstado3: {fileID: 448986267}
-  vida: {fileID: 0}
+  vida: {fileID: 211605424}
 --- !u!54 &1993186974
 Rigidbody:
   m_ObjectHideFlags: 0
