@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+using System;
 
 public class Enemigo : MonoBehaviour
 {
-    [Header("------Movimiento------")]
     public float velocidad = 10f;
     private Transform target;
     private Waypoints caminos;
@@ -13,29 +14,10 @@ public class Enemigo : MonoBehaviour
     private GameObject aliadoIdentificado;
     [SerializeField] Animator animator;  // Referencia al Animator
 
-    [Header("------Combate------")]
-    public float vida_maxima = 100f;//La vida maxima del enemigo, solo para comparar y saber si se muere de una vez
-    public float vida = 100f; // La vida del enemigo
-    public float dano_enemigo = 15f;//da�o que causa el enemigo(el aliado tomara esto como parametro en recibirDa�o())
-    private Aliado_stats aliado;
-    private Movimento_Frecha frecha;
-
-    public CharacterCardManager cartas;
-    public ParticleSystem particulasMuerte;
-    public CharacterCardScriptableObject martillo;
-    public CharacterCardScriptableObject berserk;
-
-    // Start is called before the first frame update
-    void Start()
+    //=================================================================================================================================
+    private void Start()
     {
-        //COMBATE
-        vida = vida_maxima;
-        GameObject characterManagerObject = GameObject.Find("Game Manager");
-        esta_en_combate = GetComponent<Movimiento_Enemigo>();
-        cartas = characterManagerObject.GetComponent<CharacterCardManager>();
-
-        //MOVIMIENTO
-        int numeroAleatorio = Random.Range(1, 9);
+        int numeroAleatorio = UnityEngine.Random.Range(1, 9);
         GameObject objWaypoints = GameObject.Find("LINEA" + numeroAleatorio);
         caminos = objWaypoints.GetComponent<Waypoints>();
 
@@ -46,60 +28,56 @@ public class Enemigo : MonoBehaviour
 
         // Obtener el Animator adjunto al GameObject
         animator = GetComponent<Animator>();
-
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        // Establecer el booleano en el Animator
-        animator.SetBool("EstaEnCombate", esta_en_combate);
+
         if (!esta_en_combate)
         {
-            Mover();
+            Vector3 dir = target.position - transform.position;
+            transform.Translate(dir.normalized * velocidad * Time.deltaTime, Space.World);
+
+            if (Vector3.Distance(transform.position, target.position) <= 0.4f)
+            {
+                GetNextWaypoint();
+            }
         }
-        if (esta_en_combate == true && aliado != null)
+        // Si el jefe está en combate pero el objeto "Aliado" con el que estaba en combate ha sido destruido (es decir, aliadoIdentificado es null)...
+        else if (aliadoIdentificado == null)
         {
-            // Accede a la variable dps del aliado
-            recibirDano(aliado.dps);
+            // Establece que el jefe ya no está en combate.
+            esta_en_combate = false;
         }
+
+        // Establecer el booleano en el Animator
+        animator.SetBool("EstaEnCombate", esta_en_combate);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Aliado")
+        if (collision.gameObject.tag == "Aliado") // Habrá que hacer alguna función que al chocar devuelva el tag del objeto 
         {
             esta_en_combate = true;
-            // Obtiene una referencia al objeto del aliado
-            aliado = collision.gameObject.GetComponent<Aliado_stats>();
-        }
-        else if (collision.gameObject.CompareTag("Flecha"))
-        {
-            frecha = collision.gameObject.GetComponent<Movimento_Frecha>();
-            recibirDano(frecha.dps);
-        }
+            aliadoIdentificado = collision.gameObject;
 
+        }
     }
 
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Aliado")
         {
+            aliadoIdentificado = null; // Si el objeto con el que se paró de colisionar es Aliado, es null, lo cual significa que
+            // esto indica que este objeto ya no está en contacto con el objeto "Aliado".
             esta_en_combate = false;
         }
     }
 
-    private void Mover()
-    {
-        Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * velocidad * Time.deltaTime, Space.World);
 
-        if (Vector3.Distance(transform.position, target.position) <= 0.4f)
-        {
-            GetNextWaypoint();
-        }
-    }
+    //=================================================================================================================================
 
+    //======================================______FUNCIONCES MOVIMIENTO______===========================================================
     void GetNextWaypoint()
     {
         waypointIndex++;
@@ -110,6 +88,7 @@ public class Enemigo : MonoBehaviour
         }
         target = caminos.points[waypointIndex];
     }
+
     // Método necesario para el correcto espawneo de los enemigos
     private int ClosestWaypoint()
     {
@@ -128,77 +107,5 @@ public class Enemigo : MonoBehaviour
 
         return closestIndex;
     }
-    //==============================================================================================
-    private void recibirDano(float dano)
-    {
-        if (esta_en_combate == true)
-        {
-            vida -= dano * Time.deltaTime;
-        }
-        // Comprueba si la vida del enemigo ha llegado a 0
-        if (vida <= 0 || dano > vida_maxima)
-        {
-            Morir();
-        }
-    }
-
-
-    int GenerateRandomNumber()
-    {
-        // Genera un número aleatorio entre 0 (inclusive) y 1 (exclusivo)
-        float randomNumber = Random.value;
-
-        // Si el número generado es menor o igual a 0.5, devuelve 1; de lo contrario, devuelve 2
-        if (randomNumber <= 0.5f)
-        {
-            return 1;
-        }
-        else
-        {
-            return 2;
-        }
-    }
-
-    bool DropCarta()
-    {
-        // Genera un número aleatorio entre 0 (inclusive) y 1 (exclusivo)
-        float randomNumber = Random.value;
-
-        // Si el número generado es menor o igual a 0.2, devuelve verdadero; de lo contrario, devuelve falso
-        return randomNumber <= 0.2f;
-    }
-
-    public void Morir()
-    {
-        Destroy(gameObject); // Destruye el enemigo
-        Instantiate(particulasMuerte, transform.position, Quaternion.identity);
-
-        if (DropCarta())
-        {
-            cartaAleatoria();
-        }
-    }
-
-    public void cartaAleatoria()
-    {
-        if (cartas.amtOfCards < 10)
-        {
-            cartas.amtOfCards++;
-
-            if (GenerateRandomNumber() == 1)
-            {
-                cartas.characterCardSO[cartas.amtOfCards - 1] = martillo;
-            }
-            else
-            {
-                cartas.characterCardSO[cartas.amtOfCards - 1] = berserk;
-            }
-
-            cartas.characterCards = new GameObject[cartas.amtOfCards];
-            cartas.AddCharacterCard(cartas.amtOfCards - 1);
-        }
-
-
-    }
-
+    //======================================______FUNCIONCES MOVIMIENTO______==============================================================
 }
