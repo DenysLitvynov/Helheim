@@ -4898,8 +4898,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7798035992064620735}
-  - component: {fileID: 2869315280657424974}
-  - component: {fileID: 1911242349040289846}
   m_Layer: 0
   m_Name: MjolnirContainer
   m_TagString: Untagged
@@ -4928,51 +4926,6 @@ Transform:
   - {fileID: 935025029790247561}
   m_Father: {fileID: 6263758005537839893}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2869315280657424974
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645814238789090858}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 47bcdcbd2e3d3d44383d82e228b6b413, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1911242349040289846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645814238789090858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a4abf9f21cf0441b865994a762ca46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Truenos:
-  - {fileID: 7196174492814249295}
-  - {fileID: 6148527653592392799}
-  - {fileID: 3557763579814094401}
-  - {fileID: 3053757818572054373}
-  - {fileID: 9162349101358538017}
-  colliders:
-  - {fileID: 3773793775416592877}
-  - {fileID: 401803198901574876}
-  - {fileID: 401803198901574876}
-  delay: 5
-  animator: {fileID: 2869315280657424974}
 --- !u!1 &1832909250329589520
 GameObject:
   m_ObjectHideFlags: 0
@@ -14853,7 +14806,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -19764,7 +19717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &781199207686983562
 Transform:
   m_ObjectHideFlags: 0
@@ -24721,11 +24674,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6263758005537839893}
   - component: {fileID: 2784925254787030893}
-  - component: {fileID: 1390134966350303103}
-  - component: {fileID: 8577164990442342839}
-  - component: {fileID: 9051849808643350871}
   - component: {fileID: 672528634730418873}
-  - component: {fileID: 3773793775416592877}
+  - component: {fileID: 6338328363366424585}
+  - component: {fileID: 6351910088997534586}
+  - component: {fileID: 8344529139072299450}
+  - component: {fileID: 5838872361381976418}
   m_Layer: 0
   m_Name: MjolnirConEfectos 1
   m_TagString: Personaje
@@ -24777,52 +24730,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &1390134966350303103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8275762538680189098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5720af7c0f666044808ff7473f66ab3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combate_enemigo: 0
-  vida_Maxima: 50
-  vida: 50
-  dps: 200
-  particulasMuerte: {fileID: 0}
---- !u!114 &8577164990442342839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8275762538680189098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d52b0f47ce2e8d77e84f3512947a6180, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 0
-  esta_en_combate: 0
-  colocado: 0
-  spawn: {fileID: 0}
-  animator: {fileID: 0}
---- !u!114 &9051849808643350871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8275762538680189098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f79349f268eaef4b9f5f88a5d19ea83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &672528634730418873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24842,12 +24749,13 @@ MonoBehaviour:
   - {fileID: 3053757818572054373}
   - {fileID: 9162349101358538017}
   colliders:
-  - {fileID: 3773793775416592877}
-  - {fileID: 401803198901574876}
-  - {fileID: 401803198901574876}
-  delay: 5
-  animator: {fileID: 2869315280657424974}
---- !u!65 &3773793775416592877
+  - {fileID: 6338328363366424585}
+  - {fileID: 6351910088997534586}
+  delay: 3
+  animator: {fileID: 8344529139072299450}
+  colocadoCarta: {fileID: 5838872361381976418}
+  danomartillo: 2000
+--- !u!65 &6338328363366424585
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24866,8 +24774,67 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 0
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.5288336, z: 1}
-  m_Center: {x: 0, y: 0.9684657, z: 0}
+  m_Size: {x: 67.562294, y: 10.063002, z: 3.0526872}
+  m_Center: {x: 4.052379, y: 4.5314775, z: -1.0263027}
+--- !u!65 &6351910088997534586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275762538680189098}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 3.5619035, y: 11.013347, z: 44.304913}
+  m_Center: {x: 1.2809464, y: 5.0066643, z: 2.095699}
+--- !u!95 &8344529139072299450
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275762538680189098}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 47bcdcbd2e3d3d44383d82e228b6b413, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5838872361381976418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8275762538680189098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52b0f47ce2e8d77e84f3512947a6180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 0
+  esta_en_combate: 0
+  colocado: 0
+  spawn: {fileID: 0}
+  animator: {fileID: 8344529139072299450}
 --- !u!1001 &1056282563006520456
 PrefabInstance:
   m_ObjectHideFlags: 0
