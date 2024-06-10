@@ -44,6 +44,18 @@ PrefabInstance:
       propertyPath: velocidad
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5380865157374094893, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
+      propertyPath: vida
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380865157374094893, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
+      propertyPath: vida_maxima
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380865157374094893, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
+      propertyPath: dano_enemigo
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.9454062

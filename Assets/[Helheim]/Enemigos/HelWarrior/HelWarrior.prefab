@@ -141,9 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_maxima: 150
-  vida: 150
-  dano_enemigo: 35
+  vida_maxima: 80
+  vida: 80
+  dano_enemigo: 20
   cartas: {fileID: 0}
   particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
   martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
@@ -1680,7 +1680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7764957275342757137}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.28586918, y: -0.6467448, z: -0.6467448, w: 0.28586918}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.998847, y: 14.983764, z: -6.7336698}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
@@ -1691,7 +1691,7 @@ Transform:
   - {fileID: 5068441571177156381}
   - {fileID: 8870195477138662324}
   m_Father: {fileID: 3045167626108582767}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -132.308}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &7868557736023207482
 GameObject:
   m_ObjectHideFlags: 0
