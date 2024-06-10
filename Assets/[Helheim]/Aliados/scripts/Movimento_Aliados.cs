@@ -57,8 +57,8 @@ public class Movimiento_Aliodos : MonoBehaviour
         }
 
         // Establecer el booleano en el Animator
-        animator.SetBool("EstaEnCombate", esta_en_combate);
-        animator.SetBool("Colocado", colocado);
+        animator?.SetBool("EstaEnCombate", esta_en_combate);
+        animator?.SetBool("Colocado", colocado);
 
     }
          //
@@ -89,8 +89,12 @@ public class Movimiento_Aliodos : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Entorno")
         {
-         
-            Destroy(this.gameObject);
+            if (gameObject.GetComponent<MjolnirController>() == null) //El mijnolir controller no debe destruirse con el entorno sino que se destruye al caer en su script!
+            {
+                Destroy(this.gameObject);
+            }
+
+
         }
     }
 

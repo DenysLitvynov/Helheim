@@ -11,7 +11,9 @@ public class Espectro_Stats : MonoBehaviour
     private Aliado_stats aliado;
     private aliado_muro muro;
     private Movimento_Frecha flecha;
-      public CharacterCardManager cartas;
+    public MjolnirController Mjolnir;
+    public CharacterCardManager cartas;
+    
 
     public CharacterCardScriptableObject martillo;
     public CharacterCardScriptableObject berserk;
@@ -33,6 +35,8 @@ public class Espectro_Stats : MonoBehaviour
             aliado = collision.gameObject.GetComponent<Aliado_stats>();
             muro = collision.gameObject.GetComponent<aliado_muro>();
             flecha= collision.gameObject.GetComponent<Movimento_Frecha>();
+            Mjolnir = collision.gameObject.GetComponent<MjolnirController>();
+
             if (aliado != null )
             {
                 // Hace daño al aliado
@@ -49,7 +53,12 @@ public class Espectro_Stats : MonoBehaviour
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
             }
-            if(DropCarta()){
+            else if (Mjolnir != null)
+            {
+                //Destroy(collision.gameObject);
+                Destroy(gameObject);
+            }
+            if (DropCarta()){
                 cartaAleatoria();
             }
         }
