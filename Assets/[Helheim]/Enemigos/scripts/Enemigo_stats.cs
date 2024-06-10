@@ -34,8 +34,9 @@ public class Enemigo_stats : MonoBehaviour
         }
     }
 
-    private void recibirDano(float dano)
+    public void recibirDano(float dano)
     {
+        
         if (combate.esta_en_combate == true)
         {
             vida -= dano * Time.deltaTime;
