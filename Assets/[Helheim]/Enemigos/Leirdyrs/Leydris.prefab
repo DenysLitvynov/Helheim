@@ -392,6 +392,7 @@ GameObject:
   - component: {fileID: 7603413237113519247}
   - component: {fileID: 3003328762622400202}
   - component: {fileID: 4916320889735308734}
+  - component: {fileID: -7648498320715833274}
   m_Layer: 0
   m_Name: Leydris
   m_TagString: Untagged
@@ -407,7 +408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752058162703858448}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.70025045, z: -0, w: 0.7138972}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -212.26814, y: 0, z: -60.36318}
   m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
   m_ConstrainProportionsScale: 0
@@ -415,7 +416,7 @@ Transform:
   - {fileID: 2605016007308452032}
   - {fileID: 3716358538286553838}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -88.894, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!95 &-2132484646260699391
 Animator:
   serializedVersion: 5
@@ -449,9 +450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_maxima: 300
-  vida: 300
-  dano_enemigo: 25
+  vida_maxima: 100
+  vida: 100
+  dano_enemigo: 20
   cartas: {fileID: 0}
   particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
   martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
@@ -468,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 0.2
+  velocidad: 5
   esta_en_combate: 0
   animator: {fileID: -2132484646260699391}
 --- !u!65 &3003328762622400202
@@ -519,6 +520,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &-7648498320715833274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752058162703858448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a9d357ae8146d4d8adc69f11a8deed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &787597222041622794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,7 +1521,7 @@ Transform:
   m_GameObject: {fileID: 7925556835455430823}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.29153824, y: 20.20136, z: 9.530523}
+  m_LocalPosition: {x: 0.042, y: 20.20136, z: 9.530523}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children:
