@@ -76,9 +76,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combate_enemigo: 0
-  vida_Maxima: 600
-  vida: 600
-  dps: 700
+  vida_Maxima: 150
+  vida: 150
+  dps: 50
   particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
 --- !u!114 &2097530402022438228
 MonoBehaviour:
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41de95f9131a6654497518524f3ccf04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 7
+  velocidad: 6
   esta_en_combate: 0
   colocado: 0
   spawn: {fileID: 5586318276742224296, guid: 1a4f36a94c6ff4a43884eac17eed039e, type: 3}

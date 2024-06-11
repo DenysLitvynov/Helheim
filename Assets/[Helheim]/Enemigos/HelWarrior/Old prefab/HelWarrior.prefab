@@ -40,6 +40,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3288828975219531886}
     m_Modifications:
+    - target: {fileID: -759458937477484992, guid: 69d8a58afb2345025a793bcdf46062c2, type: 3}
+      propertyPath: vida
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: -759458937477484992, guid: 69d8a58afb2345025a793bcdf46062c2, type: 3}
+      propertyPath: vida_maxima
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: -759458937477484992, guid: 69d8a58afb2345025a793bcdf46062c2, type: 3}
+      propertyPath: dano_enemigo
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 576776858767351060, guid: 69d8a58afb2345025a793bcdf46062c2, type: 3}
       propertyPath: m_Name
       value: HelWarrior

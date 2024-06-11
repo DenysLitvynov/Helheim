@@ -9,7 +9,7 @@ public class MjolnirController : MonoBehaviour
     public float delay = 3f;
     public Animator animator; // El Animator del objeto
     [SerializeField] Movimiento_Aliodos colocadoCarta;
-    public int danomartillo = 200;
+    public int danomartillo = 120;
 
     private Espectro_Stats espectro;
 

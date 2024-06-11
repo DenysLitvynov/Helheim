@@ -1689,9 +1689,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combate_enemigo: 0
-  vida_Maxima: 100
-  vida: 100
-  dps: 30
+  vida_Maxima: 60
+  vida: 60
+  dps: 10
   particulasMuerte: {fileID: 0}
 --- !u!65 &6139211149671894899
 BoxCollider:

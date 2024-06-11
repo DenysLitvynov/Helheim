@@ -165,7 +165,7 @@ public class Enemigo : MonoBehaviour
         float randomNumber = Random.value;
 
         // Si el número generado es menor o igual a 0.2, devuelve verdadero; de lo contrario, devuelve falso
-        return randomNumber <= 0.2f;
+        return randomNumber <= 0.4f;
     }
 
     public void Morir()
