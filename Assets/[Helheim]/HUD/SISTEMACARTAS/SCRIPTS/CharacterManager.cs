@@ -4,32 +4,38 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Windows;
+using UnityEditor.Animations;
 
-public class CharacterManager : MonoBehaviour,IPointerClickHandler
+public class CharacterManager : MonoBehaviour
 {
 
     public GameObject panelCanvas;
     public GameObject characterPrefab;
     public Sprite levelCard;
+    public Image CardImage;
+    public GameObject cooldownImageGameObject;
+    public Image cooldownImage;
 
     GameObject character;
     public bool colocandoPersonaje=false;
     public float tiempoEspera; // Tiempo que debe pasar antes de poder colocar otro personaje
-    private float tiempoUltimaColocacion = Mathf.NegativeInfinity; // Inicializamos el tiempo de la última colocación con un valor muy pequeñodo haces click a una carta
+    private float tiempoUltimaColocacion = 0; // Inicializamos el tiempo de la última colocación con un valor muy pequeñodo haces click a una carta
     public string nombre;
 
     public CharacterCardManager cartas;
-    
+    public Animator animator;
+    public CanvasGroup cartaCanvasGroup;
+
    private void Start()
     {
         GameObject characterManagerObject = GameObject.Find("Game Manager");
         cartas = characterManagerObject.GetComponent<CharacterCardManager>();
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void ActivarCarta()
     {
        
-        if (Time.time - tiempoUltimaColocacion >= tiempoEspera || tiempoUltimaColocacion == Mathf.NegativeInfinity)
+        if (Time.time - tiempoUltimaColocacion >= tiempoEspera || tiempoUltimaColocacion == 0)
         {
             
             //Sirve para saber si se esta colocando un personaje o no;
@@ -57,16 +63,37 @@ public class CharacterManager : MonoBehaviour,IPointerClickHandler
             if(randomNumber() && levelCard.name!="LVL3" && nombre !="Berserk" && nombre !="Mjolnir"){
                 MejorarCarta(nombre);
             }
+
             if(nombre =="Berserk" ||  nombre =="Mjolnir"){
-                Destroy(gameObject);
+                animator.SetTrigger("UsoCartaEspecial");
+                cooldownImageGameObject.SetActive(false);
+                Destroy(gameObject, 2);
             }
+
+            StartCoroutine("Cooldown");
             
-  
-        }else{
+
+        }
+        else{
             Debug.Log("La carta esta en cooldown");
         }
 
     } 
+
+    IEnumerator Cooldown()
+    {
+        cartaCanvasGroup.alpha = 0.4f;
+        cooldownImageGameObject.SetActive(true);
+        float aux = 0;
+        while (aux < tiempoEspera)
+        {
+            yield return null;
+            aux += Time.deltaTime;
+            cooldownImage.fillAmount = aux / tiempoEspera;
+        }
+        cooldownImageGameObject.SetActive(false);
+        cartaCanvasGroup.alpha = 1f;
+    }
 
     void MejorarCarta(string nombreCarta){
         CharacterCardScriptableObject prefab ;
@@ -78,8 +105,8 @@ public class CharacterManager : MonoBehaviour,IPointerClickHandler
         this.characterPrefab=prefab.characterSprite;
         this.levelCard=prefab.levelCard;
         this.tiempoEspera=prefab.cooldown;
-        
-        GetComponent<Image>().sprite= this.levelCard;
+
+        CardImage.sprite= this.levelCard;
         //GetComponentInChildren<RawImage>().texture = this.characterPrefab;
         //cartas.characterCards = new GameObject[cartas.amtOfCards];
            
@@ -94,5 +121,14 @@ public class CharacterManager : MonoBehaviour,IPointerClickHandler
         return randomNumber <= 0.5f;
     }
     
-   
+   public void SelectedCard()
+    {
+        animator.SetBool("CartaSeleccionada", true);
+    }
+
+    public void ResetCard()
+    {
+        animator.SetBool("CartaSeleccionada", false);
+
+    }
 }
