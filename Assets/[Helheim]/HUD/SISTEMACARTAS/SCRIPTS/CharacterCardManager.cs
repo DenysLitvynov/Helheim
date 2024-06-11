@@ -57,10 +57,10 @@ public class CharacterCardManager : MonoBehaviour
         colocados=characterCardSO[index].colocados;
 
         //Actualiza la UI
-        card.GetComponent<Image>().sprite= levelCard;
+        cardManager.CardImage.sprite= levelCard;
         card.GetComponentInChildren<RawImage>().texture = characterIcon;
-        card.transform.Find("Nombre Personaje").GetComponent<TMP_Text>().text= "" + nombre;
-        card.transform.Find("Descripcion Personaje").GetComponent<TMP_Text>().text= "" + descripcion;
+        card.transform.GetChild(0).Find("Nombre Personaje").GetComponent<TMP_Text>().text= "" + nombre;
+        card.transform.GetChild(0).Find("Descripcion Personaje").GetComponent<TMP_Text>().text= "" + descripcion;
         
 
   
