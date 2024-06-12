@@ -3,7 +3,12 @@ guid: 42e0b9d486bc62a4d83396f03f51b653
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - cartas: {instanceID: 0}
+  - martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  - berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
+  - particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
