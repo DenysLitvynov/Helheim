@@ -14,14 +14,14 @@ public class Enemigo : MonoBehaviour
     private Waypoints caminos;
     private int waypointIndex = 0;
     private GameObject aliadoIdentificado;
-    private bool SepuedeMover;
+    private bool SepuedeMover=true;
 
     [Header("-----------------Combate-----------------")]
     public bool esta_en_combate = false;
     public float vida_maxima = 100f;//La vida maxima del enemigo, solo para comparar y saber si se muere de una vez
     public float vida = 100f; // La vida del enemigo
     public float dano_enemigo = 15f;//da�o que causa el enemigo(el aliado tomara esto como parametro en recibirDa�o())
-    private Aliado_stats aliado;
+    private Aliado aliado;
     private Movimento_Frecha frecha;
     public CharacterCardManager cartas;
     public CharacterCardScriptableObject martillo;
@@ -29,7 +29,9 @@ public class Enemigo : MonoBehaviour
 
     [Header("-----------------FX Y SFX-----------------")]
     public ParticleSystem particulasMuerte;
-    
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] EfectosDesonido;
+
 
     //======================================_________FUNCIONCES UNITY_________===========================================================
     private void Start()
@@ -49,6 +51,7 @@ public class Enemigo : MonoBehaviour
         vida = vida_maxima;
         GameObject characterManagerObject = GameObject.Find("Game Manager");
         cartas = characterManagerObject.GetComponent<CharacterCardManager>();
+      
     }
 
     private void Update()
@@ -81,7 +84,7 @@ public class Enemigo : MonoBehaviour
             aliadoIdentificado = collision.gameObject;
          
                 // Obtiene una referencia al objeto del aliado
-                aliado = collision.gameObject.GetComponent<Aliado_stats>();
+                aliado = collision.gameObject.GetComponent<Aliado>();
 
         }
         else if (collision.gameObject.CompareTag("Flecha"))
@@ -112,10 +115,12 @@ public class Enemigo : MonoBehaviour
         if (!esta_en_combate &&SepuedeMover) { 
             Vector3 dir = target.position - transform.position;
             transform.Translate(dir.normalized * velocidad * Time.deltaTime, Space.World);
+            audioSource.PlayOneShot(EfectosDesonido[0]);//EFECTO DE SONIDO AL CAMINAR
 
             if (Vector3.Distance(transform.position, target.position) <= 0.4f)
             {
                 GetNextWaypoint();
+                
             }
             return;
         }
@@ -167,12 +172,16 @@ public class Enemigo : MonoBehaviour
         if (esta_en_combate == true)
         {
             vida -= dano * Time.deltaTime;
+            // Establecer el booleano en el Animator
+            audioSource.PlayOneShot(EfectosDesonido[1]);//EFECTO DE SONIDO AL CAMINAR
+
+            if (vida <= 0 || dano >= vida_maxima)
+            {
+                Morir();// Destruye el aliado
+            }
         }
-        // Comprueba si la vida del enemigo ha llegado a 0
-        if (vida <= 0 || dano > vida_maxima)
-        {
-            Morir();
-        }
+        // Comprueba si la vida del aliado ha llegado a 0
+      
     }
 
     public void Morir()
@@ -186,6 +195,7 @@ public class Enemigo : MonoBehaviour
         {
             cartaAleatoria();
         }
+        audioSource.PlayOneShot(EfectosDesonido[2]);//EFECTO DE SONIDO AL CAMINAR
     }
 
     public void cartaAleatoria()

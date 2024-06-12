@@ -10,7 +10,7 @@ public class Aliado : MonoBehaviour
     //===========================================================================================
     [Header("-----------------Movimiento-----------------")]
     public float velocidad = 5f;
-    private float velocidad2;
+   
     public bool colocado = false;
     [SerializeField] bool SePuedeMover;
 
@@ -31,6 +31,8 @@ public class Aliado : MonoBehaviour
     private float fixedYOffset = 0.15f; // Ajusta este valor según sea necesario
     private bool spawnEffectInstanciado = false;
     public ParticleSystem particulasMuerte;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] EfectosDesonido;
 
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_____FUNCIONES DE UNITY_______++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -44,8 +46,9 @@ public class Aliado : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!esta_en_combate) { 
          Mover();
-
+        }
 
 
         if (esta_en_combate == true)
@@ -121,7 +124,8 @@ public class Aliado : MonoBehaviour
         if (!esta_en_combate && colocado && SePuedeMover)
         {
             transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
-           
+            audioSource.PlayOneShot(EfectosDesonido[0]);//EFECTO DE SONIDO AL CAMINAR
+
         }
     }
 
@@ -143,11 +147,11 @@ public class Aliado : MonoBehaviour
         {
             vida -= dano * Time.deltaTime;
             // Establecer el booleano en el Animator
-              
+            audioSource.PlayOneShot(EfectosDesonido[1]);//EFECTO DE SONIDO AL CAMINAR
 
         }
         // Comprueba si la vida del aliado ha llegado a 0
-        if (vida <= 0)
+        if (vida <= 0||dano>=vida_Maxima)
         {
             Morir();// Destruye el aliado
         }
