@@ -84,6 +84,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4040053631185072580, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
+      propertyPath: EfectosDesonido.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: a66f6352b0919d54fae5f8b3984c4e91, type: 3}
+    - target: {fileID: 4040053631185072580, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
+      propertyPath: EfectosDesonido.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 853b16b185f41f640a4ec68976b92d8a, type: 3}
+    - target: {fileID: 4040053631185072580, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
+      propertyPath: EfectosDesonido.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8107575557454717459}
   - component: {fileID: 2783993186162896688}
-  - component: {fileID: 3534861270979550301}
-  - component: {fileID: 594714017149801496}
   - component: {fileID: 806917225816181210}
   - component: {fileID: -1224204639791524076}
   - component: {fileID: 6730369120996619417}
   - component: {fileID: 2055650049294423664}
+  - component: {fileID: 262033252821890424}
+  - component: {fileID: 4795510414845660991}
   m_Layer: 0
   m_Name: Boss2
   m_TagString: Enemigo
@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.91, y: 4.38, z: -0.08}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.72345006, y: 0.72345006, z: 0.72345006}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2036482895200194576}
@@ -66,40 +66,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &3534861270979550301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7748322054679884646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida_maxima: 200
-  vida: 200
-  dano_enemigo: 30
-  cartas: {fileID: 0}
-  particulasMuerte: {fileID: 1179168509732900640, guid: 6b625974d012f9748b25d1e1042bdcfd, type: 3}
-  martillo: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
-  berserk: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
---- !u!114 &594714017149801496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7748322054679884646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 3
-  esta_en_combate: 0
-  animator: {fileID: 0}
 --- !u!114 &806917225816181210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +132,129 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &262033252821890424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7748322054679884646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e0b9d486bc62a4d83396f03f51b653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2055650049294423664}
+  velocidad: 3
+  esta_en_combate: 0
+  vida_maxima: 200
+  vida: 100
+  dano_enemigo: 30
+  cartas: {fileID: 0}
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
+  particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
+  audioSource: {fileID: 4795510414845660991}
+  EfectosDesonido:
+  - {fileID: 8300000, guid: a66f6352b0919d54fae5f8b3984c4e91, type: 3}
+  - {fileID: 8300000, guid: 853b16b185f41f640a4ec68976b92d8a, type: 3}
+  - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
+--- !u!82 &4795510414845660991
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7748322054679884646}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2002328434552633339
 PrefabInstance:
   m_ObjectHideFlags: 0

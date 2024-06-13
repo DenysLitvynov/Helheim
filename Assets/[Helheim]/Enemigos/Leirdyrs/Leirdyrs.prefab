@@ -464,12 +464,12 @@ GameObject:
   - component: {fileID: 2705013017973604063}
   - component: {fileID: 1326033084520007058}
   - component: {fileID: 6850213899280553933}
-  - component: {fileID: 6859098530163289504}
   - component: {fileID: 218764081832977363}
-  - component: {fileID: 4240177782273892317}
+  - component: {fileID: 3422798282338053002}
+  - component: {fileID: 4040053631185072580}
   m_Layer: 0
   m_Name: Leirdyrs
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -539,21 +539,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &6859098530163289504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028885711541518131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 0.3
-  esta_en_combate: 0
-  animator: {fileID: 218764081832977363}
 --- !u!95 &218764081832977363
 Animator:
   serializedVersion: 5
@@ -575,7 +560,103 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4240177782273892317
+--- !u!82 &3422798282338053002
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028885711541518131}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &4040053631185072580
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -584,16 +665,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 2028885711541518131}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 42e0b9d486bc62a4d83396f03f51b653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_maxima: 100
+  animator: {fileID: 218764081832977363}
+  velocidad: 0.3
+  esta_en_combate: 0
+  vida_maxima: 150
   vida: 100
   dano_enemigo: 15
   cartas: {fileID: 0}
-  particulasMuerte: {fileID: 0}
   martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
-  berserk: {fileID: 11400000, guid: b2a4c3f1a69e686498739ca35694608f, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
+  particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
+  audioSource: {fileID: 3422798282338053002}
+  EfectosDesonido:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2120159231661284056
 GameObject:
   m_ObjectHideFlags: 0
