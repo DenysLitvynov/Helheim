@@ -63,6 +63,10 @@ public class Aliado : MonoBehaviour
                 recibirDano(espectro.daсo_espectro);
 
             }
+            if(enemigo==null )
+            {
+                esta_en_combate=false;
+            }
 
         }
 

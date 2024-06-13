@@ -108,10 +108,10 @@ MonoBehaviour:
   particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
   audioSource: {fileID: 2479924306814959662}
   EfectosDesonido:
-  - {fileID: 8300000, guid: 52ed9060620d4a24ea27c7a8bd4fa40c, type: 3}
+  - {fileID: 8300000, guid: aff6e1a19591da23eb1e253ebc14e844, type: 3}
   - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
   - {fileID: 8300000, guid: 853b16b185f41f640a4ec68976b92d8a, type: 3}
-  - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
+  - {fileID: 8300000, guid: a1d76e2417931481a918e39e82277114, type: 3}
 --- !u!82 &2479924306814959662
 AudioSource:
   m_ObjectHideFlags: 0

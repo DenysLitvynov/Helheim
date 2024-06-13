@@ -18,8 +18,15 @@ public class Espectro_Stats : MonoBehaviour
     public CharacterCardScriptableObject martillo;
     public CharacterCardScriptableObject berserk;
 
+   [Header("-----------------FX Y SFX-----------------")]
+    public ParticleSystem particulasMuerte;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] EfectosDesonido;
+
+
     private void Start()
     {
+        audioSource.PlayOneShot(EfectosDesonido[0]);
         combate = GetComponent<Movimiento_Enemigo>();
 
         GameObject characterManagerObject = GameObject.Find("Game Manager");
@@ -42,21 +49,24 @@ public class Espectro_Stats : MonoBehaviour
                 // Hace daño al aliado
                 aliado.vida -= daсo_espectro; // Elimina la multiplicación por Time.deltaTime
                 // Destruye el espectro
-                
                 Destroy(gameObject);
+                audioSource.PlayOneShot(EfectosDesonido[1]);
             }else if(muro != null){
                  // Hace daño al aliado
                 muro.vida -= daсo_espectro; // Elimina la multiplicación por Time.deltaTime
                 // Destruye el espectro
                 Destroy(gameObject);
+                audioSource.PlayOneShot(EfectosDesonido[1]);
             }else if(flecha != null){
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
+                audioSource.PlayOneShot(EfectosDesonido[1]);
             }
             else if (Mjolnir != null)
             {
                 //Destroy(collision.gameObject);
                 Destroy(gameObject);
+                audioSource.PlayOneShot(EfectosDesonido[1]);
             }
             if (DropCarta()){
                 cartaAleatoria();
