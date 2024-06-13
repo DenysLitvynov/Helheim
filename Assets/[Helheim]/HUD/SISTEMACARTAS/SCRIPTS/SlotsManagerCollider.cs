@@ -80,7 +80,7 @@ public class SlotsManagerCollider : MonoBehaviour
             character = GameObject.FindGameObjectWithTag("Personaje");
             Aliado characterScript = character.GetComponent<Aliado>();
            
-            Aliado berserkerScript = character.GetComponent<Aliado>();
+            Movimiento_Aliodos mjolnirScript = character.GetComponent<Movimiento_Aliodos>();
             
             SpawnArrow spawnScript = character.GetComponentInChildren<SpawnArrow>();
 
@@ -88,8 +88,8 @@ public class SlotsManagerCollider : MonoBehaviour
                 characterScript.colocado=true;
             }else if(spawnScript!=null){
                 spawnScript.colocado=true;
-            }else if(berserkerScript!=null){
-                berserkerScript.colocado=true;
+            }else if(mjolnirScript!=null){
+                mjolnirScript.colocado=true;
             }
                         
             character.tag="Aliado";

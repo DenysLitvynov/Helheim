@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Windows;
-using UnityEditor.Animations;
+//using UnityEditor.Animations;
 
 public class CharacterManager : MonoBehaviour
 {

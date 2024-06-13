@@ -52,7 +52,12 @@ public class Movimiento_Aliodos : MonoBehaviour
             Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + fixedYOffset, transform.position.z);
             // Ajuste de rotación para que el sistema de partículas mire hacia arriba
             Quaternion rotation = Quaternion.Euler(-90, 0, 0);
-            ParticleSystem effectInstance = Instantiate(spawn, spawnPosition, rotation);
+
+            if (spawn!=null)
+            {
+                ParticleSystem effectInstance = Instantiate(spawn, spawnPosition, rotation);
+            }
+            
             spawnEffectInstanciado = true;
         }
 
