@@ -45,17 +45,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8227139801773012177}
     - target: {fileID: -2896356979381508055, guid: 69d8a58afb2345025a793bcdf46062c2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1987582830430714801}
+    - target: {fileID: -2896356979381508055, guid: 69d8a58afb2345025a793bcdf46062c2, type: 3}
       propertyPath: EfectosDesonido.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -2896356979381508055, guid: 69d8a58afb2345025a793bcdf46062c2, type: 3}
       propertyPath: EfectosDesonido.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: a66f6352b0919d54fae5f8b3984c4e91, type: 3}
+      objectReference: {fileID: 8300000, guid: 2721da175fb561908bb986e115208b9d, type: 3}
     - target: {fileID: -2896356979381508055, guid: 69d8a58afb2345025a793bcdf46062c2, type: 3}
       propertyPath: EfectosDesonido.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 853b16b185f41f640a4ec68976b92d8a, type: 3}
+      objectReference: {fileID: 8300000, guid: 1c0f3b62e9ce94a30aadce8df3767c1f, type: 3}
     - target: {fileID: -2896356979381508055, guid: 69d8a58afb2345025a793bcdf46062c2, type: 3}
       propertyPath: EfectosDesonido.Array.data[2]
       value: 

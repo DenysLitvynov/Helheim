@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+
 
 public class Espectro_Stats : MonoBehaviour
 {
     private Movimiento_Enemigo combate;
-    public float vida_maxima = 100f;//La vida maxima del enemigo, solo para comparar y saber si se muere de una vez
-    public float vida = 100f; // La vida del enemigo
+
     public float daсo_espectro = 50f;//daсo que causa el enemigo(el aliado tomara esto como parametro en recibirDaсo())
     private Aliado aliado;
-    private Aliado muro;
+    private aliado_muro muro;
     private Movimento_Frecha flecha;
     public MjolnirController Mjolnir;
     public CharacterCardManager cartas;
@@ -18,8 +19,15 @@ public class Espectro_Stats : MonoBehaviour
     public CharacterCardScriptableObject martillo;
     public CharacterCardScriptableObject berserk;
 
+   [Header("-----------------FX Y SFX-----------------")]
+    public ParticleSystem particulasMuerte;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip[] EfectosDesonido;
+
+
     private void Start()
     {
+        audioSource.PlayOneShot(EfectosDesonido[0]);
         combate = GetComponent<Movimiento_Enemigo>();
 
         GameObject characterManagerObject = GameObject.Find("Game Manager");
@@ -33,36 +41,43 @@ public class Espectro_Stats : MonoBehaviour
         {
             // Obtiene una referencia al objeto del aliado
             aliado = collision.gameObject.GetComponent<Aliado>();
-            muro = collision.gameObject.GetComponent<Aliado>();
+            muro = collision.gameObject.GetComponent<aliado_muro>();
             flecha= collision.gameObject.GetComponent<Movimento_Frecha>();
             Mjolnir = collision.gameObject.GetComponent<MjolnirController>();
-
+            Debug.Log("Hello: ");
             if (aliado != null )
             {
+                 
                 // Hace daño al aliado
                 aliado.vida -= daсo_espectro; // Elimina la multiplicación por Time.deltaTime
                 // Destruye el espectro
-                
-                Destroy(gameObject);
+                StartCoroutine(Die());
             }else if(muro != null){
                  // Hace daño al aliado
                 muro.vida -= daсo_espectro; // Elimina la multiplicación por Time.deltaTime
                 // Destruye el espectro
-                Destroy(gameObject);
+                StartCoroutine(Die());
             }else if(flecha != null){
                 Destroy(collision.gameObject);
-                Destroy(gameObject);
+                StartCoroutine(Die());
             }
             else if (Mjolnir != null)
             {
                 //Destroy(collision.gameObject);
-                Destroy(gameObject);
+                StartCoroutine(Die());
             }
             if (DropCarta()){
                 cartaAleatoria();
             }
         }
     }
+    IEnumerator Die(){
+    
+    audioSource.PlayOneShot(EfectosDesonido[1]);
+    yield return new WaitForSeconds(1); //waits 3 seconds
+    Destroy(gameObject); //this will work after 3 seconds.
+}
+
 
     public void cartaAleatoria(){
         

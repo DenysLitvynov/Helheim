@@ -572,13 +572,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.8
+  m_Pitch: 1.45
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 100
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -680,9 +680,9 @@ MonoBehaviour:
   particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
   audioSource: {fileID: 3422798282338053002}
   EfectosDesonido:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 2721da175fb561908bb986e115208b9d, type: 3}
+  - {fileID: 8300000, guid: 5978baf70917bc2f782d670eb7138378, type: 3}
+  - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
 --- !u!1 &2120159231661284056
 GameObject:
   m_ObjectHideFlags: 0

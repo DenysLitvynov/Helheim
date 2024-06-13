@@ -63,6 +63,10 @@ public class Aliado : MonoBehaviour
                 recibirDano(espectro.daсo_espectro);
 
             }
+            if(enemigo==null )
+            {
+                esta_en_combate=false;
+            }
 
         }
 
@@ -162,14 +166,18 @@ public class Aliado : MonoBehaviour
 
     void playSonidoAtaque()
     {
+
         audioSource.PlayOneShot(EfectosDesonido[2]);//EFECTO DE SONIDO AL CAMINAR
     }
 
     public void Morir()
     {
-        Destroy(gameObject); // Destruye el enemigo
+        Destroy(gameObject, (2)); // Destruye el enemigo
         Instantiate(particulasMuerte, transform.position, Quaternion.identity);
+        audioSource.PlayOneShot(EfectosDesonido[3]);
+
     }
+
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_____FUNCIONES DE COMBATE_______++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
