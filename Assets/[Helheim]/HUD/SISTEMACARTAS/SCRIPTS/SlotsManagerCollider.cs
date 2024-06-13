@@ -78,9 +78,9 @@ public class SlotsManagerCollider : MonoBehaviour
   
         if(colocandoPersoanje==true ){
             character = GameObject.FindGameObjectWithTag("Personaje");
-            Movimiento_Aliodos characterScript = character.GetComponent<Movimiento_Aliodos>();
+            Aliado characterScript = character.GetComponent<Aliado>();
            
-            Movimiento_Berserk berserkerScript = character.GetComponent<Movimiento_Berserk>();
+            Aliado berserkerScript = character.GetComponent<Aliado>();
             
             SpawnArrow spawnScript = character.GetComponentInChildren<SpawnArrow>();
 

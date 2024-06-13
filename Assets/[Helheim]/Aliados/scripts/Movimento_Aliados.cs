@@ -56,9 +56,13 @@ public class Movimiento_Aliodos : MonoBehaviour
             spawnEffectInstanciado = true;
         }
 
-        // Establecer el booleano en el Animator
-        animator?.SetBool("EstaEnCombate", esta_en_combate);
-        animator?.SetBool("Colocado", colocado);
+        if(animator!= null)
+        {
+            // Establecer el booleano en el Animator
+            animator?.SetBool("EstaEnCombate", esta_en_combate);
+            animator?.SetBool("Colocado", colocado);
+        }
+       
 
     }
          //

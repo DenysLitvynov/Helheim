@@ -74,6 +74,7 @@ public class Aliado : MonoBehaviour
             Quaternion rotation = Quaternion.Euler(-90, 0, 0);
             ParticleSystem effectInstance = Instantiate(spawn, spawnPosition, rotation);
             spawnEffectInstanciado = true;
+            audioSource.PlayOneShot(EfectosDesonido[0]);//EFECTO DE SONIDO AL CAMINAR
         }
 
         if(animator!=null)
@@ -125,7 +126,7 @@ public class Aliado : MonoBehaviour
         if (!esta_en_combate && colocado && SePuedeMover)
         {
             transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
-            audioSource.PlayOneShot(EfectosDesonido[0]);//EFECTO DE SONIDO AL CAMINAR
+            
 
         }
     }
@@ -133,10 +134,12 @@ public class Aliado : MonoBehaviour
     void empezarMovimiento()
     {
         SePuedeMover = true;
+        audioSource.PlayOneShot(EfectosDesonido[1]);//EFECTO DE SONIDO AL CAMINAR
     }
     void PararMovimiento()
     {
         SePuedeMover = false;
+        audioSource.PlayOneShot(EfectosDesonido[1]);//EFECTO DE SONIDO AL CAMINAR
     }
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_____FUNCIONES DE MOVIMIENTO_______++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -148,7 +151,6 @@ public class Aliado : MonoBehaviour
         {
             vida -= dano * Time.deltaTime;
             // Establecer el booleano en el Animator
-            audioSource.PlayOneShot(EfectosDesonido[1]);//EFECTO DE SONIDO AL CAMINAR
 
         }
         // Comprueba si la vida del aliado ha llegado a 0
@@ -156,6 +158,11 @@ public class Aliado : MonoBehaviour
         {
             Morir();// Destruye el aliado
         }
+    }
+
+    void playSonidoAtaque()
+    {
+        audioSource.PlayOneShot(EfectosDesonido[2]);//EFECTO DE SONIDO AL CAMINAR
     }
 
     public void Morir()
