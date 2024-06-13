@@ -60,7 +60,7 @@ MonoBehaviour:
   martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
   berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
   particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 6987673557492138896}
   EfectosDesonido:
   - {fileID: 8300000, guid: a66f6352b0919d54fae5f8b3984c4e91, type: 3}
   - {fileID: 8300000, guid: 853b16b185f41f640a4ec68976b92d8a, type: 3}

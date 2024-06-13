@@ -210,8 +210,8 @@ public class Enemigo : MonoBehaviour
         }
   
     }
-
     public void cartaAleatoria()
+
     {
         if (cartas.amtOfCards < 10)
         {

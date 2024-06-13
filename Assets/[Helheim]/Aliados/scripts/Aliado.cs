@@ -166,20 +166,18 @@ public class Aliado : MonoBehaviour
 
     void playSonidoAtaque()
     {
+
         audioSource.PlayOneShot(EfectosDesonido[2]);//EFECTO DE SONIDO AL CAMINAR
     }
 
     public void Morir()
     {
-        StartCoroutine(Die());
+        Destroy(gameObject, (2)); // Destruye el enemigo
         Instantiate(particulasMuerte, transform.position, Quaternion.identity);
+        audioSource.PlayOneShot(EfectosDesonido[3]);
+
     }
-    IEnumerator Die(){
-    
-    audioSource.PlayOneShot(EfectosDesonido[4]);
-    yield return new WaitForSeconds(1); //waits 3 seconds
-    Destroy(gameObject); //this will work after 3 seconds.
-}
+
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_____FUNCIONES DE COMBATE_______++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
