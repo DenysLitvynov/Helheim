@@ -44,9 +44,11 @@ public class Enemigo : MonoBehaviour
         waypointIndex = ClosestWaypoint();
 
         target = caminos.points[waypointIndex];
+        audioSource=GetComponent<AudioSource>();
 
         // Obtener el Animator adjunto al GameObject
         animator = GetComponent<Animator>();
+        audioSource= GetComponent<AudioSource>();
 
         vida = vida_maxima;
         GameObject characterManagerObject = GameObject.Find("Game Manager");
@@ -69,11 +71,18 @@ public class Enemigo : MonoBehaviour
             recibirDano(aliado.dps);
         }
 
-        // Establecer el booleano en el Animator
-        animator.SetBool("EstaEnCombate", esta_en_combate);
+        if(animator!=null)
+        {
+            // Establecer el booleano en el Animator
+            animator.SetBool("EstaEnCombate", esta_en_combate);
+        }
 
-        Mover();
-        
+        if (!esta_en_combate && SepuedeMover)
+        {
+            Mover();
+            return;
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -112,23 +121,22 @@ public class Enemigo : MonoBehaviour
 
     void Mover()
     {
-        if (!esta_en_combate &&SepuedeMover) { 
+       
             Vector3 dir = target.position - transform.position;
             transform.Translate(dir.normalized * velocidad * Time.deltaTime, Space.World);
-            audioSource.PlayOneShot(EfectosDesonido[0]);//EFECTO DE SONIDO AL CAMINAR
-
+            
             if (Vector3.Distance(transform.position, target.position) <= 0.4f)
             {
                 GetNextWaypoint();
                 
             }
-            return;
-        }
+         
     }
     
     void empezarMovimiento()
     {
         SepuedeMover = true;
+        audioSource.PlayOneShot(EfectosDesonido[0]);
     }
     void detenerMovimient() 
     {
@@ -173,7 +181,6 @@ public class Enemigo : MonoBehaviour
         {
             vida -= dano * Time.deltaTime;
             // Establecer el booleano en el Animator
-            audioSource.PlayOneShot(EfectosDesonido[1]);//EFECTO DE SONIDO AL CAMINAR
 
             if (vida <= 0 || dano >= vida_maxima)
             {
@@ -183,19 +190,25 @@ public class Enemigo : MonoBehaviour
         // Comprueba si la vida del aliado ha llegado a 0
       
     }
+   private void playSonidoEspada()
+    {
+        audioSource.PlayOneShot(EfectosDesonido[1]);
+    }
 
     public void Morir()
     {
-        Destroy(gameObject); // Destruye el enemigo
+
+        Destroy(gameObject,0.5f); // Destruye el enemigo
         // Define un desplazamiento en el eje Y
         Vector3 posicion = transform.position + new Vector3(0, 1.0f, 0); // Ajusta el valor 1.0f según sea necesario
         Instantiate(particulasMuerte, posicion, Quaternion.identity);
-        
+        audioSource.PlayOneShot(EfectosDesonido[2]);
+
         if (DropCarta())
         {
             cartaAleatoria();
         }
-        audioSource.PlayOneShot(EfectosDesonido[2]);//EFECTO DE SONIDO AL CAMINAR
+  
     }
 
     public void cartaAleatoria()
