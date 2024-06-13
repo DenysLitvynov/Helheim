@@ -8,8 +8,8 @@ public class Espectro_Stats : MonoBehaviour
     public float vida_maxima = 100f;//La vida maxima del enemigo, solo para comparar y saber si se muere de una vez
     public float vida = 100f; // La vida del enemigo
     public float daсo_espectro = 50f;//daсo que causa el enemigo(el aliado tomara esto como parametro en recibirDaсo())
-    private Aliado_stats aliado;
-    private aliado_muro muro;
+    private Aliado aliado;
+    private Aliado muro;
     private Movimento_Frecha flecha;
     public MjolnirController Mjolnir;
     public CharacterCardManager cartas;
@@ -32,8 +32,8 @@ public class Espectro_Stats : MonoBehaviour
         if (collision.gameObject.tag == "Aliado" ||collision.gameObject.tag == "Flecha" )
         {
             // Obtiene una referencia al objeto del aliado
-            aliado = collision.gameObject.GetComponent<Aliado_stats>();
-            muro = collision.gameObject.GetComponent<aliado_muro>();
+            aliado = collision.gameObject.GetComponent<Aliado>();
+            muro = collision.gameObject.GetComponent<Aliado>();
             flecha= collision.gameObject.GetComponent<Movimento_Frecha>();
             Mjolnir = collision.gameObject.GetComponent<MjolnirController>();
 

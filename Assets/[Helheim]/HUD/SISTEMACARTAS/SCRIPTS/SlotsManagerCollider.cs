@@ -55,12 +55,11 @@ public class SlotsManagerCollider : MonoBehaviour
                 character.transform.SetParent(this.transform);
                
                 Vector3 pos=new Vector3(0, 0, -1);
-                character.transform.localPosition = pos;
-
-             
+                character.transform.localPosition = pos;             
         }
         //} 
     }
+
     void OnCollisionEnter(Collision collision){
         if (collision.gameObject.tag == "Personaje" ){
             CharacterCardManager.casillaActual = this.gameObject;
@@ -74,7 +73,7 @@ public class SlotsManagerCollider : MonoBehaviour
         }
     }
     
-     void TryPlaceCharacter(){
+    void TryPlaceCharacter(){
   
         if(colocandoPersoanje==true ){
             character = GameObject.FindGameObjectWithTag("Personaje");

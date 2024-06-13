@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 867346917246537621}
   - component: {fileID: 2735153965238166359}
   - component: {fileID: -2881841835532991229}
-  - component: {fileID: 1342174683448357662}
   - component: {fileID: 7381103704701515458}
   - component: {fileID: 2559318578425909968}
+  - component: {fileID: -6885468277338655032}
   m_Layer: 0
   m_Name: Espectro
   m_TagString: Enemigo
@@ -98,21 +98,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 3.561235, z: 1}
   m_Center: {x: 0, y: 0.5464833, z: 0}
---- !u!114 &1342174683448357662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6120940689491781809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 3
-  esta_en_combate: 0
-  animator: {fileID: 0}
 --- !u!114 &7381103704701515458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +138,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-6885468277338655032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120940689491781809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 3
+  esta_en_combate: 0
+  animator: {fileID: 2559318578425909968}
 --- !u!1001 &9001582235752605027
 PrefabInstance:
   m_ObjectHideFlags: 0

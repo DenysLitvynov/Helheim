@@ -168,8 +168,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5, y: 2, z: 1}
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Size: {x: 0.5, y: 2.1886294, z: 0.54394776}
+  m_Center: {x: 4.024503e-12, y: 0.09332316, z: -0.1017619}
 --- !u!95 &408286555319547300
 Animator:
   serializedVersion: 5

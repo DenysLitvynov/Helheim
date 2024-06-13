@@ -78,6 +78,7 @@ MonoBehaviour:
   vida_Maxima: 200
   vida: 50
   dps: 0.01
+  particulasMuerte: {fileID: 0}
 --- !u!65 &1893441994422304312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -97,8 +98,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1278532, y: 2.1366975, z: 1.3332977}
-  m_Center: {x: 0.06392664, y: 1.1326853, z: -0.076788545}
+  m_Size: {x: 1.1278532, y: 2.8672447, z: 1.3332977}
+  m_Center: {x: 0.06392664, y: 0.7674117, z: -0.076788545}
 --- !u!1 &4217104127344081869
 GameObject:
   m_ObjectHideFlags: 0
