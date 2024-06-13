@@ -171,9 +171,15 @@ public class Aliado : MonoBehaviour
 
     public void Morir()
     {
-        Destroy(gameObject); // Destruye el enemigo
+        StartCoroutine(Die());
         Instantiate(particulasMuerte, transform.position, Quaternion.identity);
     }
+    IEnumerator Die(){
+    
+    audioSource.PlayOneShot(EfectosDesonido[4]);
+    yield return new WaitForSeconds(1); //waits 3 seconds
+    Destroy(gameObject); //this will work after 3 seconds.
+}
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_____FUNCIONES DE COMBATE_______++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 

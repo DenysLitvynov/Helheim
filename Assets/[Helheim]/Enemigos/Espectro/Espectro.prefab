@@ -126,8 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7a4cb03a1bf2f49904bf9dd5745609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida_maxima: 100
-  vida: 100
   "da\u0441o_espectro": 15
   Mjolnir: {fileID: 0}
   cartas: {fileID: 0}
@@ -136,8 +134,8 @@ MonoBehaviour:
   particulasMuerte: {fileID: 0}
   audioSource: {fileID: 2671191487629297726}
   EfectosDesonido:
-  - {fileID: 8300000, guid: 1e65e44f3b66d8a7689f145424e0762e, type: 3}
   - {fileID: 8300000, guid: 1b5b8146f7ff1b57685b67f3439b9b5e, type: 3}
+  - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
 --- !u!95 &2559318578425909968
 Animator:
   serializedVersion: 5
@@ -172,12 +170,12 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.5
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 100
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -245,7 +243,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
