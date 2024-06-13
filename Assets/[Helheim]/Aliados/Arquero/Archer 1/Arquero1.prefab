@@ -169,7 +169,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5482225786511268882}
-  - component: {fileID: 5431491711438222987}
   m_Layer: 0
   m_Name: Bow simple
   m_TagString: Untagged
@@ -193,21 +192,6 @@ Transform:
   - {fileID: 5006753212347647897}
   m_Father: {fileID: 6041798345822670656}
   m_LocalEulerAnglesHint: {x: 18.737, y: -29.451, z: -36.928}
---- !u!114 &5431491711438222987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428158242425738960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cddb9e89fcd2560c09f3262ce41c5e6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arrowPrefab: {fileID: 4808752901011626463, guid: 70e9134b3547f20b0a8b0e5c2c7bd202, type: 3}
-  spawnInterval: 3
-  colocado: 1
 --- !u!1 &551403596689267601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,6 +1269,53 @@ Transform:
   - {fileID: 684926149450831693}
   m_Father: {fileID: 8141302539376093512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5065427465608133865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7439092960567194939}
+  - component: {fileID: 5394567090990609801}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7439092960567194939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5065427465608133865}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.69925183, z: -0, w: -0.71487546}
+  m_LocalPosition: {x: 19.1, y: 25.4, z: 10.6}
+  m_LocalScale: {x: 13.333332, y: 13.333333, z: 13.333332}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 798751165749472149}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5394567090990609801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5065427465608133865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cddb9e89fcd2560c09f3262ce41c5e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowPrefab: {fileID: 4808752901011626463, guid: 70e9134b3547f20b0a8b0e5c2c7bd202, type: 3}
+  spawnInterval: 3
+  colocado: 1
 --- !u!1 &5200280835086227032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,8 +1584,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5670365, y: 2.962768, z: 0.6808155}
-  m_Center: {x: 0.07383552, y: -1.1319593, z: 0.1942555}
+  m_Size: {x: 0.46371204, y: 6.4770727, z: 0.6808155}
+  m_Center: {x: 0.022173192, y: -2.8891118, z: 0.19425556}
 --- !u!95 &408286555319547300
 Animator:
   serializedVersion: 5
@@ -2408,6 +2439,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3830144547639274945}
+  - {fileID: 7439092960567194939}
   - {fileID: 686023922912987818}
   m_Father: {fileID: 7475911296737303540}
   m_LocalEulerAnglesHint: {x: 0, y: 271.266, z: 0}
