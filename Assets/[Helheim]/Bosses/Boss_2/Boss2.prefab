@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2055650049294423664}
   - component: {fileID: 262033252821890424}
   - component: {fileID: 4795510414845660991}
+  - component: {fileID: 2552197488566231260}
   m_Layer: 0
   m_Name: Boss2
   m_TagString: Enemigo
@@ -255,6 +256,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2552197488566231260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7748322054679884646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c62b98620af1d54eac150c33e44f942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2002328434552633339
 PrefabInstance:
   m_ObjectHideFlags: 0

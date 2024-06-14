@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 625672004515683503}
   - component: {fileID: -6769076682404173694}
   - component: {fileID: 3236022765324524424}
+  - component: {fileID: 4654693301853076523}
   m_Layer: 0
   m_Name: Penitente1
   m_TagString: Enemigo
@@ -242,6 +243,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a66f6352b0919d54fae5f8b3984c4e91, type: 3}
   - {fileID: 8300000, guid: 853b16b185f41f640a4ec68976b92d8a, type: 3}
   - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
+--- !u!114 &4654693301853076523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2452543340082555685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c62b98620af1d54eac150c33e44f942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6420586827905036111
 PrefabInstance:
   m_ObjectHideFlags: 0

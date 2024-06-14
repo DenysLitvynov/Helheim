@@ -1710,6 +1710,7 @@ GameObject:
   - component: {fileID: 5685955931157035404}
   - component: {fileID: 4858572783436459608}
   - component: {fileID: 3999684814209376426}
+  - component: {fileID: 111597877289158976}
   m_Layer: 0
   m_Name: Archer 2
   m_TagString: Personaje
@@ -1828,10 +1829,10 @@ MonoBehaviour:
   particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
   audioSource: {fileID: 3999684814209376426}
   EfectosDesonido:
-  - {fileID: 8300000, guid: 52ed9060620d4a24ea27c7a8bd4fa40c, type: 3}
-  - {fileID: 8300000, guid: a66f6352b0919d54fae5f8b3984c4e91, type: 3}
-  - {fileID: 8300000, guid: 853b16b185f41f640a4ec68976b92d8a, type: 3}
-  - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
+  - {fileID: 8300000, guid: 1984db33194a96546b53337e811b4e0f, type: 3}
+  - {fileID: 8300000, guid: 0dafbfa3ee2b95d4b8b23865e46eee40, type: 3}
+  - {fileID: 8300000, guid: c887a0fc3fa110644af731597f81fa3a, type: 3}
+  - {fileID: 8300000, guid: 7d7f4373a7e61274f917effa7598826d, type: 3}
 --- !u!82 &3999684814209376426
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1928,6 +1929,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &111597877289158976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5732418016639274054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c62b98620af1d54eac150c33e44f942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5852230927686996841
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6987673557492138896}
   - component: {fileID: 3730503728839218291}
   - component: {fileID: 7577781225058701817}
+  - component: {fileID: 9196254183818639298}
   m_Layer: 0
   m_Name: Boss1
   m_TagString: Enemigo
@@ -242,6 +243,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.8128847, y: 4.257527, z: 1.2909973}
   m_Center: {x: -0.40644196, y: 1.6287638, z: -0.06526104}
+--- !u!114 &9196254183818639298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2532150377607083129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c62b98620af1d54eac150c33e44f942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6780590266687013154
 PrefabInstance:
   m_ObjectHideFlags: 0

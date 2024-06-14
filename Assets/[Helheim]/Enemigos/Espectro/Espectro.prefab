@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2559318578425909968}
   - component: {fileID: 2671191487629297726}
   - component: {fileID: -2642200297420891745}
+  - component: {fileID: 5043641943946619780}
   m_Layer: 0
   m_Name: Espectro
   m_TagString: Enemigo
@@ -253,6 +254,18 @@ MonoBehaviour:
   velocidad: 1
   esta_en_combate: 0
   animator: {fileID: 0}
+--- !u!114 &5043641943946619780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120940689491781809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c62b98620af1d54eac150c33e44f942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9001582235752605027
 PrefabInstance:
   m_ObjectHideFlags: 0

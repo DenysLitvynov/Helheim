@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 408286555319547300}
   - component: {fileID: 531315429849964533}
   - component: {fileID: 2290817928657693265}
+  - component: {fileID: 93591978601784618}
   m_Layer: 0
   m_Name: Warrior2
   m_TagString: Personaje
@@ -311,10 +312,22 @@ MonoBehaviour:
   particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
   audioSource: {fileID: 531315429849964533}
   EfectosDesonido:
-  - {fileID: 8300000, guid: aff6e1a19591da23eb1e253ebc14e844, type: 3}
-  - {fileID: 8300000, guid: 2721da175fb561908bb986e115208b9d, type: 3}
-  - {fileID: 8300000, guid: 1c0f3b62e9ce94a30aadce8df3767c1f, type: 3}
-  - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
+  - {fileID: 8300000, guid: 1984db33194a96546b53337e811b4e0f, type: 3}
+  - {fileID: 8300000, guid: a66f6352b0919d54fae5f8b3984c4e91, type: 3}
+  - {fileID: 8300000, guid: 667089bbe26a81e408c9c34da34d73e2, type: 3}
+  - {fileID: 8300000, guid: 8b19909169392b645a4392e26eaef672, type: 3}
+--- !u!114 &93591978601784618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5547683239768185982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c62b98620af1d54eac150c33e44f942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4814137835746619313
 PrefabInstance:
   m_ObjectHideFlags: 0

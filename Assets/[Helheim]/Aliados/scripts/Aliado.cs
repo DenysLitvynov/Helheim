@@ -188,7 +188,8 @@ public class Aliado : MonoBehaviour
 
     public void Morir()
     {
-        Destroy(gameObject,0.5f); // Destruye el enemigo
+
+        Destroy(gameObject,0.2f); // Destruye el enemigo
         Instantiate(particulasMuerte, transform.position, Quaternion.identity);
 
 
