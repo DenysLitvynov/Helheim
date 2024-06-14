@@ -15345,13 +15345,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192253bf6a310f74c93ae47ce414c549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amtOfCards: 5
+  amtOfCards: 3
   characterCardSO:
   - {fileID: 11400000, guid: e911952b8bfbbc54d878a92f89569a6e, type: 2}
   - {fileID: 11400000, guid: 57732fa7918f82f4bb3ea2b8f6dc36af, type: 2}
   - {fileID: 11400000, guid: b2a4c3f1a69e686498739ca35694608f, type: 2}
-  - {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
-  - {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

@@ -40,6 +40,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3951987460678336407}
     m_Modifications:
+    - target: {fileID: 1326033084520007058, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
+      propertyPath: m_Size.x
+      value: 8.813958
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326033084520007058, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
+      propertyPath: m_Size.z
+      value: 12.6557455
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326033084520007058, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
+      propertyPath: m_Center.x
+      value: 0.06480495
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326033084520007058, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
+      propertyPath: m_Center.z
+      value: 3.3278706
+      objectReference: {fileID: 0}
     - target: {fileID: 2028885711541518131, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
       propertyPath: m_Name
       value: Leirdyrs
@@ -50,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2705013017973604063, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.177
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 2705013017973604063, guid: fafc29b7b0311d7e3b5b7c4d46fd0f5b, type: 3}
       propertyPath: m_LocalPosition.z
