@@ -38,7 +38,7 @@ public class CambioDeCasa : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemigo" || other.gameObject.tag == "Enemy")
         {
-            Enemigo_stats enemigo = other.gameObject.GetComponent<Enemigo_stats>();
+            Enemigo enemigo = other.gameObject.GetComponent<Enemigo>();
             Espectro_Stats espectro = other.gameObject.GetComponent<Espectro_Stats>();
 
             if (enemigo != null)
