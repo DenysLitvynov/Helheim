@@ -23,6 +23,7 @@ public class Enemigo : MonoBehaviour
     public float dano_enemigo = 15f;//da�o que causa el enemigo(el aliado tomara esto como parametro en recibirDa�o())
     private Aliado aliado;
     private Movimento_Frecha frecha;
+    private Movimiento_Aliodos MJOLNIR;
     public CharacterCardManager cartas;
     public CharacterCardScriptableObject martillo;
     public CharacterCardScriptableObject berserk;
@@ -101,7 +102,6 @@ public class Enemigo : MonoBehaviour
             frecha = collision.gameObject.GetComponent<Movimento_Frecha>();
             recibirDano(frecha.dps);
         }
-
     }
 
     private void OnCollisionExit(Collision collision)
@@ -175,7 +175,7 @@ public class Enemigo : MonoBehaviour
     //=======================================================================______FUNCIONCES MOVIMIENTO______==============================================================
 
     //======================================================================_________FUNCIONCES COMBATE_________===========================================================
-    private void recibirDano(float dano)
+    public void recibirDano(float dano)
     {
         if (esta_en_combate == true)
         {
@@ -198,7 +198,7 @@ public class Enemigo : MonoBehaviour
     public void Morir()
     {
 
-        Destroy(gameObject,0.5f); // Destruye el enemigo
+        Destroy(gameObject); // Destruye el enemigo
         // Define un desplazamiento en el eje Y
         Vector3 posicion = transform.position + new Vector3(0, 1.0f, 0); // Ajusta el valor 1.0f según sea necesario
         Instantiate(particulasMuerte, posicion, Quaternion.identity);

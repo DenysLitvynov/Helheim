@@ -18,7 +18,7 @@ public class SpawnerDev : MonoBehaviour
         // Si se presionan las teclas X y Y al mismo tiempo, instancia el prefab2
         if (Input.GetKey(KeyCode.P))
         {
-            Instantiate(prefab2, transform.position, Quaternion.identity);
+          Time.timeScale = 10f;
         }
     }
     

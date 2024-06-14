@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7381103704701515458}
   - component: {fileID: 2559318578425909968}
   - component: {fileID: 2671191487629297726}
+  - component: {fileID: -2642200297420891745}
   m_Layer: 0
   m_Name: Espectro
   m_TagString: Enemigo
@@ -237,6 +238,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-2642200297420891745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120940689491781809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 1
+  esta_en_combate: 0
+  animator: {fileID: 0}
 --- !u!1001 &9001582235752605027
 PrefabInstance:
   m_ObjectHideFlags: 0

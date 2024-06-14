@@ -5,15 +5,14 @@ using UnityEngine;
 public class SpawnArrow : MonoBehaviour
 {
     public GameObject arrowPrefab; // Il prefabbricato della freccia da spawnare
-    public float spawnInterval = 3f; // Intervallo di tempo tra uno spawn e l'altro
 
-    private float timer; // Timer per tenere traccia del tempo
+  
     public bool colocado = false;
 
     void Start()
     {
         // Invoca repetidamente la funzione GenerateArrow ogni spawnInterval secondi, iniziando dopo 1 secondo.
-        InvokeRepeating("GenerateArrow", 1.75f, spawnInterval);
+       // InvokeRepeating("GenerateArrow", 1.75f, spawnInterval);
     }
 
     public void GenerateArrow()

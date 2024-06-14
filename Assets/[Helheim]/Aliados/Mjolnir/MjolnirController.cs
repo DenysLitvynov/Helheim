@@ -9,7 +9,7 @@ public class MjolnirController : MonoBehaviour
     public float delay = 3f;
     public Animator animator; // El Animator del objeto
     [SerializeField] Movimiento_Aliodos colocadoCarta;
-    public int danomartillo = 120;
+    public int danomartillo = 200;
 
     private Espectro_Stats espectro;
 
@@ -58,9 +58,9 @@ public class MjolnirController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemigo")
+        if (collision.gameObject.tag == "Enemigo"&&collision.gameObject!=null)
         {
-            collision.gameObject.GetComponent<Enemigo_stats>().recibirDano(danomartillo);
+            collision.gameObject.GetComponent<Enemigo>().recibirDano(danomartillo);
 
             Debug.Log("MARTILLO ESTA HACIENDO DAÑO EN AMBOS EJES"+danomartillo);
         }

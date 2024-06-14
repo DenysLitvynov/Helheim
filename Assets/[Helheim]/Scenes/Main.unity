@@ -15048,7 +15048,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 57732fa7918f82f4bb3ea2b8f6dc36af, type: 2}
   - {fileID: 11400000, guid: b2a4c3f1a69e686498739ca35694608f, type: 2}
   - {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
-  - {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  - {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -18290,7 +18290,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 4.7583733, y: 4.590946, z: 10.103302}
   m_Center: {x: -6.930457, y: 1.7954731, z: 0.42698574}

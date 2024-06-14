@@ -25,6 +25,7 @@ public class Aliado : MonoBehaviour
     //private Controlador_de_Estados enemigoControler;
     private Enemigo enemigo;
     private Espectro_Stats espectro;
+    private SpawnArrow spawnArrowScript;
     //==========================================================================================================
     [Header("-----------------FX Y SFX-----------------")]
     public ParticleSystem spawn;
@@ -41,6 +42,7 @@ public class Aliado : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         vida = vida_Maxima;
+        spawnArrowScript = GetComponentInChildren<SpawnArrow>();
     }
 
     // Update is called once per frame
@@ -161,6 +163,7 @@ public class Aliado : MonoBehaviour
         if (vida <= 0||dano>=vida_Maxima)
         {
             Morir();// Destruye el aliado
+            audioSource.PlayOneShot(EfectosDesonido[3]);
         }
     }
 
@@ -170,13 +173,27 @@ public class Aliado : MonoBehaviour
         audioSource.PlayOneShot(EfectosDesonido[2]);//EFECTO DE SONIDO AL CAMINAR
     }
 
+    private void dispararFlecha()
+    {
+        if (spawnArrowScript != null)
+        {
+            spawnArrowScript.GenerateArrow();
+        }
+        playSonidoAtaque();
+    }
+    private void playRecarga()
+    {
+        audioSource.PlayOneShot(EfectosDesonido[1]);//EFECTO DE SONIDO AL CAMINAR
+    }
+
     public void Morir()
     {
-        Destroy(gameObject, (2)); // Destruye el enemigo
+        Destroy(gameObject,0.5f); // Destruye el enemigo
         Instantiate(particulasMuerte, transform.position, Quaternion.identity);
-        audioSource.PlayOneShot(EfectosDesonido[3]);
+
 
     }
+
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++_____FUNCIONES DE COMBATE_______++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

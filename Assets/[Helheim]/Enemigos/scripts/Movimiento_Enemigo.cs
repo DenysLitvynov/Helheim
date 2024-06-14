@@ -48,8 +48,12 @@ public class Movimiento_Enemigo : MonoBehaviour
             esta_en_combate = false;
         }
 
-        // Establecer el booleano en el Animator
-        animator.SetBool("EstaEnCombate", esta_en_combate);
+        if(animator != null)
+        {
+            // Establecer el booleano en el Animator
+            animator.SetBool("EstaEnCombate", esta_en_combate);
+        }
+        
     }
 
     void GetNextWaypoint()
