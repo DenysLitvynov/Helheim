@@ -74,7 +74,7 @@ public class Espectro_Stats : MonoBehaviour
     IEnumerator Die(){
     
     audioSource.PlayOneShot(EfectosDesonido[1]);
-    yield return new WaitForSeconds(1); //waits 3 seconds
+    yield return new WaitForSeconds(0.5f); //waits 3 seconds
     Destroy(gameObject); //this will work after 3 seconds.
 }
 

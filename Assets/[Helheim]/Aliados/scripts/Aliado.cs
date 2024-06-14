@@ -25,6 +25,7 @@ public class Aliado : MonoBehaviour
     //private Controlador_de_Estados enemigoControler;
     private Enemigo enemigo;
     private Espectro_Stats espectro;
+    private LaMonja_Stats lamonja;
     private SpawnArrow spawnArrowScript;
     //==========================================================================================================
     [Header("-----------------FX Y SFX-----------------")]
@@ -65,7 +66,15 @@ public class Aliado : MonoBehaviour
                 recibirDano(espectro.daсo_espectro);
 
             }
-            if(enemigo==null )
+            /*
+            else if (lamonja != null)
+            {
+                recibirDano(1);
+
+            }
+            */
+
+            if (enemigo==null )
             {
                 esta_en_combate=false;
             }
@@ -101,6 +110,7 @@ public class Aliado : MonoBehaviour
             esta_en_combate = true;
             enemigo = collision.gameObject.GetComponent<Enemigo>();
             espectro = collision.gameObject.GetComponent<Espectro_Stats>();
+           // lamonja = collision.gameObject.GetComponent<LaMonja_Stats>();
 
         }
         else if (collision.gameObject.tag == "Entorno")

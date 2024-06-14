@@ -64,8 +64,8 @@ MonoBehaviour:
   audioSource: {fileID: 7131143216927754241}
   EfectosDesonido:
   - {fileID: 8300000, guid: a66f6352b0919d54fae5f8b3984c4e91, type: 3}
-  - {fileID: 8300000, guid: 853b16b185f41f640a4ec68976b92d8a, type: 3}
-  - {fileID: 8300000, guid: e1b447aa9fa353143ae19ecbed4827fe, type: 3}
+  - {fileID: 8300000, guid: e34bb4845bc831d3dae62938f7f16a94, type: 3}
+  - {fileID: 8300000, guid: 8b19909169392b645a4392e26eaef672, type: 3}
 --- !u!54 &3021245386363760126
 Rigidbody:
   m_ObjectHideFlags: 0

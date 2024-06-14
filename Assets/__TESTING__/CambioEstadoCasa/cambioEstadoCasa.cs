@@ -7,9 +7,15 @@ public class CambioDeCasa : MonoBehaviour
     public GameObject Casa;
     public GameObject CasaEstado2;
     public GameObject CasaEstado3;
+    private AudioSource SFX;
+    [SerializeField] AudioClip collisionClip; // Clip de sonido a reproducir en la colisión
 
     public ComportamientoBarra vida;
 
+    private void Start()
+    {
+        SFX = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         float saludActual = vida.vidaActual;
@@ -40,6 +46,12 @@ public class CambioDeCasa : MonoBehaviour
         {
             Enemigo enemigo = other.gameObject.GetComponent<Enemigo>();
             Espectro_Stats espectro = other.gameObject.GetComponent<Espectro_Stats>();
+
+            // Reproducir el sonido de la colisión
+            if (SFX != null && collisionClip != null)
+            {
+                SFX.PlayOneShot(collisionClip);
+            }
 
             if (enemigo != null)
             {

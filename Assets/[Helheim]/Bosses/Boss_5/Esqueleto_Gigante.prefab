@@ -40,6 +40,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1634052008997232461}
     m_Modifications:
+    - target: {fileID: 5709579664495718397, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
+      propertyPath: EfectosDesonido.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ac79f8ec71e24e4fb879e0d6687ce20, type: 3}
+    - target: {fileID: 5709579664495718397, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
+      propertyPath: EfectosDesonido.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e34bb4845bc831d3dae62938f7f16a94, type: 3}
+    - target: {fileID: 5709579664495718397, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
+      propertyPath: EfectosDesonido.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b19909169392b645a4392e26eaef672, type: 3}
     - target: {fileID: 6967616339026469442, guid: f63f38d89f5ee97429c300e587dea077, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.65

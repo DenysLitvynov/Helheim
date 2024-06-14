@@ -10,6 +10,8 @@ public class MjolnirController : MonoBehaviour
     public Animator animator; // El Animator del objeto
     [SerializeField] Movimiento_Aliodos colocadoCarta;
     public int danomartillo = 200;
+    private AudioSource audioSource;
+    private AudioClip truenos;
 
     private Espectro_Stats espectro;
 
@@ -20,6 +22,7 @@ public class MjolnirController : MonoBehaviour
         {
             trueno.Stop();
         }
+        audioSource = GetComponent<AudioSource>();
         
 
     }
@@ -53,9 +56,20 @@ public class MjolnirController : MonoBehaviour
         {
             collider.enabled = true;
         }
-        Destroy(gameObject, delay);
+       
+
+        if(colocadoCarta == true)
+        {
+            Destroy(this.gameObject, delay);
+        }
     }
 
+    private void playSonidoTruenos()
+    {
+        audioSource.PlayOneShot(truenos);
+    }
+
+    /*
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Enemigo"&&collision.gameObject!=null)
@@ -66,6 +80,7 @@ public class MjolnirController : MonoBehaviour
         }
         
     }
+    */
 
 }
 

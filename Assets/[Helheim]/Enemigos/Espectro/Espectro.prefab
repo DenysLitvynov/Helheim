@@ -117,10 +117,10 @@ MonoBehaviour:
   cartas: {fileID: 0}
   martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
   berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
-  particulasMuerte: {fileID: 0}
+  particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
   audioSource: {fileID: 2671191487629297726}
   EfectosDesonido:
-  - {fileID: 8300000, guid: 1b5b8146f7ff1b57685b67f3439b9b5e, type: 3}
+  - {fileID: 8300000, guid: f1c390c7f555e024e9d83ef0decdc027, type: 3}
   - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
 --- !u!95 &2559318578425909968
 Animator:

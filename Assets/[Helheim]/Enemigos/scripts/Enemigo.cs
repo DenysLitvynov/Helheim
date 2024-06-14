@@ -23,7 +23,7 @@ public class Enemigo : MonoBehaviour
     public float dano_enemigo = 15f;//da�o que causa el enemigo(el aliado tomara esto como parametro en recibirDa�o())
     private Aliado aliado;
     private Movimento_Frecha frecha;
-    private Movimiento_Aliodos MJOLNIR;
+    private MjolnirController MJOLNIR;
     public CharacterCardManager cartas;
     public CharacterCardScriptableObject martillo;
     public CharacterCardScriptableObject berserk;
@@ -71,8 +71,12 @@ public class Enemigo : MonoBehaviour
             // Accede a la variable dps del aliado
             recibirDano(aliado.dps);
         }
+        if (MJOLNIR!=null)
+        {
+            recibirDano(MJOLNIR.danomartillo);
+        }
 
-        if(animator!=null)
+        if (animator!=null)
         {
             // Establecer el booleano en el Animator
             animator.SetBool("EstaEnCombate", esta_en_combate);
@@ -95,6 +99,7 @@ public class Enemigo : MonoBehaviour
          
                 // Obtiene una referencia al objeto del aliado
                 aliado = collision.gameObject.GetComponent<Aliado>();
+                MJOLNIR=collision.gameObject.GetComponent<MjolnirController>();
 
         }
         else if (collision.gameObject.CompareTag("Flecha"))
@@ -102,6 +107,7 @@ public class Enemigo : MonoBehaviour
             frecha = collision.gameObject.GetComponent<Movimento_Frecha>();
             recibirDano(frecha.dps);
         }
+
     }
 
     private void OnCollisionExit(Collision collision)
