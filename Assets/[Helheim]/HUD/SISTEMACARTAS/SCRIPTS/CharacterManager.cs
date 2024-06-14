@@ -118,7 +118,7 @@ public class CharacterManager : MonoBehaviour
         float randomNumber = Random.value;
 
         // Si el nmero generado es menor o igual a 0.1 (10%), devuelve verdadero; de lo contrario, devuelve falso
-        return randomNumber <= 0.5f;
+        return randomNumber <= 0.15f;
     }
     
    public void SelectedCard()

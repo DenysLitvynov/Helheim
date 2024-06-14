@@ -24756,7 +24756,7 @@ MonoBehaviour:
   delay: 3
   animator: {fileID: 8344529139072299450}
   colocadoCarta: {fileID: 5838872361381976418}
-  danomartillo: 2000
+  danomartillo: 200
 --- !u!65 &6338328363366424585
 BoxCollider:
   m_ObjectHideFlags: 0
