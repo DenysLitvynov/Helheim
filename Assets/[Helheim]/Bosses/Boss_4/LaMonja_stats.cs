@@ -12,7 +12,7 @@ public class LaMonja_Stats : MonoBehaviour
     public GameObject espectroPrefab; // El prefab del espectro que la monja va a invocar
     public float tiempoEntreInvocaciones = 5f; // El tiempo entre cada invocación
     public float distanciaDeInvocacion = 2f; // La distancia a la que se invocarán los espectros
-    private Aliado_stats aliado; // Referencia al aliado
+    private Aliado aliado; // Referencia al aliado
 
     public int maxEspectros = 5; // El número máximo de espectros que la monja puede invocar
     private int espectrosActuales = 0; // El número actual de espectros invocados
@@ -66,7 +66,7 @@ public class LaMonja_Stats : MonoBehaviour
         {
             combate.esta_en_combate = true;
             // Obtiene una referencia al objeto del aliado
-            aliado = collision.gameObject.GetComponent<Aliado_stats>();
+            aliado = collision.gameObject.GetComponent<Aliado>();
         }
     }
 
@@ -112,4 +112,5 @@ public class LaMonja_Stats : MonoBehaviour
         }
     }
     */
+    
 }

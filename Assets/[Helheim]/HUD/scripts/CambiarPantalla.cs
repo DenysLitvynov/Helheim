@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CambiarPantalla : MonoBehaviour
 {
+
+    public GameObject OptionPanel;
     // Start is called before the first frame update
     public void Jugar()
     {
@@ -12,7 +14,7 @@ public class CambiarPantalla : MonoBehaviour
     }
     public void Opciones()
     {
-         Debug.Log("Fuera de servicio...");
+         OptionPanel.SetActive(true);
     }
 
     // Update is called once per frame

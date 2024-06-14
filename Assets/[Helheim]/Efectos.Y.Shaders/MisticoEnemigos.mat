@@ -27,10 +27,10 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _FresnelPower: 0.43
+    - _FresnelPower: 0.39
     - _GlowSpread: 0.87
     m_Colors:
-    - _FresnelColor: {r: 0, g: 0.27336085, b: 0.42913625, a: 0}
+    - _FresnelColor: {r: 0, g: 1.776304, b: 2.7885356, a: 0}
     - _FresnelPower: {r: 1, g: 0, b: 0, a: 0}
     - _InteriorColor: {r: 0, g: 0.00892586, b: 0.035896827, a: 0}
     - _InteriorPosition: {r: 0, g: 0.64, b: 0, a: 0}

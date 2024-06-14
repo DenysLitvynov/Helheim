@@ -6,10 +6,14 @@ public class MjolnirController : MonoBehaviour
 {
     [SerializeField] ParticleSystem[] Truenos;
     [SerializeField] BoxCollider[] colliders; // Asegúrate de asignar tus colliders aquí en el Inspector
-    public float delay = 5f;
+    public float delay = 3f;
     public Animator animator; // El Animator del objeto
-    Movimiento_Aliodos colocadoCarta;
-  
+    [SerializeField] Movimiento_Aliodos colocadoCarta;
+    public int danomartillo = 200;
+    private AudioSource audioSource;
+    private AudioClip truenos;
+
+    private Espectro_Stats espectro;
 
     void Start()
     {
@@ -18,21 +22,25 @@ public class MjolnirController : MonoBehaviour
         {
             trueno.Stop();
         }
-        colocadoCarta = GetComponent<Movimiento_Aliodos>();
+        audioSource = GetComponent<AudioSource>();
+        
 
     }
 
     void Update()
     {
-        if (colocadoCarta.colocado)
-        {
-            // Si el objeto está colocado, reproduce la animación
-            animator.SetBool("Colocado", true);
-        }
-        else
-        {
-            // Si el objeto no está colocado, detiene la animación
-            animator.SetBool("Colocado", false);
+        if(colocadoCarta != null){
+
+            if (colocadoCarta.colocado)
+            {
+                // Si el objeto está colocado, reproduce la animación
+                animator.SetBool("Colocado", true);
+            }
+            else
+            {
+                // Si el objeto no está colocado, detiene la animación
+                animator.SetBool("Colocado", false);
+            }
         }
     }
 
@@ -48,6 +56,32 @@ public class MjolnirController : MonoBehaviour
         {
             collider.enabled = true;
         }
-        Destroy(gameObject, delay);
+       
+
+        if(colocadoCarta == true)
+        {
+            Destroy(this.gameObject, delay);
+        }
     }
+
+    private void playSonidoTruenos()
+    {
+        audioSource.PlayOneShot(truenos);
+    }
+
+    /*
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemigo"&&collision.gameObject!=null)
+        {
+            collision.gameObject.GetComponent<Enemigo>().recibirDano(danomartillo);
+
+            Debug.Log("MARTILLO ESTA HACIENDO DAÑO EN AMBOS EJES"+danomartillo);
+        }
+        
+    }
+    */
+
 }
+
+

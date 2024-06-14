@@ -15,7 +15,7 @@ public class Movimiento_Aliodos : MonoBehaviour
     public ParticleSystem spawn;
     private bool spawnEffectInstanciado = false;
     // Offset fijo para la posición Y
-    private float fixedYOffset = 2.0f; // Ajusta este valor según sea necesario
+    private float fixedYOffset = 0.15f; // Ajusta este valor según sea necesario
     [SerializeField] Animator animator;  // Referencia al Animator
 
     private void Start()
@@ -52,13 +52,22 @@ public class Movimiento_Aliodos : MonoBehaviour
             Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y + fixedYOffset, transform.position.z);
             // Ajuste de rotación para que el sistema de partículas mire hacia arriba
             Quaternion rotation = Quaternion.Euler(-90, 0, 0);
-            ParticleSystem effectInstance = Instantiate(spawn, spawnPosition, rotation);
+
+            if (spawn!=null)
+            {
+                ParticleSystem effectInstance = Instantiate(spawn, spawnPosition, rotation);
+            }
+            
             spawnEffectInstanciado = true;
         }
 
-        // Establecer el booleano en el Animator
-        animator.SetBool("EstaEnCombate", esta_en_combate);
-        animator.SetBool("Colocado", colocado);
+        if(animator!= null)
+        {
+            // Establecer el booleano en el Animator
+            animator?.SetBool("EstaEnCombate", esta_en_combate);
+            animator?.SetBool("Colocado", colocado);
+        }
+       
 
     }
          //
@@ -89,8 +98,12 @@ public class Movimiento_Aliodos : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Entorno")
         {
-         
-            Destroy(this.gameObject);
+            if (gameObject.GetComponent<MjolnirController>() == null) //El mijnolir controller no debe destruirse con el entorno sino que se destruye al caer en su script!
+            {
+                Destroy(this.gameObject);
+            }
+
+
         }
     }
 

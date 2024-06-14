@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1400f969466cf4340bbed0b76086a6f2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - spawn: {fileID: 5586318276742224296, guid: 1a4f36a94c6ff4a43884eac17eed039e, type: 3}
+  - particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

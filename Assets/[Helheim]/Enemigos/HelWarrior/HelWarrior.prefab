@@ -73,11 +73,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3045167626108582767}
   - component: {fileID: 4193540477488070375}
-  - component: {fileID: -759458937477484992}
-  - component: {fileID: 4710616447554038920}
   - component: {fileID: 2343017589864112011}
   - component: {fileID: -3921165751929326019}
   - component: {fileID: 8328216984558058033}
+  - component: {fileID: -2896356979381508055}
   m_Layer: 0
   m_Name: HelWarrior
   m_TagString: Enemigo
@@ -129,40 +128,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &-759458937477484992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576776858767351060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d41075c849690954ca5f67f2f17645c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida_maxima: 150
-  vida: 150
-  dano_enemigo: 35
-  cartas: {fileID: 0}
-  particulasMuerte: {fileID: 1179168509732900640, guid: 6b625974d012f9748b25d1e1042bdcfd, type: 3}
-  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
-  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
---- !u!114 &4710616447554038920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576776858767351060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56462babbcfa3da4ebcc8f40450437ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 1
-  esta_en_combate: 0
-  animator: {fileID: -3921165751929326019}
 --- !u!114 &2343017589864112011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +182,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.942921, y: 25.870762, z: 18.76908}
   m_Center: {x: 2.3546247, y: 12.434818, z: 0.48873082}
+--- !u!114 &-2896356979381508055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576776858767351060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42e0b9d486bc62a4d83396f03f51b653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  velocidad: 1
+  esta_en_combate: 0
+  vida_maxima: 80
+  vida: 100
+  dano_enemigo: 20
+  cartas: {fileID: 0}
+  martillo: {fileID: 11400000, guid: 803b77724c3962746b3a29f3cf52d69b, type: 2}
+  berserk: {fileID: 11400000, guid: 294c14df5e468c54480556a12e940790, type: 2}
+  particulasMuerte: {fileID: 1937049070325923575, guid: a2b218898e59f6d43bd1474634f12adb, type: 3}
+  audioSource: {fileID: 0}
+  EfectosDesonido:
+  - {fileID: 8300000, guid: 2721da175fb561908bb986e115208b9d, type: 3}
+  - {fileID: 8300000, guid: 853b16b185f41f640a4ec68976b92d8a, type: 3}
+  - {fileID: 8300000, guid: 5d5ced3cf2877324c8f7e80f413145bf, type: 3}
 --- !u!1 &846189969014962381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,7 +1672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7764957275342757137}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.28586918, y: -0.6467448, z: -0.6467448, w: 0.28586918}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.998847, y: 14.983764, z: -6.7336698}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
@@ -1691,7 +1683,7 @@ Transform:
   - {fileID: 5068441571177156381}
   - {fileID: 8870195477138662324}
   m_Father: {fileID: 3045167626108582767}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -132.308}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &7868557736023207482
 GameObject:
   m_ObjectHideFlags: 0

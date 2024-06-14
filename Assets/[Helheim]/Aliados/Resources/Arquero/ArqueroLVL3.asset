@@ -20,5 +20,5 @@ MonoBehaviour:
   descripcion: "Son las tropas con menos salud pero que pueden hacer da\xF1o desde
     lejos. Estas tropas no se mueven. Los arqueros disparan en l\xEDnea recta para
     maximizar el da\xF1o. "
-  cooldown: 2
+  cooldown: 4
   colocados: 0

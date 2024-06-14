@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1215022977703870102}
   - component: {fileID: -1546467954589793625}
   - component: {fileID: -4947312404883213264}
+  - component: {fileID: 2201688858136865007}
   m_Layer: 0
   m_Name: arrow simple
   m_TagString: Flecha
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4808752901011626463}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.031, z: 0.288}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -131,7 +132,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4808752901011626463}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba6474736a29d24f6af7481ca1bcd72e, type: 3}
   m_Name: 
@@ -140,3 +141,16 @@ MonoBehaviour:
   direzione: {x: 40, y: 2, z: 2}
   dps: 40
   delay: 2
+--- !u!114 &2201688858136865007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4808752901011626463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebee4f83f7be12a43a836dec2ae33835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10

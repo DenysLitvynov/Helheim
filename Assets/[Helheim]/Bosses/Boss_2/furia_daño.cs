@@ -6,7 +6,7 @@ using UnityEngine.Video;
 public class salto : MonoBehaviour
 {
     private Vector3 coordenadas = new Vector3(22.9099998f, 4.38000011f, -0.0799999982f);
-    private Enemigo_stats boss;
+    private Enemigo boss;
     /*
     public GameObject Brazos;
 
@@ -18,7 +18,7 @@ public class salto : MonoBehaviour
 
     void Start()
     {
-        boss = GetComponent<Enemigo_stats>();
+        boss = GetComponent<Enemigo>();
     }
 
     // Update is called once per frame

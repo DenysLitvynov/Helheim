@@ -55,12 +55,11 @@ public class SlotsManagerCollider : MonoBehaviour
                 character.transform.SetParent(this.transform);
                
                 Vector3 pos=new Vector3(0, 0, -1);
-                character.transform.localPosition = pos;
-
-             
+                character.transform.localPosition = pos;             
         }
         //} 
     }
+
     void OnCollisionEnter(Collision collision){
         if (collision.gameObject.tag == "Personaje" ){
             CharacterCardManager.casillaActual = this.gameObject;
@@ -74,13 +73,13 @@ public class SlotsManagerCollider : MonoBehaviour
         }
     }
     
-     void TryPlaceCharacter(){
+    void TryPlaceCharacter(){
   
         if(colocandoPersoanje==true ){
             character = GameObject.FindGameObjectWithTag("Personaje");
-            Movimiento_Aliodos characterScript = character.GetComponent<Movimiento_Aliodos>();
+            Aliado characterScript = character.GetComponent<Aliado>();
            
-            Movimiento_Berserk berserkerScript = character.GetComponent<Movimiento_Berserk>();
+            Movimiento_Aliodos mjolnirScript = character.GetComponent<Movimiento_Aliodos>();
             
             SpawnArrow spawnScript = character.GetComponentInChildren<SpawnArrow>();
 
@@ -88,8 +87,8 @@ public class SlotsManagerCollider : MonoBehaviour
                 characterScript.colocado=true;
             }else if(spawnScript!=null){
                 spawnScript.colocado=true;
-            }else if(berserkerScript!=null){
-                berserkerScript.colocado=true;
+            }else if(mjolnirScript!=null){
+                mjolnirScript.colocado=true;
             }
                         
             character.tag="Aliado";
